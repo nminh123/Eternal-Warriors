@@ -18,4 +18,18 @@ public class Ally : Entity
     {
         base.Update();
     }
+    protected void TriggerAttack()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(checkAttack.position, attackDistance);
+
+        foreach (Collider2D hit in colliders)
+        {
+            Enemy enemy = hit.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.Damage(1);
+                break;
+            }
+        }
+    }
 }
