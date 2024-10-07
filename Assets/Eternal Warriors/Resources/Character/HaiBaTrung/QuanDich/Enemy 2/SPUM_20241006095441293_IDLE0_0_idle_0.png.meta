@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,175 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_IDLE0_0_idle_0_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e8ccc4f667ac5f4c8d91fbf907b7a63
-      internalID: -456276837
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_IDLE0_0_idle_0_1
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c876a6b7df3ed9b4a83f37027b5794b3
-      internalID: 681301516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_IDLE0_0_idle_0_2
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66fbf2f493660a84a977848ccd124955
-      internalID: 2123608353
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_IDLE0_0_idle_0_3
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65d3d2d0806473246baee1fa4af9963e
-      internalID: -821064340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_IDLE0_0_idle_0_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d44f6b4df7897c4b8620f95d79d048e
-      internalID: 1429884829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_IDLE0_0_idle_0_5
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd3eb6ec34ea87b4cb5baca345acc513
-      internalID: 625285063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_IDLE0_0_idle_0_6
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b30c231af342a5740aead9dda8d95dcd
-      internalID: -655741206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_IDLE0_0_idle_0_7
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad5a432a102958e40887429868824c64
-      internalID: 1592435085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -274,15 +106,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      SPUM_20241006095441293_IDLE0_0_idle_0_0: -456276837
-      SPUM_20241006095441293_IDLE0_0_idle_0_1: 681301516
-      SPUM_20241006095441293_IDLE0_0_idle_0_2: 2123608353
-      SPUM_20241006095441293_IDLE0_0_idle_0_3: -821064340
-      SPUM_20241006095441293_IDLE0_0_idle_0_4: 1429884829
-      SPUM_20241006095441293_IDLE0_0_idle_0_5: 625285063
-      SPUM_20241006095441293_IDLE0_0_idle_0_6: -655741206
-      SPUM_20241006095441293_IDLE0_0_idle_0_7: 1592435085
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

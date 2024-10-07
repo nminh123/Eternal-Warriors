@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,280 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29ce7e18f70b6bb4ea87e8db685baf0f
-      internalID: -424910283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_1
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2bd30fdce48f15418e6bde7ee453153
-      internalID: -453965772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_2
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf3b88c2bc1419c448878ddc524eb490
-      internalID: -767038090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_3
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73a49b2c6a2158b49a1e796c213f508c
-      internalID: 990952882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cde705d15009fe543921eff9d9b048f4
-      internalID: -390209837
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_5
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b001d904501b12740bf22e5aee8e689e
-      internalID: 84301156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_6
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 920b2d892858d234b9ff692e0200d512
-      internalID: -1909703600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_7
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5696fad89e4a92241b7d95d49dca95d1
-      internalID: -1252098788
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 512
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e0b8f51797fd3c4c9ad3931af09ccd8
-      internalID: 68732523
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_9
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 512
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a3d8d08fe07fa249a584d290002312f
-      internalID: 1258606420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_10
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 512
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af79ca6e2733cd245a65f9c01d99a868
-      internalID: 155031920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_11
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 512
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a66409dfbf7df44983d7f2a35ced4de
-      internalID: -929599492
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0102b2d173db874282988274893e8b2
-      internalID: 550350731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -379,20 +106,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_0: -424910283
-      SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_1: -453965772
-      SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_10: 155031920
-      SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_11: -929599492
-      SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_12: 550350731
-      SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_2: -767038090
-      SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_3: 990952882
-      SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_4: -390209837
-      SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_5: 84301156
-      SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_6: -1909703600
-      SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_7: -1252098788
-      SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_8: 68732523
-      SPUM_20241006095441293_DAMAGED0_0_Attack_Bow_0_9: 1258606420
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
