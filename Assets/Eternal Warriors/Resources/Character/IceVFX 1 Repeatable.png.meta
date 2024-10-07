@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 55738f4900cfffc47876475ae864c436
+guid: ead25ca3080f1884b9ca7c7c0541e37f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPUM_20241006101641769_IDLE0_0_idle_0_0
+      name: IceVFX 1 Repeatable_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1536
-        width: 512
-        height: 512
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19b4ef574e0fb0942a4865e90b7b7005
-      internalID: 1931157547
+      spriteID: 85c2ea1f028560744a68d2e3a200ffe4
+      internalID: -13590778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241006101641769_IDLE0_0_idle_0_1
+      name: IceVFX 1 Repeatable_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 512
-        height: 512
+        x: 48
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fab89b64e0424a4c85a108954819eae
-      internalID: 404029165
+      spriteID: 551716bc437cec4468da801a754dbea1
+      internalID: -144626260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241006101641769_IDLE0_0_idle_0_2
+      name: IceVFX 1 Repeatable_2
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1536
-        width: 512
-        height: 512
+        x: 96
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17497a051cf4f8f4fb68f8a442a3bfaf
-      internalID: -1300116365
+      spriteID: 723997c739f076c4298edfdde66e023e
+      internalID: 1313148156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241006101641769_IDLE0_0_idle_0_3
+      name: IceVFX 1 Repeatable_3
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 512
-        height: 512
+        x: 144
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 049fed00d95d56e438b4171991176ca8
-      internalID: 1922645227
+      spriteID: be163bc37d6abed4a8b9917f03fb97bb
+      internalID: 2011655066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241006101641769_IDLE0_0_idle_0_4
+      name: IceVFX 1 Repeatable_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 512
-        height: 512
+        x: 192
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48e60aa639a04ee4a89daee883c5f5a1
-      internalID: 142144133
+      spriteID: 6f82246cef6eba545b8f92886c6830ba
+      internalID: -683571721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241006101641769_IDLE0_0_idle_0_5
+      name: IceVFX 1 Repeatable_5
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 512
-        height: 512
+        x: 240
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02b6c8326eb34b84fbc7248a27b7899e
-      internalID: 1714417039
+      spriteID: 0943686a84918544e96a74818b49972e
+      internalID: -1139995946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241006101641769_IDLE0_0_idle_0_6
+      name: IceVFX 1 Repeatable_6
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1024
-        width: 512
-        height: 512
+        x: 288
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65493cd7f9f357741aacfed6989e1e44
-      internalID: -1115726475
+      spriteID: 42666f4bfc9c18e41b81c356beb503a0
+      internalID: 814504061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241006101641769_IDLE0_0_idle_0_7
+      name: IceVFX 1 Repeatable_7
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1024
-        width: 512
-        height: 512
+        x: 336
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,8 +258,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 265778245f7d0774fae44541bc640701
-      internalID: 1561954103
+      spriteID: b8d9f0880f65ace43b4d1af71a30892e
+      internalID: 1502966497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceVFX 1 Repeatable_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0018ef7d909b9274dbae89ae4d8211b0
+      internalID: 556213884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceVFX 1 Repeatable_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a968410619387814e9414a1e5686f254
+      internalID: 1979718080
       vertices: []
       indices: 
       edges: []
@@ -275,14 +317,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPUM_20241006101641769_IDLE0_0_idle_0_0: 1931157547
-      SPUM_20241006101641769_IDLE0_0_idle_0_1: 404029165
-      SPUM_20241006101641769_IDLE0_0_idle_0_2: -1300116365
-      SPUM_20241006101641769_IDLE0_0_idle_0_3: 1922645227
-      SPUM_20241006101641769_IDLE0_0_idle_0_4: 142144133
-      SPUM_20241006101641769_IDLE0_0_idle_0_5: 1714417039
-      SPUM_20241006101641769_IDLE0_0_idle_0_6: -1115726475
-      SPUM_20241006101641769_IDLE0_0_idle_0_7: 1561954103
+      IceVFX 1 Repeatable_0: -13590778
+      IceVFX 1 Repeatable_1: -144626260
+      IceVFX 1 Repeatable_2: 1313148156
+      IceVFX 1 Repeatable_3: 2011655066
+      IceVFX 1 Repeatable_4: -683571721
+      IceVFX 1 Repeatable_5: -1139995946
+      IceVFX 1 Repeatable_6: 814504061
+      IceVFX 1 Repeatable_7: 1502966497
+      IceVFX 1 Repeatable_8: 556213884
+      IceVFX 1 Repeatable_9: 1979718080
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
