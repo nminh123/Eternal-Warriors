@@ -9,6 +9,11 @@ public class Horoes : MonoBehaviour
 
     public void HeroesSpawn(int Index)
     {
-        Instantiate(heroes[Index], spawnPoint.position, Quaternion.identity);
+        if(Power.instance.power <= 0) return;
+        if (heroes[0] && Power.instance.power >= 2)
+        {
+            Power.instance.RomovePower(2);
+            Instantiate(heroes[0], spawnPoint.position, Quaternion.identity);
+        }
     }
 }
