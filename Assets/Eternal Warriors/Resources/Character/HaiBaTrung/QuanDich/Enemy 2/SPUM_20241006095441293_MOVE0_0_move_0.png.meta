@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,112 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_MOVE0_0_move_0_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca83d89c36166b048b737d820a384b50
-      internalID: 2070016847
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_MOVE0_0_move_0_1
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78ac086339dbbf348bb81ea9fda795db
-      internalID: 154288271
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_MOVE0_0_move_0_2
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19b488b700e53704fb3e3a6387f07e8d
-      internalID: 745125430
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_MOVE0_0_move_0_3
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34d555c3e3f3ea84a891aba7fce4c4b6
-      internalID: 546277260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241006095441293_MOVE0_0_move_0_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1b27586f8a652b429ccb2566627e24e
-      internalID: 1064368636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -211,12 +106,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      SPUM_20241006095441293_MOVE0_0_move_0_0: 2070016847
-      SPUM_20241006095441293_MOVE0_0_move_0_1: 154288271
-      SPUM_20241006095441293_MOVE0_0_move_0_2: 745125430
-      SPUM_20241006095441293_MOVE0_0_move_0_3: 546277260
-      SPUM_20241006095441293_MOVE0_0_move_0_4: 1064368636
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
