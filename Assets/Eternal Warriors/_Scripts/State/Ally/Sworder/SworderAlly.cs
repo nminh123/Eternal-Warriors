@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class SworderAlly : Ally
@@ -18,6 +19,7 @@ public class SworderAlly : Ally
         moveState = new(this, this, stateMachine, "Move");
         battleState = new(this, this, stateMachine, "Move");
         attackState = new(this, this, stateMachine, "Attack");
+        deahState = new(this, this, stateMachine, "Deah");
 
     }
 
@@ -32,12 +34,9 @@ public class SworderAlly : Ally
     {
         base.Update();
     }
-    public override void Damage(int Damge)
+
+    protected override void AnimDeah()
     {
-        base.Damage(Damge);
-    }
-    protected override void CheckDeah()
-    {
-        base.CheckDeah();
+        stateMachine.ContinueState(deahState);
     }
 }
