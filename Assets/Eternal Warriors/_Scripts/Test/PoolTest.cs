@@ -30,15 +30,17 @@ public class PoolTest : MonoBehaviour
     {
         foreach (var obj in poolObjects)
         {
-            if (!obj.activeInHierarchy && obj.name.Contains(objectPrefabs[index].name))  // Check correct type
+            if (!obj.activeInHierarchy && obj.name.Contains(objectPrefabs[index].name))
             {
                 obj.SetActive(true);
+                Debug.Log("Retrieved from pool: " + obj.name);
                 return obj;
             }
         }
 
         // If no inactive objects, instantiate a new one based on the requested type
         GameObject newObj = Instantiate(objectPrefabs[index]);
+        newObj.gameObject.name = objectPrefabs[index].gameObject.name;
         newObj.SetActive(true);
         poolObjects.Add(newObj);
         newObj.transform.parent = Bag.transform;
@@ -48,5 +50,6 @@ public class PoolTest : MonoBehaviour
     public void ReturnObject(GameObject obj)
     {
         obj.SetActive(false);
+        Debug.Log("Returned to pool: " + obj.name);
     }
 }

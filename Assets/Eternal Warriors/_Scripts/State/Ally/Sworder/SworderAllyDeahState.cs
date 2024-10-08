@@ -13,23 +13,25 @@ public class SworderAllyDeahState : EntityState
     public override void Enter()
     {
         base.Enter();
-        startTime = 1f;
+        startTime = 1.1f;
+        
     }
 
     public override void Exit()
     {
         base.Exit();
+        
     }
 
     public override void Logic()
     {
         base.Logic();
 
-        if(startTime <= 0)
+        if (islife)
         {
             sworderAlly.ReturnToPool();
-            sworderAlly.gameObject.SetActive(false);
         }
+
     }
 }
 

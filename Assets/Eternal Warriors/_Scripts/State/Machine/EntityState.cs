@@ -10,6 +10,7 @@ public class EntityState
     protected string boolName;
     protected float startTime;
     protected bool isCalled;
+    protected bool islife;
 
     public EntityState(Entity entity, EntityStateMachine stateMchine, string boolName)
     {
@@ -22,6 +23,7 @@ public class EntityState
     {
         entity.animator.SetBool(boolName, true);
         isCalled = false;
+        islife = false;
     }
     public virtual void Exit()
     {
@@ -35,5 +37,9 @@ public class EntityState
     public void CheckAnimationAttack()
     {
         isCalled = true;
+    }
+    public void CheckAnimationDeah()
+    {
+        islife = true;
     }
 }
