@@ -11,6 +11,7 @@ public class Entity : MonoBehaviour
 
     public Rigidbody2D rb { get;set; }
     public Animator animator { get;set; }
+    public Collider2D col {  get; set; }
     #endregion
     [Header("Stat")]
     [SerializeField] protected int maxHealth;
@@ -32,6 +33,7 @@ public class Entity : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        col = GetComponent<Collider2D>();
 
         currentHealth = maxHealth;
     }
@@ -53,16 +55,21 @@ public class Entity : MonoBehaviour
 
     public virtual void Damage(int Damge)
     {
-        if (islife)
-        {
-            currentHealth -= Damge;
-        }
+        if (!islife) return;
+        
+        currentHealth -= Damge;
+        
     }
     protected virtual void CheckDeah()
     {
-        if(maxHealth <= 0)
+        if(currentHealth <= 0 && islife)
+        {
+            col.enabled = false;
             islife = false;
+            AnimDeah();
+        }
     }
+    protected virtual void AnimDeah() { }
     protected void OnDrawGizmos()
     {
         Gizmos.DrawLine(checkAttack.position, new Vector3
@@ -76,5 +83,10 @@ public class Entity : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    public void ReturnToPool()
+    {
+        GameObject.FindObjectOfType<PoolTest>().ReturnObject(gameObject);
     }
 }

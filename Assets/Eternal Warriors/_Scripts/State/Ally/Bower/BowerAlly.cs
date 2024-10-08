@@ -8,6 +8,7 @@ public class BowerAlly : Ally
     public BowerAllyMoveState moveState { get; private set; }
     public BowerAllyBattleState battleState { get; private set; }
     public BowerAllyAttackState attackState { get; private set; }
+    public BowerAllyDeahState deahState { get; private set; }
     protected override void Awake()
     {
         base.Awake();
@@ -16,6 +17,7 @@ public class BowerAlly : Ally
         moveState = new(this, this, stateMachine, "Move");
         battleState = new(this, this, stateMachine, "Idle");
         attackState = new(this, this, stateMachine, "Attack");
+        deahState = new(this, this, stateMachine, "Deah");
     }
 
     protected override void Start()
@@ -28,12 +30,10 @@ public class BowerAlly : Ally
     {
         base.Update();
     }
-    public override void Damage(int Damge)
+
+    protected override void AnimDeah()
     {
-        base.Damage(Damge);
-    }
-    protected override void CheckDeah()
-    {
-        base.CheckDeah();
+        base.AnimDeah();
+        stateMachine.ContinueState(deahState);
     }
 }

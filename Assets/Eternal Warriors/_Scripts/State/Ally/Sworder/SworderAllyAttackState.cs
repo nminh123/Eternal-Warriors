@@ -13,6 +13,7 @@ public class SworderAllyAttackState : EntityState
     public override void Enter()
     {
         base.Enter();
+        sworderAlly.SetZeroVelocity();
     }
 
     public override void Exit()

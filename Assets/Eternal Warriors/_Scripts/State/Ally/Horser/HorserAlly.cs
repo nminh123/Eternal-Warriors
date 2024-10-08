@@ -30,9 +30,10 @@ public class HorserAlly : Ally
     {
         base.Update();
     }
-    protected override void CheckDeah()
+    protected override void AnimDeah()
     {
-        base.CheckDeah();
+        base.AnimDeah();
+        stateMachine.ContinueState(deahState);
     }
-    
+
 }

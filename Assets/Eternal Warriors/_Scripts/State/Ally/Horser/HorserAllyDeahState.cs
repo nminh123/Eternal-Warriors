@@ -13,6 +13,7 @@ public class HorserAllyDeahState : EntityState
     public override void Enter()
     {
         base.Enter();
+        startTime = 1.6f;
     }
 
     public override void Exit()
@@ -23,5 +24,13 @@ public class HorserAllyDeahState : EntityState
     public override void Logic()
     {
         base.Logic();
+
+
+        if(startTime <= 0)
+        {
+            horser.ReturnToPool();
+            horser.gameObject.SetActive(false);
+        }
+            
     }
 }
