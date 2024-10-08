@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements.Experimental;
@@ -25,6 +25,13 @@ public class Entity : MonoBehaviour
     [SerializeField] protected Transform checkAttack;
     [SerializeField] protected float attackDistance;
     [SerializeField] protected LayerMask whatIsCheckAttack;
+    protected void OnEnable()
+    {
+        islife = true;
+        currentHealth = maxHealth;
+
+    }
+
     protected virtual void Awake()
     {
         stateMachine = new();
@@ -35,7 +42,7 @@ public class Entity : MonoBehaviour
         animator = GetComponent<Animator>();
         col = GetComponent<Collider2D>();
 
-        currentHealth = maxHealth;
+        //currentHealth = maxHealth;
     }
     protected virtual void Update()
     {
@@ -51,6 +58,7 @@ public class Entity : MonoBehaviour
         rb.velocity = Vector2.zero;
     }
     public void CheckAnimationAttack() => stateMachine.currentState.CheckAnimationAttack();
+    public void CheckAnimationDeah() => stateMachine.currentState.CheckAnimationDeah();
     public RaycastHit2D CheckAttack() => Physics2D.Raycast(checkAttack.position, Vector2.right * facing, attackDistance, whatIsCheckAttack);
 
     public virtual void Damage(int Damge)
@@ -88,5 +96,6 @@ public class Entity : MonoBehaviour
     public void ReturnToPool()
     {
         GameObject.FindObjectOfType<PoolTest>().ReturnObject(gameObject);
+        col.enabled = true;
     }
 }
