@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using MidniteOilSoftware.ObjectPoolManager;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
@@ -22,7 +23,12 @@ public class SworderAlly : Ally
         deahState = new(this, this, stateMachine, "Deah");
 
     }
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+        stateMachine.StartState(moveState);
 
+    }
     protected override void Start()
     {
         base.Start();
@@ -38,5 +44,6 @@ public class SworderAlly : Ally
     protected override void AnimDeah()
     {
         stateMachine.ContinueState(deahState);
+        ReturnPool(this.gameObject);
     }
 }

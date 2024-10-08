@@ -1,3 +1,4 @@
+using MidniteOilSoftware.ObjectPoolManager;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,11 +27,9 @@ public class SworderAllyDeahState : EntityState
     public override void Logic()
     {
         base.Logic();
+            
 
-        if (islife)
-        {
-            sworderAlly.ReturnToPool();
-        }
+
 
     }
 }
