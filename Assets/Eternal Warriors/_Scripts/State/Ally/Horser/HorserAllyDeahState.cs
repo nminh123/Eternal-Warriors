@@ -26,11 +26,6 @@ public class HorserAllyDeahState : EntityState
         base.Logic();
 
 
-        if(startTime <= 0)
-        {
-            horser.ReturnToPool();
-            horser.gameObject.SetActive(false);
-        }
             
     }
 }

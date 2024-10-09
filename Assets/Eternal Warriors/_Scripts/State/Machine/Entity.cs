@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using MidniteOilSoftware.ObjectPoolManager;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements.Experimental;
@@ -25,7 +26,7 @@ public class Entity : MonoBehaviour
     [SerializeField] protected Transform checkAttack;
     [SerializeField] protected float attackDistance;
     [SerializeField] protected LayerMask whatIsCheckAttack;
-    protected void OnEnable()
+    protected virtual void OnEnable()
     {
         islife = true;
         currentHealth = maxHealth;
@@ -35,11 +36,12 @@ public class Entity : MonoBehaviour
     protected virtual void Awake()
     {
         stateMachine = new();
+        animator = GetComponent<Animator>();
     }
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        
         col = GetComponent<Collider2D>();
 
         //currentHealth = maxHealth;
@@ -92,10 +94,9 @@ public class Entity : MonoBehaviour
         }
         return false;
     }
-
-    public void ReturnToPool()
+    public virtual void ReturnPool(GameObject obj)
     {
-        GameObject.FindObjectOfType<PoolTest>().ReturnObject(gameObject);
+        ObjectPoolManager.DespawnGameObject(obj);
         col.enabled = true;
     }
 }

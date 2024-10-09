@@ -24,10 +24,6 @@ public class BowerAllyDeahState : EntityState
     public override void Logic()
     {
         base.Logic();
-        if(startTime <= 0)
-        {
-            bowerAlly.ReturnToPool();
-            bowerAlly.gameObject.SetActive(false);
-        }
+
     }
 }
