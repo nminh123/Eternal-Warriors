@@ -22,6 +22,7 @@ public class BowerEnemy : Enemy
         moveState = new(this, this, stateMachine, "Move");
         battleState = new(this, this, stateMachine, "Idle");
         attackState = new(this, this, stateMachine, "Attack");
+        deahState = new(this, this, stateMachine, "Deah");
     }
 
     protected override void CheckDeah()
@@ -38,6 +39,11 @@ public class BowerEnemy : Enemy
     protected override void Update()
     {
         base.Update();
-        
+
+    }
+    protected override void AnimDeah()
+    {
+        stateMachine.ContinueState(deahState);
+
     }
 }

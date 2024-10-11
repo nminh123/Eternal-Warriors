@@ -17,6 +17,7 @@ public class Entity : MonoBehaviour
     [Header("Stat")]
     [SerializeField] protected int maxHealth;
     public float speed;
+    public int damage;
     public float attackCoolDown;
     public int facing;
     protected int currentHealth;

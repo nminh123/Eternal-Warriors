@@ -4,47 +4,44 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
+public class Wave
+{
+    public GameObject[] enemyType;
+    public int[] enemyCount;
+}
 public class WaveSpawner : MonoBehaviour
 {
-    [System.Serializable]
-    public class Wave
-    {
-        public GameObject[] enemyTypes; 
-        public int[] enemyCounts;       
-    }
-
-    public Wave[] waves;  
+    public Wave[] wave;  
     public Transform spawnPoint;    
-    public float timeBetweenEnemies = 1f; 
-    public float timeBetweenWaves = 5f;   
+    public float timeBetweenEnemie = 1f; 
+    public float timeBetweenWave = 5f;   
 
-    private int currentWaveIndex = 0; 
+    private int currentWave = 0; 
 
     void Start()
     {
-        StartCoroutine(SpawnWaves());
+        StartCoroutine(SpawnWave());
     }
 
-    IEnumerator SpawnWaves()
+    IEnumerator SpawnWave()
     {
-        while (currentWaveIndex < waves.Length) 
+        while (currentWave < wave.Length) 
         {
-            yield return new WaitForSeconds(timeBetweenWaves); 
+            yield return new WaitForSeconds(timeBetweenWave); 
 
-            Debug.Log("Wave " + (currentWaveIndex + 1) + " started!");
+            Wave _currentWave = wave[currentWave]; 
 
-            Wave currentWave = waves[currentWaveIndex]; 
-
-            for (int i = 0; i < currentWave.enemyTypes.Length; i++) 
+            for (int i = 0; i < _currentWave.enemyType.Length; i++) 
             {
-                for (int j = 0; j < currentWave.enemyCounts[i]; j++) 
+                for (int j = 0; j < _currentWave.enemyCount[i]; j++) 
                 {
-                    SpawnEnemy(currentWave.enemyTypes[i]);
-                    yield return new WaitForSeconds(timeBetweenEnemies); 
+                    SpawnEnemy(_currentWave.enemyType[i]);
+                    yield return new WaitForSeconds(timeBetweenEnemie); 
                 }
             }
 
-            currentWaveIndex++; 
+            currentWave++; 
         }
     }
 

@@ -23,5 +23,8 @@ public class BowerEnemyDeahState : EntityState
     public override void Logic()
     {
         base.Logic();
+
+        if (islife)
+            bowerEnemy.ReturnPool(bowerEnemy.gameObject);
     }
 }

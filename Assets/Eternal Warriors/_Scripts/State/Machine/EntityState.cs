@@ -10,7 +10,7 @@ public class EntityState
     protected string boolName;
     protected float startTime;
     protected bool isCalled;
-    protected bool islife;
+    public bool islife;
 
     public EntityState(Entity entity, EntityStateMachine stateMchine, string boolName)
     {

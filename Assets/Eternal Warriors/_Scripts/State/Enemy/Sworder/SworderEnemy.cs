@@ -8,6 +8,7 @@ public class SworderEnemy : Enemy
     public SworderEnemyMoveState moveState { get; private set; }
     public SworderEnemyBattleState battleState { get; private set; }
     public SworderEnemyAttackState attackState { get; private set; }
+    public SworderEnemyDeahState deahState {  get; private set; }
     protected override void Awake()
     {
         base.Awake();
@@ -15,6 +16,7 @@ public class SworderEnemy : Enemy
         moveState = new(this, this, stateMachine, "Move");
         battleState = new(this, this, stateMachine, "Idle");
         attackState = new(this, this, stateMachine, "Attack");
+        deahState = new(this, this, stateMachine, "Deah");
 
     }
 
@@ -33,8 +35,8 @@ public class SworderEnemy : Enemy
     {
         base.Damage(Damge);
     }
-    protected override void CheckDeah()
+    protected override void AnimDeah()
     {
-        base.CheckDeah();
+        stateMachine.ContinueState(deahState);
     }
 }
