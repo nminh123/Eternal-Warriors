@@ -33,8 +33,8 @@ public class HorserEnemy : Enemy
     {
         base.Damage(Damge);
     }
-    protected override void CheckDeah()
+    protected override void AnimDeah()
     {
-        base.CheckDeah();
+        stateMachine.ContinueState(deahState);
     }
 }

@@ -23,6 +23,9 @@ public class HorserEnemyDeahState : EntityState
     public override void Logic()
     {
         base.Logic();
+
+        if (islife)
+            horserEnemy.ReturnPool(horserEnemy.gameObject);
     }
 }
 

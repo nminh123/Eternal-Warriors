@@ -27,10 +27,8 @@ public class SworderAllyDeahState : EntityState
     public override void Logic()
     {
         base.Logic();
-            
-
-
-
+        if(islife)
+            sworderAlly.ReturnPool(sworderAlly.gameObject);
     }
 }
 
