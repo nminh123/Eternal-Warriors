@@ -25,5 +25,8 @@ public class BowerAllyDeahState : EntityState
     {
         base.Logic();
 
+        if (islife)
+            bowerAlly.ReturnPool(bowerAlly.gameObject);
+
     }
 }

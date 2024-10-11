@@ -25,7 +25,8 @@ public class HorserAllyDeahState : EntityState
     {
         base.Logic();
 
+        if (islife)
+            horser.ReturnPool(horser.gameObject);
 
-            
     }
 }

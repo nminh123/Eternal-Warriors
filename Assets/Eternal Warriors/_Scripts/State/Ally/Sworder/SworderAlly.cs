@@ -18,7 +18,7 @@ public class SworderAlly : Ally
 
         idleState = new(this, this, stateMachine, "Idle");
         moveState = new(this, this, stateMachine, "Move");
-        battleState = new(this, this, stateMachine, "Move");
+        battleState = new(this, this, stateMachine, "Idle");
         attackState = new(this, this, stateMachine, "Attack");
         deahState = new(this, this, stateMachine, "Deah");
 
@@ -44,6 +44,7 @@ public class SworderAlly : Ally
     protected override void AnimDeah()
     {
         stateMachine.ContinueState(deahState);
-        ReturnPool(this.gameObject);
+        //ReturnPool(this.gameObject);
+
     }
 }

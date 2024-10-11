@@ -25,9 +25,15 @@ public class Ally : Entity
         foreach (Collider2D hit in colliders)
         {
             Enemy enemy = hit.GetComponent<Enemy>();
+            TowerEnemy tower = hit.GetComponent<TowerEnemy>();
             if (enemy != null)
             {
-                enemy.Damage(1);
+                enemy.Damage(damage);
+                break;
+            }
+            else if(tower != null)
+            {
+                tower.Damage(damage/2);
                 break;
             }
         }
