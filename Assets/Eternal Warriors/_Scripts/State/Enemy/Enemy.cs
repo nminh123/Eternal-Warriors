@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : Entity
 {
+    public GameObject Coint;
     protected override void Awake()
     {
         base.Awake();
@@ -21,6 +22,10 @@ public class Enemy : Entity
     public override void Damage(int Damge)
     {
         base.Damage(Damge);
+    }
+    public virtual void FallCoint()
+    {
+        Instantiate(Coint, this.transform.position,Quaternion.identity);
     }
     protected void TriggerAttack()
     {

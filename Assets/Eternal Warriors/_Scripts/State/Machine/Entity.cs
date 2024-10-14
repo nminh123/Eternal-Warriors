@@ -20,7 +20,7 @@ public class Entity : MonoBehaviour
     public int damage;
     public float attackCoolDown;
     public int facing;
-    protected int currentHealth;
+    [SerializeField]protected int currentHealth;
     protected bool islife = true;
     public float lastTimeAttacked { get;set;}
     [Header("Attack")]
