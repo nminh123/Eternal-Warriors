@@ -17,7 +17,7 @@ public class HorserEnemyDeahState : EntityState
 
     public override void Exit()
     {
-        base.Exit();
+        base.Exit();      
     }
 
     public override void Logic()
@@ -25,7 +25,10 @@ public class HorserEnemyDeahState : EntityState
         base.Logic();
 
         if (islife)
+        {
+            horserEnemy.FallCoint();
             horserEnemy.ReturnPool(horserEnemy.gameObject);
+        }
     }
 }
 
