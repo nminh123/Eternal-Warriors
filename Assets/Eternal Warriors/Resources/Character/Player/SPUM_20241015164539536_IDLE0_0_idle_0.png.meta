@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8b60faf2892b4ac4581968729ac152c7
+guid: f5e01ed664e8b364283547ef831a0203
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 130
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flagg_0
+      name: SPUM_20241015164539536_IDLE0_0_idle_0_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 32
-        height: 38
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e68a7b658dcddb4e957f245e7b48a64
-      internalID: -938683401
+      spriteID: 586818c0a862f7949bda8b5058640642
+      internalID: 73991547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flagg_1
+      name: SPUM_20241015164539536_IDLE0_0_idle_0_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 38
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1e144aa9bc7dd94da9d03b5e1b7e92e
-      internalID: 239475805
+      spriteID: 856482ac84ecb6647b8535ff8f10ae4c
+      internalID: 1830651747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flagg_2
+      name: SPUM_20241015164539536_IDLE0_0_idle_0_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 38
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60ac4d7f28eaeac42986c739d9ad3918
-      internalID: -1264735509
+      spriteID: a7caa1be6f349f54facacc4a524aa86a
+      internalID: -1209494982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flagg_3
+      name: SPUM_20241015164539536_IDLE0_0_idle_0_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 38
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +174,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb8c72be8f22f9d47802d3002e644fdd
-      internalID: 1356229423
+      spriteID: 89b53703f01ebe945a73827656d39125
+      internalID: 757989107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPUM_20241015164539536_IDLE0_0_idle_0_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83944adcb78721a49aa7e037411b0fc2
+      internalID: -753398142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPUM_20241015164539536_IDLE0_0_idle_0_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b1c8b337f3c614e808d770c6ada235
+      internalID: 208688005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPUM_20241015164539536_IDLE0_0_idle_0_6
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6c4667a71a5fb4697f28eb8948a2da
+      internalID: -1317516638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPUM_20241015164539536_IDLE0_0_idle_0_7
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5f672a990f40e40954a85d7dd700d1
+      internalID: 1193144065
       vertices: []
       indices: 
       edges: []
@@ -191,10 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Flagg_0: -938683401
-      Flagg_1: 239475805
-      Flagg_2: -1264735509
-      Flagg_3: 1356229423
+      SPUM_20241015164539536_IDLE0_0_idle_0_0: 73991547
+      SPUM_20241015164539536_IDLE0_0_idle_0_1: 1830651747
+      SPUM_20241015164539536_IDLE0_0_idle_0_2: -1209494982
+      SPUM_20241015164539536_IDLE0_0_idle_0_3: 757989107
+      SPUM_20241015164539536_IDLE0_0_idle_0_4: -753398142
+      SPUM_20241015164539536_IDLE0_0_idle_0_5: 208688005
+      SPUM_20241015164539536_IDLE0_0_idle_0_6: -1317516638
+      SPUM_20241015164539536_IDLE0_0_idle_0_7: 1193144065
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
