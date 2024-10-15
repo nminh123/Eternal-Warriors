@@ -11,10 +11,12 @@ public class Tower : MonoBehaviour
     [SerializeField] public Image healthImage;
     private float targetFillAmount;
     private float updateSpeed = 1f;
+    public bool isLive { get; private set; }
 
     protected void Start()
     {
         health = maxHealth;
+        isLive = true;
     }
     protected void Update()
     {
@@ -22,11 +24,17 @@ public class Tower : MonoBehaviour
         {
             healthImage.fillAmount = Mathf.MoveTowards(healthImage.fillAmount, targetFillAmount, updateSpeed * Time.deltaTime);
         }
-        SetHealth(health, maxHealth);
+        this.SetHealth(health, maxHealth);
+        this.CheckDeah();
     }
     public virtual void Damage(int damage)
     {
         health -= damage;   
+    }
+    public virtual void CheckDeah()
+    {
+        if(health <= 0)
+            isLive = false;
     }
     public void SetHealth(int currentHealth, int maxHealth)
     {
