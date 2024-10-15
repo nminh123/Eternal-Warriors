@@ -33,7 +33,7 @@ public class Ally : Entity
             }
             else if(tower != null)
             {
-                tower.Damage(damage/2);
+                tower.Damage(damage);
                 break;
             }
         }

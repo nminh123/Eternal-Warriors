@@ -20,6 +20,7 @@ public class CointManager : MonoBehaviour
     public void RemoveCount(int _coint)
     {
         if(coint <= 0) return;
+        if(coint < _coint) return;
 
         coint -= _coint;
     }

@@ -42,7 +42,7 @@ public class Enemy : Entity
             }
             else if(tower != null)
             {
-                ally.Damage(damage/2);
+                tower.Damage(damage);
                 break;
             }
         }
