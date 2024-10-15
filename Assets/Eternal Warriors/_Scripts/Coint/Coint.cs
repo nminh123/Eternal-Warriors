@@ -1,5 +1,5 @@
+using MidniteOilSoftware.ObjectPoolManager;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Coint : MonoBehaviour
@@ -9,24 +9,40 @@ public class Coint : MonoBehaviour
     [SerializeField] int timerCoint;
 
     private int cointRandom;
+    private Coroutine timerCoroutine;
 
-    private void Start()
+    private void OnEnable()
     {
         cointRandom = Random.Range(minCoint, maxCoint);
-        StartCoroutine(AddPointEndTime());
+        timerCoroutine = StartCoroutine(AddPointEndTime());
     }
+
+    private void OnDisable()
+    {
+        
+        if (timerCoroutine != null)
+        {
+            StopCoroutine(timerCoroutine);
+            timerCoroutine = null;
+        }
+    }
+
     private void OnMouseDown()
-    {        
+    {
         CointManager.instance.AddCoint(cointRandom);
-        this.gameObject.SetActive(false);
+        ReturnPool(this.gameObject);
     }
+
     IEnumerator AddPointEndTime()
     {
-        while (true)
-        {
-            yield return new WaitForSeconds(timerCoint);
-            CointManager.instance.AddCoint(cointRandom);
-            this.gameObject.SetActive(false);
-        }
+        yield return new WaitForSeconds(timerCoint);
+        CointManager.instance.AddCoint(cointRandom);
+        ReturnPool(this.gameObject);
+    }
+
+    public void ReturnPool(GameObject obj)
+    {
+        
+        ObjectPoolManager.DespawnGameObject(obj);
     }
 }

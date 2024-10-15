@@ -22,6 +22,8 @@ public class Entity : MonoBehaviour
     public int facing;
     [SerializeField]protected int currentHealth;
     protected bool islife = true;
+    protected TowerAlly towerAlly { get; set; }
+    protected TowerEnemy towerEnemy { get; set; }
     public float lastTimeAttacked { get;set;}
     [Header("Attack")]
     [SerializeField] protected Transform checkAttack;
@@ -45,12 +47,16 @@ public class Entity : MonoBehaviour
         
         col = GetComponent<Collider2D>();
 
+        towerAlly = FindObjectOfType<TowerAlly>();
+        towerEnemy = FindObjectOfType<TowerEnemy>();
+
         //currentHealth = maxHealth;
     }
     protected virtual void Update()
     {
         stateMachine.currentState.Logic();
         this.CheckDeah();
+        this.CheckTowerDeah();
     }
     public virtual void SetVelocity(float x)
     {
@@ -79,6 +85,17 @@ public class Entity : MonoBehaviour
             islife = false;
             AnimDeah();
         }
+    }
+    protected virtual void CheckTowerDeah()
+    {
+        if(!towerAlly.isLive || !towerEnemy.isLive)
+        {
+            AnimIdleTowerDeah();
+        }
+    }
+    protected virtual void AnimIdleTowerDeah()
+    {
+
     }
     protected virtual void AnimDeah() { }
     protected void OnDrawGizmos()

@@ -1,6 +1,8 @@
+using MidniteOilSoftware.ObjectPoolManager;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Enemy : Entity
 {
@@ -25,7 +27,7 @@ public class Enemy : Entity
     }
     public virtual void FallCoint()
     {
-        Instantiate(Coint, this.transform.position,Quaternion.identity);
+        ObjectPoolManager.SpawnGameObject(Coint, this.transform.position, Quaternion.identity);
     }
     protected void TriggerAttack()
     {

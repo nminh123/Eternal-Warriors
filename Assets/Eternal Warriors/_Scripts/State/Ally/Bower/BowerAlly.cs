@@ -36,4 +36,9 @@ public class BowerAlly : Ally
         base.AnimDeah();
         stateMachine.ContinueState(deahState);
     }
+    protected override void AnimIdleTowerDeah()
+    {
+        base.AnimIdleTowerDeah();
+        stateMachine.ContinueState(idleState);
+    }
 }

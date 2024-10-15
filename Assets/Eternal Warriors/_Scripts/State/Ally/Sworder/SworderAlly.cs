@@ -47,4 +47,9 @@ public class SworderAlly : Ally
         //ReturnPool(this.gameObject);
 
     }
+    protected override void AnimIdleTowerDeah()
+    {
+        base.AnimIdleTowerDeah();
+        stateMachine.ContinueState(idleState);
+    }
 }
