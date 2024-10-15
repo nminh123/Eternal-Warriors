@@ -36,5 +36,6 @@ public class HorserEnemy : Enemy
     protected override void AnimDeah()
     {
         stateMachine.ContinueState(deahState);
+
     }
 }
