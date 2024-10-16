@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8b7ac8ff9a5b0754886aacf5999f9446
+guid: 6b3408eb0cb1d8141a0e0f9ecf4ea5e5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 120
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -97,64 +97,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icons 32x32 Style 02_0
+      name: SPUM_20241006094859162_DAMAGED0_2_Attack_Normal_0_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 642
-        width: 28
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eab5a55313db6474485ebc2152cf2bd4
-      internalID: 1980983830
+      spriteID: e57ff1984d364bf4797ce185bd4eced9
+      internalID: -926936574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Icons 32x32 Style 02_1
+      name: SPUM_20241006094859162_DAMAGED0_2_Attack_Normal_0_1
       rect:
         serializedVersion: 2
-        x: 98
-        y: 162
-        width: 28
-        height: 28
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7962da1f2745574db7ee081a27054f8
-      internalID: 350989016
+      spriteID: 50a4fa3bf30265d4cb1a380af8d9b37f
+      internalID: -1936399587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Icons 32x32 Style 02_2
+      name: SPUM_20241006094859162_DAMAGED0_2_Attack_Normal_0_2
       rect:
         serializedVersion: 2
-        x: 226
-        y: 322
-        width: 28
-        height: 28
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a1ae2f53bfbad2478962a24ab73acce
-      internalID: 2099094256
+      spriteID: e9941a1d7ba9598469cfc188e9c4cca7
+      internalID: 1027546865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPUM_20241006094859162_DAMAGED0_2_Attack_Normal_0_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81b7f91844e45c45a12dd8642e51bd0
+      internalID: 79054732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPUM_20241006094859162_DAMAGED0_2_Attack_Normal_0_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c222afb11e07b144a048a651136fc56
+      internalID: -1069149663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPUM_20241006094859162_DAMAGED0_2_Attack_Normal_0_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b0a4fa89652234f8d45c24ce497ad8
+      internalID: 611823446
       vertices: []
       indices: 
       edges: []
@@ -170,9 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Icons 32x32 Style 02_0: -1596909721
-      Icons 32x32 Style 02_1: 1980983830
-      Icons 32x32 Style 02_2: 350989016
+      SPUM_20241006094859162_DAMAGED0_2_Attack_Normal_0_0: -926936574
+      SPUM_20241006094859162_DAMAGED0_2_Attack_Normal_0_1: -1936399587
+      SPUM_20241006094859162_DAMAGED0_2_Attack_Normal_0_2: 1027546865
+      SPUM_20241006094859162_DAMAGED0_2_Attack_Normal_0_3: 79054732
+      SPUM_20241006094859162_DAMAGED0_2_Attack_Normal_0_4: -1069149663
+      SPUM_20241006094859162_DAMAGED0_2_Attack_Normal_0_5: 611823446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
