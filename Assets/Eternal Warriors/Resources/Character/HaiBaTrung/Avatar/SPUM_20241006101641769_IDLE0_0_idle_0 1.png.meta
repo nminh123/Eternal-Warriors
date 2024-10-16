@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f40f593215c37ff48a3fc8373dbefa18
+guid: 523d11d984bd7db4393f058da25e20b5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 130
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPUM_20241015164539536_OTHER2_0_move_0_0
+      name: SPUM_20241006101641769_IDLE0_0_idle_0_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0bd079ea06343249a2cda78d4bdf7d1
-      internalID: -1201473748
+      spriteID: 19b4ef574e0fb0942a4865e90b7b7005
+      internalID: 1931157547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241015164539536_OTHER2_0_move_0_1
+      name: SPUM_20241006101641769_IDLE0_0_idle_0_1
       rect:
         serializedVersion: 2
         x: 512
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 089cf1bd0bf19ae4a90f59e934a2b536
-      internalID: 1708419745
+      spriteID: 0fab89b64e0424a4c85a108954819eae
+      internalID: 404029165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241015164539536_OTHER2_0_move_0_2
+      name: SPUM_20241006101641769_IDLE0_0_idle_0_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ffa7388c356a0d40941d880fa9446a6
-      internalID: 1079331385
+      spriteID: 17497a051cf4f8f4fb68f8a442a3bfaf
+      internalID: -1300116365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241015164539536_OTHER2_0_move_0_3
+      name: SPUM_20241006101641769_IDLE0_0_idle_0_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 186bbc13a6201b8418eb2eba10fb5ec8
-      internalID: 1604443635
+      spriteID: 049fed00d95d56e438b4171991176ca8
+      internalID: 1922645227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241015164539536_OTHER2_0_move_0_4
+      name: SPUM_20241006101641769_IDLE0_0_idle_0_4
       rect:
         serializedVersion: 2
         x: 0
@@ -195,8 +195,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38cb55ac8d34d85408fe19650b9154a2
-      internalID: -68271769
+      spriteID: 48e60aa639a04ee4a89daee883c5f5a1
+      internalID: 142144133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPUM_20241006101641769_IDLE0_0_idle_0_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b6c8326eb34b84fbc7248a27b7899e
+      internalID: 1714417039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPUM_20241006101641769_IDLE0_0_idle_0_6
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65493cd7f9f357741aacfed6989e1e44
+      internalID: -1115726475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPUM_20241006101641769_IDLE0_0_idle_0_7
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265778245f7d0774fae44541bc640701
+      internalID: 1561954103
       vertices: []
       indices: 
       edges: []
@@ -212,11 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPUM_20241015164539536_OTHER2_0_move_0_0: -1201473748
-      SPUM_20241015164539536_OTHER2_0_move_0_1: 1708419745
-      SPUM_20241015164539536_OTHER2_0_move_0_2: 1079331385
-      SPUM_20241015164539536_OTHER2_0_move_0_3: 1604443635
-      SPUM_20241015164539536_OTHER2_0_move_0_4: -68271769
+      SPUM_20241006101641769_IDLE0_0_idle_0_0: 1931157547
+      SPUM_20241006101641769_IDLE0_0_idle_0_1: 404029165
+      SPUM_20241006101641769_IDLE0_0_idle_0_2: -1300116365
+      SPUM_20241006101641769_IDLE0_0_idle_0_3: 1922645227
+      SPUM_20241006101641769_IDLE0_0_idle_0_4: 142144133
+      SPUM_20241006101641769_IDLE0_0_idle_0_5: 1714417039
+      SPUM_20241006101641769_IDLE0_0_idle_0_6: -1115726475
+      SPUM_20241006101641769_IDLE0_0_idle_0_7: 1561954103
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
