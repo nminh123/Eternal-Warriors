@@ -3,17 +3,7 @@ namespace Test.scripts.data.core
     [System.Serializable]
     public class JsonData
     {
-        private static int _score;
-        public static int Score
-        {
-            get
-            {
-                return _score;
-            }
-            set
-            {
-                _score = value;
-            }
-        }
+        public static string Time { get; set; }
+        public static int Score { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace Test.scripts.data.core
 
         private void Update()
         {
-            StartCoroutine(RecallAfterSecond(5));
+            StartCoroutine(RecallAfterSecond(8));
         }
 
         IEnumerator RecallAfterSecond(float time)
