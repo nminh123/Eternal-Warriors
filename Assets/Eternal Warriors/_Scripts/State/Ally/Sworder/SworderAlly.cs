@@ -12,10 +12,13 @@ public class SworderAlly : Ally
     public SworderAllyAttackState attackState { get; private set; }
     public SworderAllyDeahState deahState { get; private set; }
 
+    public float distanceAttackk {  get; private set; }
+
     protected override void Awake()
     {
         base.Awake();
-
+        distanceAttackk = attackDistance;
+        distanceAttackk -= 0.2f;
         idleState = new(this, this, stateMachine, "Idle");
         moveState = new(this, this, stateMachine, "Move");
         battleState = new(this, this, stateMachine, "Idle");
@@ -25,8 +28,8 @@ public class SworderAlly : Ally
     }
     protected override void OnEnable()
     {
-        base.OnEnable();
         stateMachine.StartState(moveState);
+        base.OnEnable();
 
     }
     protected override void Start()

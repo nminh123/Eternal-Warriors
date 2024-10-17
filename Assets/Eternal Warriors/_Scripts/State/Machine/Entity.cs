@@ -27,15 +27,17 @@ public class Entity : MonoBehaviour
     public float lastTimeAttacked { get;set;}
     [Header("Attack")]
     [SerializeField] protected Transform checkAttack;
-    [SerializeField] protected float attackDistance;
+    public float attackDistance;
     [SerializeField] protected LayerMask whatIsCheckAttack;
     protected virtual void OnEnable()
     {
         islife = true;
         currentHealth = maxHealth;
+    }
+    protected virtual void OnDisable()
+    {
 
     }
-
     protected virtual void Awake()
     {
         stateMachine = new();
@@ -114,7 +116,7 @@ public class Entity : MonoBehaviour
     }
     public virtual void ReturnPool(GameObject obj)
     {
-        ObjectPoolManager.DespawnGameObject(obj);
         col.enabled = true;
+        ObjectPoolManager.DespawnGameObject(obj);
     }
 }

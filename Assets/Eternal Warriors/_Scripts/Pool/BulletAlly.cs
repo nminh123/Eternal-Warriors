@@ -16,9 +16,16 @@ public class BulletAlly : Bullet
         foreach (Collider2D hit in colliders)
         {
             Enemy enemy = hit.GetComponent<Enemy>();
+            TowerEnemy tower = hit.GetComponent<TowerEnemy>();
             if (enemy != null)
             {
                 enemy.Damage(damage);
+                ReturnToPool();
+                break;
+            }
+            if(tower != null)
+            {
+                tower.Damage(damage);
                 ReturnToPool();
                 break;
             }
