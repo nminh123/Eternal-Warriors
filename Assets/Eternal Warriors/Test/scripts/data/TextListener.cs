@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 
@@ -10,7 +9,7 @@ namespace Test.scripts.data.core
 
         private void Update()
         {
-            score.text = JsonData.score.ToString();
+            score.text = JsonData.Score.ToString();
         }
     }
 }

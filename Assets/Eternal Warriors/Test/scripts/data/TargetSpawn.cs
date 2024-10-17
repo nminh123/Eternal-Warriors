@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -10,7 +9,7 @@ namespace Test.scripts.data.core
 
         private void Update()
         {
-            StartCoroutine(RecallAfterSecond(2));
+            StartCoroutine(RecallAfterSecond(5));
         }
 
         IEnumerator RecallAfterSecond(float time)
