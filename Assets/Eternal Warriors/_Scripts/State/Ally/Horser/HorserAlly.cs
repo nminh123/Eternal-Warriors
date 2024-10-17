@@ -19,13 +19,17 @@ public class HorserAlly : Ally
         deahState = new(this, this, stateMachine, "Deah");
         battleState = new(this, this, stateMachine, "Idle");
     }
-
     protected override void Start()
     {
         base.Start();
         stateMachine.StartState(moveState);
     }
+    protected override void OnEnable()
+    {
+        stateMachine.StartState(moveState);
+        base.OnEnable();
 
+    }
     protected override void Update()
     {
         base.Update();

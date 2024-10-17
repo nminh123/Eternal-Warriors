@@ -24,7 +24,12 @@ public class BowerEnemy : Enemy
         attackState = new(this, this, stateMachine, "Attack");
         deahState = new(this, this, stateMachine, "Deah");
     }
+    protected override void OnEnable()
+    {
+        stateMachine.StartState(moveState);
+        base.OnEnable();
 
+    }
     protected override void CheckDeah()
     {
         base.CheckDeah();

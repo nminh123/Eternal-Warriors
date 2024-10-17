@@ -23,5 +23,7 @@ public class HorserAllyIdleState : EntityState
     public override void Logic()
     {
         base.Logic();
+
+        
     }
 }

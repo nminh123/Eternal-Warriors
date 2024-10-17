@@ -28,8 +28,8 @@ public class SworderAlly : Ally
     }
     protected override void OnEnable()
     {
-        base.OnEnable();
         stateMachine.StartState(moveState);
+        base.OnEnable();
 
     }
     protected override void Start()

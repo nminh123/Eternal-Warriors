@@ -25,6 +25,9 @@ public class BowerEnemyDeahState : EntityState
         base.Logic();
 
         if (islife)
+        {
+            bowerEnemy.FallCoint();
             bowerEnemy.ReturnPool(bowerEnemy.gameObject);
+        }
     }
 }

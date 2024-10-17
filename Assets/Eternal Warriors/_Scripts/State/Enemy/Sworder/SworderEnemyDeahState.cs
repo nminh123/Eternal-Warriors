@@ -25,6 +25,9 @@ public class SworderEnemyDeahState : EntityState
         base.Logic();
 
         if (islife)
+        {
+            sworderEnemy.FallCoint();
             sworderEnemy.ReturnPool(sworderEnemy.gameObject);
+        }
     }
 }

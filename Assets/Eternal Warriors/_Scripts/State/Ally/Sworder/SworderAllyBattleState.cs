@@ -13,7 +13,7 @@ public class SworderAllyBattleState : EntityState
     public override void Enter()
     {
         base.Enter();
-
+        
         sworderAlly.SetZeroVelocity();
     }
 
@@ -28,10 +28,16 @@ public class SworderAllyBattleState : EntityState
 
         if (sworderAlly.CheckAttack())
         {
-            if (sworderAlly.CanAttack())
-                stateMchine.ContinueState(sworderAlly.attackState);
+            if(sworderAlly.CheckAttack().distance < .4f)
+            {
+                if (sworderAlly.CanAttack())
+                    stateMchine.ContinueState(sworderAlly.attackState);
+            }        
         }
         else
+        {
             stateMchine.ContinueState(sworderAlly.moveState);
+        }
+           
     }
 }
