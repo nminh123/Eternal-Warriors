@@ -26,7 +26,7 @@ public class SworderAllyBattleState : EntityState
     {
         base.Logic();
 
-        if (sworderAlly.CheckAttack())
+        if (sworderAlly.CheckAttack().distance <= sworderAlly.attackDistance)
         {
             if (sworderAlly.CanAttack())
                 stateMchine.ContinueState(sworderAlly.attackState);

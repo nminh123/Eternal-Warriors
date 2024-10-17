@@ -27,7 +27,7 @@ public class Entity : MonoBehaviour
     public float lastTimeAttacked { get;set;}
     [Header("Attack")]
     [SerializeField] protected Transform checkAttack;
-    [SerializeField] protected float attackDistance;
+    public float attackDistance;
     [SerializeField] protected LayerMask whatIsCheckAttack;
     protected virtual void OnEnable()
     {

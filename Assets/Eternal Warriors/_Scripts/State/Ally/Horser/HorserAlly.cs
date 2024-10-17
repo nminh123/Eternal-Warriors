@@ -36,4 +36,10 @@ public class HorserAlly : Ally
         stateMachine.ContinueState(deahState);
     }
 
+    protected override void AnimIdleTowerDeah()
+    {
+        base.AnimIdleTowerDeah();
+        stateMachine.ContinueState(idleState);
+    }
+
 }
