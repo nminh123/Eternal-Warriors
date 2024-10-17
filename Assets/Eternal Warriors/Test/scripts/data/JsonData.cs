@@ -1,15 +1,14 @@
 namespace Test.scripts.data.core
 {
     [System.Serializable]
-    public struct JsonData
+    public class JsonData
     {
-        static int _score;
-
-        public static int score
+        private static int _score;
+        public static int Score
         {
             get
             {
-                return score;
+                return _score;
             }
             set
             {

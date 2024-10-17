@@ -16,7 +16,7 @@ namespace Test.scripts.data.core
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                JsonData.score++;
+                JsonData.Score++;
                 this.gameObject.SetActive(false);
             }
         }
