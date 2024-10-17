@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Test.scripts.data.core
@@ -12,11 +11,12 @@ namespace Test.scripts.data.core
         {
             collision = GetComponent<CircleCollider2D>();
         }
-
+        
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.gameObject.CompareTag("Player"))
             {
+                JsonData.score++;
                 this.gameObject.SetActive(false);
             }
         }
