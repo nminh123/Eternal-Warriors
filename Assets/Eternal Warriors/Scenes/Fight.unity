@@ -378,7 +378,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 192
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1685,7 +1685,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.31527853, y: 0}
+  m_Offset: {x: -0.31527853, y: -0.15262413}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1696,7 +1696,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0630417, y: 2.77}
+  m_Size: {x: 2.0630417, y: 3.0752482}
   m_EdgeRadius: 0
 --- !u!1 &601363056
 GameObject:
@@ -3551,7 +3551,7 @@ Transform:
   m_GameObject: {fileID: 1145711000}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.37, y: -3.93, z: 0}
+  m_LocalPosition: {x: 1, y: -3.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5627,7 +5627,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762814903}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0dbb7ebd220ebb240932b8928de91adb, type: 3}
   m_Name: 
@@ -5950,7 +5950,7 @@ Transform:
   m_GameObject: {fileID: 1910373688}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.42, y: -9.38, z: 0}
+  m_LocalPosition: {x: -0.9, y: -3.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5972,7 +5972,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -6043,7 +6043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   speed: 1
-  damage: 0
+  damage: 1
   attackCoolDown: 0
   facing: -1
   currentHealth: 0
@@ -6158,7 +6158,7 @@ Transform:
   m_GameObject: {fileID: 1956006472}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.14, y: -3.69, z: 0}
+  m_LocalPosition: {x: 3.41, y: -3.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7204,7 +7204,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009374142, y: -0.24}
+  m_Offset: {x: -0.050151825, y: -0.21759748}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7215,7 +7215,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.21525002, y: 0.03642249}
+  m_Size: {x: 0.09619808, y: 0.032582283}
   m_EdgeRadius: 0
 --- !u!4 &4958697968402585147
 Transform:
@@ -7226,35 +7226,12 @@ Transform:
   m_GameObject: {fileID: 4085919860625046683}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.031, y: -0.23, z: 0}
+  m_LocalPosition: {x: 0.085, y: -0.252, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6393923521089340401}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5497457228294143982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7730759682427504895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6e7701d2fa230442bfc454b30255b96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 10
-  speed: 1.5
-  damage: 1
-  attackCoolDown: 1
-  facing: 1
-  currentHealth: 0
-  checkAttack: {fileID: 4958697968402585147}
-  attackDistance: 0.5
-  whatIsCheckAttack:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!4 &6393923521089340401
 Transform:
   m_ObjectHideFlags: 0
@@ -7264,7 +7241,7 @@ Transform:
   m_GameObject: {fileID: 7730759682427504895}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.13, y: -3.88, z: 0}
+  m_LocalPosition: {x: -3.88, y: -3.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7332,7 +7309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6393923521089340401}
-  - component: {fileID: 5497457228294143982}
+  - component: {fileID: 7730759682427504896}
   - component: {fileID: 7470446045724900742}
   - component: {fileID: 2529489801674554560}
   - component: {fileID: 3131328436154503338}
@@ -7344,6 +7321,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &7730759682427504896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7730759682427504895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a187a2c1f59698b40bea72323324370c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  speed: 1
+  damage: 1
+  attackCoolDown: 1
+  facing: 1
+  currentHealth: 0
+  checkAttack: {fileID: 4958697968402585147}
+  attackDistance: 0.5
+  whatIsCheckAttack:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

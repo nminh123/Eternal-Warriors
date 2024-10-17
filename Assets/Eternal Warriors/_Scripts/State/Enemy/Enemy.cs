@@ -39,6 +39,7 @@ public class Enemy : Entity
             TowerAlly tower = hit.GetComponent<TowerAlly>();
             if (ally != null)
             {
+                Debug.Log("a");
                 ally.Damage(damage);
                 break;
             }
