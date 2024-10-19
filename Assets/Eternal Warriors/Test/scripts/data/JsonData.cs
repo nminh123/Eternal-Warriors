@@ -1,9 +1,17 @@
+using UnityEngine.Serialization;
+
 namespace Test.scripts.data.core
 {
     [System.Serializable]
     public class JsonData
     {
-        public static string Time { get; set; }
-        public static int Score { get; set; }
+        [FormerlySerializedAs("Time")] public string time;
+        [FormerlySerializedAs("Score")] public int score;
+        
+        public void SetValue(string time, int score)
+        {
+            this.time = time;
+            this.score = score;
+        }
     }
 }

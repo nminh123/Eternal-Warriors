@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7baac73-4b12-47ec-b826-b80f5458a25b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/GameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/GameManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/SaveAndLoad.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/SaveAndLoad.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scenes/DataSceneTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scenes/DataSceneTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/JsonData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/JsonData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/TargetSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/TargetSpawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/SaveAndLoad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/SaveAndLoad.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/TextListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/TextListener.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +123,7 @@
       <workItem from="1728544952006" duration="14741000" />
       <workItem from="1728630953716" duration="5368000" />
       <workItem from="1729079291224" duration="4540000" />
+      <workItem from="1729353534264" duration="11945000" />
     </task>
     <servers />
   </component>
