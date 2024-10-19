@@ -1,25 +1,18 @@
 using System;
+using System.IO;
 using UnityEngine;
 
 namespace Test.scripts.data.core
 {
     public class GameManager : MonoBehaviour
     {
-        private SaveAndLoad manageData;
-
+        public int score;
+        public string time;
+        
         private void Awake()
         {
-            manageData = new SaveAndLoad();
-        }
-
-        private void Start()
-        {
-            manageData.Load();
-        }
-
-        private void OnApplicationQuit()
-        {
-            manageData.Save();
+            score = 0;
+            time = DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss");
         }
     }
 }
