@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d7baac73-4b12-47ec-b826-b80f5458a25b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scenes/DataSceneTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scenes/DataSceneTest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/JsonData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/JsonData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/SaveAndLoad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/SaveAndLoad.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/TextListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/TextListener.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +26,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10075f8d4dda423b945f7b39523eb7de3600/bd/8c083e20/JsonUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58ad0307846e4e2aa7b395ea5a7758f5469200/3c/a9353101/CancellationTokenSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/55/ebc1150e/IFormatProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b0ec4bde85954a17996a00bbf5c09221954c00/bc/4b8d1fa6/BuildPipelineInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b0ec4bde85954a17996a00bbf5c09221954c00/e6/ee26fda9/Lightmapping.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cde31c1eadd84eb1a2bfd6e45f877c49175400/02/1c2cd51b/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cde31c1eadd84eb1a2bfd6e45f877c49175400/2f/5d7b7277/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cde31c1eadd84eb1a2bfd6e45f877c49175400/41/94c4abc4/LightProbes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cde31c1eadd84eb1a2bfd6e45f877c49175400/57/410ec4ae/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cde31c1eadd84eb1a2bfd6e45f877c49175400/65/c7e3dc06/Application.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cde31c1eadd84eb1a2bfd6e45f877c49175400/7b/65fab609/Component.cs" root0="SKIP_HIGHLIGHTING" />
@@ -55,25 +55,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;MinhCao&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "MinhCao",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/nhatminh/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/nhatminh/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
-      &quot;/Users/nhatminh/Library/Application Support/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/nhatminh/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
+      "/Users/nhatminh/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
+      "/Users/nhatminh/Library/Application Support/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../../Unity/Install/2022.3.21f1/Unity.app/Contents/MacOS/Unity" />
@@ -101,10 +102,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="78260">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="78260" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -123,7 +124,7 @@
       <workItem from="1728544952006" duration="14741000" />
       <workItem from="1728630953716" duration="5368000" />
       <workItem from="1729079291224" duration="4540000" />
-      <workItem from="1729353534264" duration="11945000" />
+      <workItem from="1729353534264" duration="14450000" />
     </task>
     <servers />
   </component>

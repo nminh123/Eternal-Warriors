@@ -1,5 +1,4 @@
 using System;
-using System.IO;
 using UnityEngine;
 
 namespace Test.scripts.data.core
@@ -8,7 +7,7 @@ namespace Test.scripts.data.core
     {
         public int score;
         public string time;
-        
+
         private void Awake()
         {
             score = 0;

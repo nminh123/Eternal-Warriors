@@ -18,11 +18,12 @@ namespace Test.scripts.data.core
             string json = JsonUtility.ToJson(data);
             string path = Application.persistentDataPath + "/data.json";
             File.WriteAllText(path, json);
+            Debug.Log("Score: " + data.score);
         }
 
         public void LoadGame()
         {
-            string path =Application.persistentDataPath + "/data.json";
+            string path = Application.persistentDataPath + "/data.json";
             
             if(!File.Exists(path))
                 Debug.LogWarning("File not found!");
@@ -31,8 +32,8 @@ namespace Test.scripts.data.core
                 string json = File.ReadAllText(path);
                 JsonData data = JsonUtility.FromJson<JsonData>(json);
 
-                manager.score = score;
-                manager.time = time;
+                manager.score = data.score;
+                manager.time = data.time;
             }
         }
 

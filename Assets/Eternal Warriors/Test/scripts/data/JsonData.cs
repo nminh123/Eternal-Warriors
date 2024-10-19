@@ -5,8 +5,9 @@ namespace Test.scripts.data.core
     [System.Serializable]
     public class JsonData
     {
-        [FormerlySerializedAs("Time")] public string time;
-        [FormerlySerializedAs("Score")] public int score;
+        //Todo: Debug 2 biến này. time với score của lớp này đang null.
+        public string time;
+        public int score;
         
         public void SetValue(string time, int score)
         {
