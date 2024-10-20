@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/JsonData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/JsonData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/SaveAndLoad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/SaveAndLoad.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/Target.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/TextListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/TextListener.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +127,8 @@
       <workItem from="1728630953716" duration="5368000" />
       <workItem from="1729079291224" duration="4540000" />
       <workItem from="1729353534264" duration="14621000" />
-      <workItem from="1729395937795" duration="12856000" />
+      <workItem from="1729395937795" duration="14266000" />
+      <workItem from="1729433971490" duration="2467000" />
     </task>
     <servers />
   </component>

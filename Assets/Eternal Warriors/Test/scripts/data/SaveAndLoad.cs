@@ -18,11 +18,12 @@ namespace Test.scripts.data.core
                 Debug.LogWarning("Data is null!!");
             else
             {
-                data.Score = manager.Score;
+                data.score = manager.Score;
+                data.time = manager.Time;
                 string json = JsonUtility.ToJson(data, true);
                 Debug.Log(json);
                 File.WriteAllText(path, json);
-                Debug.Log("Data Score: " + data.Score + " Manager Score: " + manager.Score);
+                Debug.Log("Data Score: " + data.score + " Manager Score: " + manager.Score);
             }
         }
 
@@ -40,7 +41,8 @@ namespace Test.scripts.data.core
                 string json = File.ReadAllText(path);
                 data = JsonUtility.FromJson<JsonData>(json);
 
-                manager.Score = data.Score;
+                manager.Score = data.score;
+                manager.Time = data.time;
             }
         }
 
