@@ -1,17 +1,14 @@
-using System;
 using UnityEngine;
 
 namespace Test.scripts.data.core
 {
     public class GameManager : MonoBehaviour
     {
-        public int score;
-        public string time;
+        public int Score { get; set; }
 
         private void Awake()
         {
-            score = 0;
-            time = DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss");
+            Score = 0;
         }
     }
 }

@@ -17,9 +17,9 @@ namespace Test.scripts.data.core
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                manager.score++;
+                manager.Score++;
                 this.gameObject.SetActive(false);
-                Debug.Log(manager.score);
+                Debug.Log("Score: " + manager.Score);
             }
         }
     }
