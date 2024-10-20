@@ -1251,7 +1251,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &284853290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2131,12 +2131,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heroes:
-  - heroName: Hai Ba Chung
+  - heroName: "Hai B\xE0 Tr\u01B0ng \xF4"
     attack: 0
     defense: 0
     superPower: 0
     heroImage: {fileID: 1027546865, guid: 6b3408eb0cb1d8141a0e0f9ecf4ea5e5, type: 3}
-  - heroName: Kiem
+  - heroName: "Ki\u1EBFm"
     attack: 0
     defense: 0
     superPower: 0
@@ -2208,7 +2208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &643982770
 MonoBehaviour:
   m_ObjectHideFlags: 0
