@@ -10,7 +10,7 @@ namespace Test.scripts.data.core
 
         private void Update()
         {
-            score.text = manager.score.ToString();
+            score.text = manager.Score.ToString();
         }
     }
 }

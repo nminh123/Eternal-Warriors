@@ -5,43 +5,56 @@ namespace Test.scripts.data.core
 {
     public class SaveAndLoad : MonoBehaviour
     {
-        private string time;
-        private int score;
-
+        private string path;
+        
         [SerializeField] private GameManager manager;
+        private JsonData data;
 
         public void SaveGame()
         {
-            JsonData data = new JsonData();
-            data.SetValue(time, score);
-
-            string json = JsonUtility.ToJson(data);
-            string path = Application.persistentDataPath + "/data.json";
-            File.WriteAllText(path, json);
-            Debug.Log("Score: " + data.score);
+            if(!File.Exists(path))
+                Debug.LogWarning("File not found!");
+            if(data == null)
+                Debug.LogWarning("Data is null!!");
+            else
+            {
+                data.Score = manager.Score;
+                string json = JsonUtility.ToJson(data, true);
+                Debug.Log(json);
+                File.WriteAllText(path, json);
+                Debug.Log("Data Score: " + data.Score + " Manager Score: " + manager.Score);
+            }
         }
 
         public void LoadGame()
         {
-            string path = Application.persistentDataPath + "/data.json";
-            
-            if(!File.Exists(path))
+            if (!File.Exists(path))
+            {
                 Debug.LogWarning("File not found!");
+                SaveGame();
+            }
+            if(data == null)
+                Debug.LogWarning("Data is null!!");
             else
             {
                 string json = File.ReadAllText(path);
-                JsonData data = JsonUtility.FromJson<JsonData>(json);
+                data = JsonUtility.FromJson<JsonData>(json);
 
-                manager.score = data.score;
-                manager.time = data.time;
+                manager.Score = data.Score;
             }
         }
 
         private void Awake()
         {
-            LoadGame();
+            data = new JsonData();
+            path = Application.persistentDataPath + "/data.json";
         }
 
+        private void Start()
+        {
+            LoadGame();
+        }
+        
         private void OnApplicationQuit()
         {
             SaveGame();
