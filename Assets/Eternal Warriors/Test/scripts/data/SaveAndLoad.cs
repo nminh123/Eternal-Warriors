@@ -3,33 +3,48 @@ using System.IO;
 
 namespace Test.scripts.data.core
 {
-    public class SaveAndLoad
+    public class SaveAndLoad : MonoBehaviour
     {
-        private static readonly string Path = Application.persistentDataPath + "/dat.json";
-        JsonData data = new JsonData();
+        private string time;
+        private int score;
 
-        public void Save()
+        [SerializeField] private GameManager manager;
+
+        public void SaveGame()
         {
-            if (data == null)
-            {
-                Debug.LogWarning("Không tìm thấy dữ liệu để lưu");
-                return;
-            }
-            string json = JsonUtility.ToJson(data, true);
-            File.WriteAllText(Path, json);
-            Debug.Log("Saved Data!!");
+            JsonData data = new JsonData();
+            data.SetValue(time, score);
+
+            string json = JsonUtility.ToJson(data);
+            string path = Application.persistentDataPath + "/data.json";
+            File.WriteAllText(path, json);
+            Debug.Log("Score: " + data.score);
         }
 
-        public void Load()
+        public void LoadGame()
         {
-            if (data == null)
+            string path = Application.persistentDataPath + "/data.json";
+            
+            if(!File.Exists(path))
+                Debug.LogWarning("File not found!");
+            else
             {
-                Debug.LogWarning("Không tìm thấy dữ liệu để tải về!!");
-                return;
+                string json = File.ReadAllText(path);
+                JsonData data = JsonUtility.FromJson<JsonData>(json);
+
+                manager.score = data.score;
+                manager.time = data.time;
             }
-            string json = File.ReadAllText(Path);
-            data = JsonUtility.FromJson<JsonData>(json);
-            Debug.Log("Loaded Data!!");
+        }
+
+        private void Awake()
+        {
+            LoadGame();
+        }
+
+        private void OnApplicationQuit()
+        {
+            SaveGame();
         }
     }
 }

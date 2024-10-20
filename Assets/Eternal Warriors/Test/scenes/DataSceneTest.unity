@@ -271,6 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 219865706}
+  manager: {fileID: 1079160587}
 --- !u!1 &581244893
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ffb958bc7341c7a786278e1a36d82c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
+  time: 
 --- !u!4 &1079160588
 Transform:
   m_ObjectHideFlags: 0
@@ -569,6 +572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351992951806917147, guid: b8a58a0adef6b43cb924a3d69742285a, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1079160587}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -626,6 +633,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351992951806917147, guid: b8a58a0adef6b43cb924a3d69742285a, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1079160587}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -683,6 +694,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351992951806917147, guid: b8a58a0adef6b43cb924a3d69742285a, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1079160587}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -915,6 +930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351992951806917147, guid: b8a58a0adef6b43cb924a3d69742285a, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1079160587}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -931,6 +950,7 @@ GameObject:
   - component: {fileID: 2017589202}
   - component: {fileID: 2017589201}
   - component: {fileID: 2017589200}
+  - component: {fileID: 2017589203}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1012,6 +1032,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2017589203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017589199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d70d062c944b66b572b0d83afd3d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1079160587}
 --- !u!1001 &3511231484138544223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1064,6 +1097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 7351992951806917147, guid: b8a58a0adef6b43cb924a3d69742285a, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1079160587}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

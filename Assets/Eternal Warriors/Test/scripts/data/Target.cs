@@ -6,6 +6,7 @@ namespace Test.scripts.data.core
     public class Target : MonoBehaviour
     {
         private CircleCollider2D collision;
+        [SerializeField] private GameManager manager;
 
         private void Start()
         {
@@ -16,8 +17,9 @@ namespace Test.scripts.data.core
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                JsonData.Score++;
+                manager.score++;
                 this.gameObject.SetActive(false);
+                Debug.Log(manager.score);
             }
         }
     }
