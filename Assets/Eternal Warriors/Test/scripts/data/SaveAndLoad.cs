@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.IO;
+using UnityEngine.Serialization;
 
 namespace Test.scripts.data.core
 {
@@ -7,7 +8,7 @@ namespace Test.scripts.data.core
     {
         private string path;
         
-        [SerializeField] private GameManager manager;
+        [FormerlySerializedAs("manager")] [SerializeField] private ManagerTest managerTest;
         private JsonData data;
 
         public void SaveGame()
@@ -18,12 +19,12 @@ namespace Test.scripts.data.core
                 Debug.LogWarning("Data is null!!");
             else
             {
-                data.score = manager.Score;
-                data.time = manager.Time;
+                data.score = managerTest.Score;
+                data.time = managerTest.Time;
                 string json = JsonUtility.ToJson(data, true);
                 Debug.Log(json);
                 File.WriteAllText(path, json);
-                Debug.Log("Data Score: " + data.score + " Manager Score: " + manager.Score);
+                Debug.Log("Data Score: " + data.score + " Manager Score: " + managerTest.Score);
             }
         }
 
@@ -41,8 +42,8 @@ namespace Test.scripts.data.core
                 string json = File.ReadAllText(path);
                 data = JsonUtility.FromJson<JsonData>(json);
 
-                manager.Score = data.score;
-                manager.Time = data.time;
+                managerTest.Score = data.score;
+                managerTest.Time = data.time;
             }
         }
 

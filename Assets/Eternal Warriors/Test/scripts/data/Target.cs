@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Test.scripts.data.core
 {
@@ -6,7 +7,7 @@ namespace Test.scripts.data.core
     public class Target : MonoBehaviour
     {
         private CircleCollider2D collision;
-        [SerializeField] private GameManager manager;
+        [FormerlySerializedAs("manager")] [SerializeField] private ManagerTest managerTest;
 
         private void Start()
         {
@@ -17,9 +18,9 @@ namespace Test.scripts.data.core
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                manager.Score++;
+                managerTest.Score++;
                 this.gameObject.SetActive(false);
-                Debug.Log("Score: " + manager.Score);
+                Debug.Log("Score: " + managerTest.Score);
             }
         }
     }

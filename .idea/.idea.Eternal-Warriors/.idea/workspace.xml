@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d7baac73-4b12-47ec-b826-b80f5458a25b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/JsonData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/JsonData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/SaveAndLoad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/SaveAndLoad.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/TextListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/TextListener.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +16,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/nhatminh/Documents/nhatminhh/GitHub/Eternal-Warriors/Assets/Eternal Warriors/Test/scripts/data/JsonData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/nhatminh/Documents/nhatminhh/GitHub/Eternal-Warriors/Assets/Eternal Warriors/Test/scripts/data/SaveAndLoad.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/Target.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MidniteOilSoftware/Scripts/Managers/ObjectPoolManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs" root0="SKIP_HIGHLIGHTING" />
@@ -128,7 +124,9 @@
       <workItem from="1729079291224" duration="4540000" />
       <workItem from="1729353534264" duration="14621000" />
       <workItem from="1729395937795" duration="14266000" />
-      <workItem from="1729433971490" duration="2467000" />
+      <workItem from="1729433971490" duration="2836000" />
+      <workItem from="1729437746018" duration="1242000" />
+      <workItem from="1729472185141" duration="1865000" />
     </task>
     <servers />
   </component>

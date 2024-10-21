@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Test.scripts.data.core
 {
-    public class GameManager : MonoBehaviour
+    public class ManagerTest : MonoBehaviour
     {
         public int Score { get; set; }
         public string Time { get; set; }
