@@ -5637,6 +5637,10 @@ MonoBehaviour:
     - {fileID: 1910373688}
     - {fileID: 1910373688}
     enemyCount: 0100000002000000
+  - enemyType:
+    - {fileID: 1179722449}
+    - {fileID: 1179722449}
+    enemyCount: 0100000002000000
   spawnPoint: {fileID: 794620460}
   timeBetweenEnemie: 2
   timeBetweenWave: 5
