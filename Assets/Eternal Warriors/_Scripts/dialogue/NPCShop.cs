@@ -11,15 +11,15 @@ public class NPCShop : MonoBehaviour
     public Button refusalButton;         
     public string[] firstMeetingDialogue;  
     public string[] dialogues;            
-    public string[] refusalDialogue;      
-    private int dialogueIndex = 0;
-    private bool playerIsClose = false;  
-    private bool dialogueActive = false; 
-    private bool firstMeeting = true;   
-    private bool refusalActive = false;  
-    private bool buttonsVisible = false; 
+    public string[] refusalDialogue;
+    protected int dialogueIndex = 0;
+    protected bool playerIsClose = false;
+    protected bool dialogueActive = false;
+    protected bool firstMeeting = true;
+    protected bool refusalActive = false;
+    protected bool buttonsVisible = false; 
 
-    private void Start()
+    protected void Start()
     {
         dialoguePanel.SetActive(false);     
         otherPanel.SetActive(false);       
@@ -30,9 +30,9 @@ public class NPCShop : MonoBehaviour
         refusalButton.onClick.AddListener(ShowRefusalDialogue);   
     }
 
-    private void Update()
+    protected void Update()
     {
-        if (playerIsClose && Input.GetKeyDown(KeyCode.E)) 
+        if (playerIsClose && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0)))
         {
             if (otherPanel.activeInHierarchy) 
             {
@@ -69,7 +69,11 @@ public class NPCShop : MonoBehaviour
         }
     }
 
-    private void ShowFirstMeetingDialogue()
+    protected void OnMouseDown()
+    {
+        
+    }
+    protected void ShowFirstMeetingDialogue()
     {
         if (dialogueIndex < firstMeetingDialogue.Length)
         {
@@ -83,7 +87,7 @@ public class NPCShop : MonoBehaviour
         }
     }
 
-    private void ShowDialogue()
+    protected void ShowDialogue()
     {
         if (dialogueIndex < dialogues.Length)
         {
@@ -96,7 +100,7 @@ public class NPCShop : MonoBehaviour
         }
     }
 
-    private void ShowRefusalDialogue()
+    protected void ShowRefusalDialogue()
     {
         dialogueIndex = 0; 
         refusalActive = true; 
@@ -113,14 +117,14 @@ public class NPCShop : MonoBehaviour
         }
     }
 
-    public void OpenOtherPanel()
+    protected virtual void OpenOtherPanel()
     {
         otherPanel.SetActive(true);   
         dialoguePanel.SetActive(false);
         HideButtons();                
     }
 
-    public void EndDialogue()
+    protected void EndDialogue()
     {
         if (dialoguePanel != null) 
         {
@@ -142,21 +146,21 @@ public class NPCShop : MonoBehaviour
         refusalActive = false; 
     }
 
-    private void ShowButtons()
+    protected virtual void ShowButtons()
     {
         openOtherPanelButton.gameObject.SetActive(true); 
         refusalButton.gameObject.SetActive(true);      
         buttonsVisible = true;
     }
 
-    private void HideButtons()
+    protected void HideButtons()
     {
         openOtherPanelButton.gameObject.SetActive(false); 
         refusalButton.gameObject.SetActive(false);   
         buttonsVisible = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    protected void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
@@ -164,7 +168,7 @@ public class NPCShop : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    protected void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
