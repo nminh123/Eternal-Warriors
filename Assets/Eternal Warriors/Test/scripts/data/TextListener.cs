@@ -1,16 +1,17 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Test.scripts.data.core
 {
     public class TextListener : MonoBehaviour
     {
-        [SerializeField]private TextMeshProUGUI score;
-        [SerializeField] private GameManager manager;
+        [SerializeField] private TextMeshProUGUI score;
+        [FormerlySerializedAs("manager")] [SerializeField] private ManagerTest managerTest;
 
         private void Update()
         {
-            score.text = manager.score.ToString();
+            score.text = managerTest.Score.ToString();
         }
     }
 }
