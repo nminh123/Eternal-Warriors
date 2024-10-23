@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Eternal Warriors/Scenes/CutScene/CutScene 1.unity
     guid: 4c0450090e17d484687ad7ae0f94d57e
   - enabled: 1
+    path: Assets/Eternal Warriors/Scenes/CutScene/CutScene 2.unity
+    guid: 4031ac3b32924aa49ae918694f7cb1ad
+  - enabled: 1
     path: Assets/Eternal Warriors/Scenes/ManChoi/MapKhoiDau.unity
     guid: d5b2eb9e6366e474988a12f9d2c25a9e
   - enabled: 1
