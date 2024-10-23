@@ -44,4 +44,8 @@ public class SworderEnemy : Enemy
     {
         stateMachine.ContinueState(deahState);
     }
+    protected override void AnimIdleTowerDeah()
+    {
+        stateMachine.ContinueState(idleState);
+    }
 }

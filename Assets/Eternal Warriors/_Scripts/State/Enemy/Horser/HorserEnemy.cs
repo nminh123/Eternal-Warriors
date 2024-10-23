@@ -43,4 +43,8 @@ public class HorserEnemy : Enemy
         stateMachine.ContinueState(deahState);
 
     }
+    protected override void AnimIdleTowerDeah()
+    {
+        stateMachine.ContinueState(idleState);
+    }
 }

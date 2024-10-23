@@ -5142,7 +5142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 293979255}
   otherPanel: {fileID: 1481954814}
-  dialogueText: {fileID: 1590458848}
+  dialogueText: {fileID: 2076934094}
   openOtherPanelButton: {fileID: 132813199}
   refusalButton: {fileID: 543644658}
   firstMeetingDialogue:

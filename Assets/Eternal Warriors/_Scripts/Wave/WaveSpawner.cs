@@ -7,42 +7,49 @@ using UnityEngine;
 [Serializable]
 public class Wave
 {
-    public GameObject[] enemyType;
-    public int[] enemyCount;
+    public GameObject[] enemyType;  
+    public int[] enemyCount;    
+    public float timeToNextWave;   
 }
 public class WaveSpawner : MonoBehaviour
 {
-    public Wave[] wave;  
-    public Transform spawnPoint;    
-    public float timeBetweenEnemie = 1f; 
-    public float timeBetweenWave = 5f;   
+    public Wave[] waves;
+    public Transform spawnPoint;
+    public float timeBetweenEnemies = 1f;
+    public int currentWaveIndex = 0;
+    public int waveNumber = 0;
 
-    private int currentWave = 0; 
-
-    void Start()
+    private void Start()
     {
-        StartCoroutine(SpawnWave());
+        StartCoroutine(SpawnWavesCoroutine());
     }
 
-    IEnumerator SpawnWave()
+    IEnumerator SpawnWavesCoroutine()
     {
-        while (currentWave < wave.Length) 
+        while (currentWaveIndex < waves.Length)
         {
-            yield return new WaitForSeconds(timeBetweenWave); 
+            yield return new WaitForSeconds(2f);
+            waveNumber++;
+            yield return new WaitForSeconds(3f);
+            Wave currentWave = waves[currentWaveIndex];
 
-            Wave _currentWave = wave[currentWave]; 
-
-            for (int i = 0; i < _currentWave.enemyType.Length; i++) 
+            // Spawn enemy theo wave
+            for (int i = 0; i < currentWave.enemyType.Length; i++)
             {
-                for (int j = 0; j < _currentWave.enemyCount[i]; j++) 
+                for (int j = 0; j < currentWave.enemyCount[i]; j++)
                 {
-                    SpawnEnemy(_currentWave.enemyType[i]);
-                    yield return new WaitForSeconds(timeBetweenEnemie); 
+                    SpawnEnemy(currentWave.enemyType[i]);
+                    yield return new WaitForSeconds(timeBetweenEnemies);
                 }
             }
 
-            currentWave++; 
+            currentWaveIndex++;
+            if (currentWaveIndex < waves.Length)
+            {
+                yield return new WaitForSeconds(currentWave.timeToNextWave);
+            }
         }
+
     }
 
     void SpawnEnemy(GameObject enemyPrefab)
