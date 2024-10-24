@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 public class Enemy : Entity
 {
     public GameObject Coint;
+    public QuestType enemyType;
     protected override void Awake()
     {
         base.Awake();
@@ -24,6 +25,11 @@ public class Enemy : Entity
     public override void Damage(int Damge)
     {
         base.Damage(Damge);
+    }
+    protected override void AnimDeah()
+    {
+        base.AnimDeah();
+        QuestManager.instance.UpdateQuest(enemyType, 1);
     }
     public virtual void FallCoint()
     {

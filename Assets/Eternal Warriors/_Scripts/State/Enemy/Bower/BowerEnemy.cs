@@ -48,6 +48,7 @@ public class BowerEnemy : Enemy
     }
     protected override void AnimDeah()
     {
+        base.AnimDeah();
         stateMachine.ContinueState(deahState);
     }
     protected override void AnimIdleTowerDeah()
