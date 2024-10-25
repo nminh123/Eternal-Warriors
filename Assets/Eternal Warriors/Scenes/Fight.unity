@@ -2829,6 +2829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coint
       objectReference: {fileID: 0}
+    - target: {fileID: 339822048847080627, guid: 3dde16d8968a63940b6a2b2bff85a3e9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2758774441802565490, guid: 3dde16d8968a63940b6a2b2bff85a3e9, type: 3}
       propertyPath: m_SortingOrder
       value: 10
