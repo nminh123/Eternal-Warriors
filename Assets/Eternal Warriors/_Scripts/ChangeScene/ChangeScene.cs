@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static CyclesProvider;
+//using static CyclesProvider;
 using UnityEngine.SocialPlatforms.Impl;
 
 public class ChangeScene : MonoBehaviour
