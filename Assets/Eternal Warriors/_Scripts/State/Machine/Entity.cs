@@ -29,36 +29,38 @@ public class Entity : MonoBehaviour
     [SerializeField] protected Transform checkAttack;
     public float attackDistance;
     [SerializeField] protected LayerMask whatIsCheckAttack;
+    protected float timerChangeScene = 2;
     protected virtual void OnEnable()
-    {
+    {        
         islife = true;
         currentHealth = maxHealth;
+        towerAlly.islife = true;
+        towerEnemy.islife = true;
+
     }
     protected virtual void OnDisable()
     {
-
+        
     }
     protected virtual void Awake()
     {
         stateMachine = new();
         animator = GetComponent<Animator>();
+        towerAlly = FindObjectOfType<TowerAlly>();
+        towerEnemy = FindObjectOfType<TowerEnemy>();
     }
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         
         col = GetComponent<Collider2D>();
-
-        towerAlly = FindObjectOfType<TowerAlly>();
-        towerEnemy = FindObjectOfType<TowerEnemy>();
-
         //currentHealth = maxHealth;
     }
     protected virtual void Update()
     {
         stateMachine.currentState.Logic();
         this.CheckDeah();
-        this.CheckTowerDeah();
+        this.CheckTowerDeah(this.gameObject);
     }
     public virtual void SetVelocity(float x)
     {
@@ -88,12 +90,18 @@ public class Entity : MonoBehaviour
             AnimDeah();
         }
     }
-    protected virtual void CheckTowerDeah()
+    protected virtual void CheckTowerDeah(GameObject obj)
     {
-        if(!towerAlly.isLive || !towerEnemy.isLive)
+        if (!towerAlly.islife || !towerEnemy.islife)
         {
             AnimIdleTowerDeah();
+            timerChangeScene -= Time.deltaTime;
+            if (timerChangeScene <= 0)
+            {
+                ReturnPool(obj);
+            }
         }
+       
     }
     protected virtual void AnimIdleTowerDeah()
     {

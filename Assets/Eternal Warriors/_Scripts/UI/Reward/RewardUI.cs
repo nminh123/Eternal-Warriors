@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class RewardUI : MonoBehaviour
 {
-    public Tower tower;
+    public TowerAlly towerAlly;
+    public TowerEnemy towerEnemy;
     public GameObject rewardPanel;
     public float setTimeActive;
     private void Start()
@@ -14,13 +15,12 @@ public class RewardUI : MonoBehaviour
     }
     private void Update()
     {        
-        if (!tower.isLive)
+        if (!towerAlly.islife || !towerEnemy.islife)
         {
             setTimeActive -= Time.deltaTime;
             if (setTimeActive > 0) return;
             rewardPanel.SetActive(true);
-        }
-            
+        }           
     }
     public void BtnHome(string sceneName)
     {
