@@ -36,6 +36,6 @@ public class BlinkingText : MonoBehaviour
 
     private void ChangeScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("main menu"); 
+        UnityEngine.SceneManagement.SceneManager.LoadScene("CutScene 2"); 
     }
 }
