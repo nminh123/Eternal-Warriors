@@ -22,6 +22,11 @@ public class Enemy : Entity
     {
         base.Update();
     }
+    protected override void CheckTowerDeah(GameObject obj)
+    {
+        base.CheckTowerDeah(obj);
+
+    }
     public override void Damage(int Damge)
     {
         base.Damage(Damge);

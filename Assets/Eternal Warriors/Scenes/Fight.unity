@@ -276,6 +276,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coint: 0
+--- !u!1 &95051796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 95051798}
+  - component: {fileID: 95051797}
+  m_Layer: 0
+  m_Name: PoolObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &95051797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95051796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 251d9c35736f33b44937fb54e4e29d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _initialCapacity: 100
+--- !u!4 &95051798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95051796}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &195602201
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +334,7 @@ GameObject:
   - component: {fileID: 195602205}
   - component: {fileID: 195602204}
   m_Layer: 7
-  m_Name: Nha 2 ba trung 2
+  m_Name: Tower Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -423,6 +468,7 @@ MonoBehaviour:
   maxHealth: 10
   healthImage: {fileID: 252512443}
   coint: {fileID: 339822048847080627, guid: 3dde16d8968a63940b6a2b2bff85a3e9, type: 3}
+  islife: 1
 --- !u!1 &209264630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,7 +1806,7 @@ GameObject:
   - component: {fileID: 599480378}
   - component: {fileID: 599480379}
   m_Layer: 6
-  m_Name: Nha 2 ba trung
+  m_Name: Tower Ally
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1848,6 +1894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   healthImage: {fileID: 579166190}
+  islife: 1
 --- !u!61 &599480379
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3416,7 +3463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44cc3d428724ff648bcb97c712e422c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tower: {fileID: 195602205}
+  towerAlly: {fileID: 599480378}
+  towerEnemy: {fileID: 195602205}
   rewardPanel: {fileID: 1830417806}
   setTimeActive: 3
 --- !u!114 &1027167425
@@ -8520,3 +8568,4 @@ SceneRoots:
   - {fileID: 1880915852}
   - {fileID: 2040847686}
   - {fileID: 1027167428}
+  - {fileID: 95051798}
