@@ -5,6 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/Eternal Warriors/Scenes/main menu/continue.unity
+    guid: 36664cfa604d58e44a7ae896015e1b15
+  - enabled: 1
+    path: Assets/Eternal Warriors/Scenes/main menu/main menu.unity
+    guid: f35e9dab99556df4d9b6e5b4e5d20d61
   - enabled: 0
     path: Assets/Eternal Warriors/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
