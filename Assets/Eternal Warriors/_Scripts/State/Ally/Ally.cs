@@ -29,6 +29,7 @@ public class Ally : Entity
             if (enemy != null)
             {
                 enemy.Damage(damage);
+                //SoundMng.instance.attackSound;
                 break;
             }
             else if(tower != null)
