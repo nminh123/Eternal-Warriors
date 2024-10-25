@@ -42,6 +42,7 @@ public class SworderEnemy : Enemy
     }
     protected override void AnimDeah()
     {
+        base.AnimDeah();
         stateMachine.ContinueState(deahState);
     }
     protected override void AnimIdleTowerDeah()

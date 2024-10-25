@@ -11,6 +11,7 @@ public class PowerUI : MonoBehaviour
 
     private float timer;
     private float progress;
+    public Tower tower;
     private void Start()
     {
         power = Power.instance;
@@ -24,6 +25,7 @@ public class PowerUI : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(!tower.isLive) return;
         timer += Time.fixedDeltaTime;
         if (timer >= power.PowerTimer)
         {
