@@ -34,9 +34,12 @@ public class Entity : MonoBehaviour
     {        
         islife = true;
         currentHealth = maxHealth;
-        towerAlly.islife = true;
-        towerEnemy.islife = true;
+        //towerAlly.islife = true;
+        //towerEnemy.islife = true;
 
+        towerAlly = FindObjectOfType<TowerAlly>();
+        towerEnemy = FindObjectOfType<TowerEnemy>();
+        timerChangeScene = 2;
     }
     protected virtual void OnDisable()
     {

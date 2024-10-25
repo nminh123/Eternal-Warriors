@@ -36,7 +36,7 @@ public class NPCShop : MonoBehaviour
 
     protected void Update()
     {
-        if (playerIsClose && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0)))
+        if (playerIsClose && (Input.GetKeyDown(KeyCode.E) || playerIsClose && Input.GetMouseButtonDown(0)))
         {
             if (otherPanel.activeInHierarchy)
             {
