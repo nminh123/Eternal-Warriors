@@ -38,7 +38,11 @@ public class Enemy : Entity
     }
     public virtual void FallCoint()
     {
-        ObjectPoolManager.SpawnGameObject(Coint, this.transform.position, Quaternion.identity);
+        //ObjectPoolManager.SpawnGameObject(Coint, this.transform.position, Quaternion.identity);
+        if (Coint != null)
+        {
+            ObjectPoolManager.SpawnGameObject(Coint, this.transform.position, Quaternion.identity);
+        }
     }
     protected void TriggerAttack()
     {
