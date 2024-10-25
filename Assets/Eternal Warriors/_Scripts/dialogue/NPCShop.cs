@@ -4,49 +4,53 @@ using TMPro;
 
 public class NPCShop : MonoBehaviour
 {
-    public GameObject dialoguePanel; 
-    public GameObject otherPanel;   
-    public TMP_Text dialogueText;    
-    public Button openOtherPanelButton; 
-    public Button refusalButton;         
-    public string[] firstMeetingDialogue;  
-    public string[] dialogues;            
+    public GameObject dialoguePanel;
+    public GameObject otherPanel;
+    public TMP_Text dialogueText;
+    public Button openOtherPanelButton;
+    public Button refusalButton;
+    public string[] firstMeetingDialogue;
+    public string[] dialogues;
     public string[] refusalDialogue;
+
     protected int dialogueIndex = 0;
     protected bool playerIsClose = false;
     protected bool dialogueActive = false;
     protected bool firstMeeting = true;
     protected bool refusalActive = false;
-    protected bool buttonsVisible = false; 
+    protected bool buttonsVisible = false;
 
     protected void Start()
     {
-        dialoguePanel.SetActive(false);     
-        otherPanel.SetActive(false);       
-        openOtherPanelButton.gameObject.SetActive(false); 
-        refusalButton.gameObject.SetActive(false);       
+        dialoguePanel.SetActive(false);
+        otherPanel.SetActive(false);
+        openOtherPanelButton.gameObject.SetActive(false);
+        refusalButton.gameObject.SetActive(false);
 
-        openOtherPanelButton.onClick.AddListener(OpenOtherPanel); 
-        refusalButton.onClick.AddListener(ShowRefusalDialogue);   
+        openOtherPanelButton.onClick.AddListener(OpenOtherPanel);
+        refusalButton.onClick.AddListener(ShowRefusalDialogue);
+
+        // Khôi phục dialogueIndex từ PlayerPrefs
+        dialogueIndex = PlayerPrefs.GetInt("dialogueIndex", 0); // Giá trị mặc định là 0
     }
 
     protected void Update()
     {
         if (playerIsClose && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0)))
         {
-            if (otherPanel.activeInHierarchy) 
+            if (otherPanel.activeInHierarchy)
             {
                 return;
             }
-            else if (refusalActive) 
+            else if (refusalActive)
             {
                 EndDialogue();
             }
-            else if (!dialoguePanel.activeInHierarchy) 
+            else if (!dialoguePanel.activeInHierarchy)
             {
                 dialoguePanel.SetActive(true);
-                dialogueActive = true; 
-                if (firstMeeting) 
+                dialogueActive = true;
+                if (firstMeeting)
                 {
                     ShowFirstMeetingDialogue();
                 }
@@ -55,7 +59,7 @@ public class NPCShop : MonoBehaviour
                     ShowDialogue();
                 }
             }
-            else if (dialogueActive && !buttonsVisible) 
+            else if (dialogueActive && !buttonsVisible)
             {
                 if (firstMeeting)
                 {
@@ -69,20 +73,16 @@ public class NPCShop : MonoBehaviour
         }
     }
 
-    protected void OnMouseDown()
-    {
-        
-    }
     protected void ShowFirstMeetingDialogue()
     {
         if (dialogueIndex < firstMeetingDialogue.Length)
         {
-            dialogueText.text = firstMeetingDialogue[dialogueIndex]; 
+            dialogueText.text = firstMeetingDialogue[dialogueIndex];
             dialogueIndex++;
         }
         else
         {
-            firstMeeting = false; 
+            firstMeeting = false;
             ShowButtons();
         }
     }
@@ -96,15 +96,15 @@ public class NPCShop : MonoBehaviour
         }
         else
         {
-            ShowButtons(); 
+            ShowButtons();
         }
     }
 
     protected void ShowRefusalDialogue()
     {
-        dialogueIndex = 0; 
-        refusalActive = true; 
-        buttonsVisible = false; 
+        dialogueIndex = 0;
+        refusalActive = true;
+        buttonsVisible = false;
         HideButtons();
         if (dialogueIndex < refusalDialogue.Length)
         {
@@ -113,50 +113,55 @@ public class NPCShop : MonoBehaviour
         }
         else
         {
-            EndDialogue(); 
+            EndDialogue();
         }
     }
 
     protected virtual void OpenOtherPanel()
     {
-        otherPanel.SetActive(true);   
+        otherPanel.SetActive(true);
         dialoguePanel.SetActive(false);
-        HideButtons();                
+        HideButtons();
     }
 
     protected void EndDialogue()
     {
-        if (dialoguePanel != null) 
+        if (dialoguePanel != null)
         {
-            dialoguePanel.SetActive(false); 
+            dialoguePanel.SetActive(false);
         }
-        if (otherPanel != null) 
+        if (otherPanel != null)
         {
-            otherPanel.SetActive(false);    
+            otherPanel.SetActive(false);
         }
         if (openOtherPanelButton != null)
         {
-            openOtherPanelButton.gameObject.SetActive(false); 
+            openOtherPanelButton.gameObject.SetActive(false);
         }
-        if (refusalButton != null) 
+        if (refusalButton != null)
         {
-            refusalButton.gameObject.SetActive(false);        
+            refusalButton.gameObject.SetActive(false);
         }
-        dialogueIndex = 0;  
-        refusalActive = false; 
+
+        // Lưu dialogueIndex vào PlayerPrefs khi kết thúc hội thoại
+        PlayerPrefs.SetInt("dialogueIndex", dialogueIndex);
+        PlayerPrefs.Save();
+
+        dialogueIndex = 0;
+        refusalActive = false;
     }
 
     protected virtual void ShowButtons()
     {
-        openOtherPanelButton.gameObject.SetActive(true); 
-        refusalButton.gameObject.SetActive(true);      
+        openOtherPanelButton.gameObject.SetActive(true);
+        refusalButton.gameObject.SetActive(true);
         buttonsVisible = true;
     }
 
     protected void HideButtons()
     {
-        openOtherPanelButton.gameObject.SetActive(false); 
-        refusalButton.gameObject.SetActive(false);   
+        openOtherPanelButton.gameObject.SetActive(false);
+        refusalButton.gameObject.SetActive(false);
         buttonsVisible = false;
     }
 
@@ -172,8 +177,8 @@ public class NPCShop : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            playerIsClose = false; 
-            EndDialogue(); 
+            playerIsClose = false;
+            EndDialogue();
         }
     }
 }
