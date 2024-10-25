@@ -6,6 +6,21 @@ using MidniteOilSoftware.ObjectPoolManager;
 public class TowerEnemy : Tower
 {
     [SerializeField] GameObject coint;
+
+    public bool islife = true;
+    protected override void Start()
+    {
+        base.Start();
+        islife = true;
+    }
+    public override void CheckDeah()
+    {
+        base.CheckDeah();
+        if (health <= 0)
+            islife = false;
+        else
+            islife = true;
+    }
     public override void Damage(int damage)
     {
         base.Damage(damage);

@@ -6,17 +6,19 @@ using UnityEngine.UI;
 public class Tower : MonoBehaviour
 {
     public int maxHealth;
-    private int health;
+    protected int health;
 
     [SerializeField] public Image healthImage;
     private float targetFillAmount;
     private float updateSpeed = 1f;
     public bool isLive { get; private set; }
+    protected bool isPaused = false;
 
-    protected void Start()
+    protected virtual void Start()
     {
         health = maxHealth;
         isLive = true;
+        isPaused = false;
     }
     protected void Update()
     {
@@ -33,9 +35,9 @@ public class Tower : MonoBehaviour
     }
     public virtual void CheckDeah()
     {
-        if(health <= 0)
-            isLive = false;
+
     }
+
     public void SetHealth(int currentHealth, int maxHealth)
     {
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);

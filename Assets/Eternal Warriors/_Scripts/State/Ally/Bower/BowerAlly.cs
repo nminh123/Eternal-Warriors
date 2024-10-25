@@ -27,8 +27,8 @@ public class BowerAlly : Ally
     }
     protected override void OnEnable()
     {
-        stateMachine.StartState(moveState);
         base.OnEnable();
+        stateMachine.StartState(moveState);
 
     }
     protected override void Update()
