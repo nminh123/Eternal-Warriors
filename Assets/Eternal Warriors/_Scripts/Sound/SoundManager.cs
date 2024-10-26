@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundMng : MonoBehaviour
+public class SoundManager : MonoBehaviour
 {   
-    public static SoundMng instance;
+    public static SoundManager instance;
     public AudioClip attackSound;
     public AudioSource attackSource;
 

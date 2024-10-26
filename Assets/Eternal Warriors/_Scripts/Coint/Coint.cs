@@ -12,12 +12,16 @@ public class Coint : MonoBehaviour
     public int cointRandom;
     private Coroutine timerCoroutine;
     private bool hasAddedCoint = false;
+    private TowerAlly towerAlly;
+    private TowerEnemy towerEnemy;
 
     [SerializeField] Transform endCoint;
 
     private void OnEnable()
     {
         endCoint = GameObject.Find("EndCoint").GetComponent<Transform>();
+        towerAlly = FindObjectOfType<TowerAlly>();
+        towerEnemy = FindObjectOfType<TowerEnemy>();
         cointRandom = Random.Range(minCoint, maxCoint);
         timerCoroutine = StartCoroutine(AddPointEndTime());
         hasAddedCoint = false;
@@ -38,7 +42,11 @@ public class Coint : MonoBehaviour
             AnimaCoint(endCoint, 1);
 
     }
-
+    protected void FixedUpdate()
+    {
+        if(!towerAlly.islife || !towerEnemy.islife)
+            AnimaCoint(endCoint, 1);
+    }
     IEnumerator AddPointEndTime()
     {
         yield return new WaitForSeconds(timerCoint);
