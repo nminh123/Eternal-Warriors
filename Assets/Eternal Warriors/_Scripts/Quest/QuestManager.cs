@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Eternal_Warriors._Scripts;
 
 [System.Serializable]
 public class Quest
@@ -33,7 +34,7 @@ public class Quest
 
     public void RewardPlayer()
     {
-        CointManager.instance.AddCoint(rewardCoins);
+        GameManager.instance.AddCoin(rewardCoins);
         QuestManager.instance.SetupNextQuest(questType);
 
     }

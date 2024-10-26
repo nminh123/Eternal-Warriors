@@ -2,6 +2,7 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using Eternal_Warriors._Scripts;
 
 public class Coint : MonoBehaviour
 {
@@ -59,7 +60,7 @@ public class Coint : MonoBehaviour
     {
         if (!hasAddedCoint)
         {
-            CointManager.instance.AddCoint(cointRandom);
+            GameManager.instance.AddCoin(cointRandom);
             hasAddedCoint = true;
         }
         ObjectPoolManager.DespawnGameObject(obj);

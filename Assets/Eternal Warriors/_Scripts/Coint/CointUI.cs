@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using Eternal_Warriors._Scripts;
 
 public class CointUI : MonoBehaviour
 {
@@ -9,19 +10,19 @@ public class CointUI : MonoBehaviour
 
     private void Start()
     {
-        displayedCoint = CointManager.instance.coint;
+        displayedCoint = GameManager.instance.Coin;
         textCoint.text = displayedCoint.ToString();
     }
 
     private void Update()
     {
-        if (displayedCoint < CointManager.instance.coint)
+        if (displayedCoint < GameManager.instance.Coin)
         {
 
             displayedCoint += Mathf.CeilToInt(increaseSpeed * Time.deltaTime);
 
-            if (displayedCoint > CointManager.instance.coint)
-                displayedCoint = CointManager.instance.coint;
+            if (displayedCoint > GameManager.instance.Coin)
+                displayedCoint = GameManager.instance.Coin;
 
 
             textCoint.text = displayedCoint.ToString();

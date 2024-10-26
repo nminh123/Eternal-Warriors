@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using Eternal_Warriors._Scripts;
 
 public class RewardUI : MonoBehaviour
 {
@@ -22,7 +20,7 @@ public class RewardUI : MonoBehaviour
         {
             setTimeActive -= Time.deltaTime;
             if (setTimeActive > 0) return;
-            textCoint.text = CointManager.instance.coint.ToString();
+            textCoint.text = GameManager.instance.Coin.ToString();
             rewardPanel.SetActive(true);
         }
         
