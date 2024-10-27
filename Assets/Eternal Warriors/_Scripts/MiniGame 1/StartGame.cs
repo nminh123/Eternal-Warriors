@@ -30,6 +30,7 @@ public class StartGame : MonoBehaviour
         {
             isBlinking = false;
             startGame.text = "";
+            SoundManager.instance.PlaySound("Start");
         }
     }
 }

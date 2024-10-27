@@ -7,7 +7,7 @@ public class TimeEnd : MonoBehaviour
 {
     [SerializeField]
     private TextMeshProUGUI timeText;
-    public float _time = 45f;
+    public float _time = 48f;
 
     private bool gameStarted = false;
 
@@ -39,6 +39,7 @@ public class TimeEnd : MonoBehaviour
         else
         {
             _time = 0;
+            SoundManager.instance.PlaySound("Victory");
             Time.timeScale = 0;
             UpdateTimeDisplay();
         }
