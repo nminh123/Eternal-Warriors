@@ -26,7 +26,8 @@ public class Score : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Point"))
-        {
+        {   
+            SoundManager.instance.PlaySound("Bonus");
             myAnimator.SetBool("is_Reward", true);
             Destroy(collision.gameObject, 0.2f);
             //tang diem
@@ -36,6 +37,7 @@ public class Score : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("PointBig"))
         {
+            SoundManager.instance.PlaySound("Bonus");
             myAnimator.SetBool("is_Reward", true);
             Destroy(collision.gameObject, 0.2f);
             //tang diem

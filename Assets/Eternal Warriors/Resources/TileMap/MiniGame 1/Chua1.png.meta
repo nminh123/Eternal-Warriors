@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 05193facf05dbd44dbcbeba528bb2fb5
+guid: c3a5a2422f2aa8841bdd7e9ed00f26ea
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 160
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPUM_20241027114253270_DAMAGED0_0_Damaged_0_0
+      name: Chua1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 512
-        height: 512
+        x: 60
+        y: 149
+        width: 203
+        height: 408
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 848889d6726f7044d8b1bc3a1c9090dc
-      internalID: 1989368887
+      spriteID: 9c6ad7d2ac7b1dc40b3fb8cf1ebf8fa1
+      internalID: 1708743430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241027114253270_DAMAGED0_0_Damaged_0_1
+      name: Chua1_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 512
-        height: 512
+        x: 410
+        y: 150
+        width: 224
+        height: 335
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,71 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 864b1e3921bac874880edcc4073a676a
-      internalID: -376973790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241027114253270_DAMAGED0_0_Damaged_0_2
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27902844b178dea40b56e6156e175297
-      internalID: -45344081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241027114253270_DAMAGED0_0_Damaged_0_3
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24599ecebe677974ab353806c1e10e86
-      internalID: 463965831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241027114253270_DAMAGED0_0_Damaged_0_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10d7cacdabe1ff5468e5d24f4c3cf749
-      internalID: -769643731
+      spriteID: f4e162812cf87b04d9292497719066bf
+      internalID: -1600838649
       vertices: []
       indices: 
       edges: []
@@ -212,11 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPUM_20241027114253270_DAMAGED0_0_Damaged_0_0: 1989368887
-      SPUM_20241027114253270_DAMAGED0_0_Damaged_0_1: -376973790
-      SPUM_20241027114253270_DAMAGED0_0_Damaged_0_2: -45344081
-      SPUM_20241027114253270_DAMAGED0_0_Damaged_0_3: 463965831
-      SPUM_20241027114253270_DAMAGED0_0_Damaged_0_4: -769643731
+      Chua1_0: 1708743430
+      Chua1_1: -1600838649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
