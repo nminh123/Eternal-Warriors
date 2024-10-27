@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FalseMap
+  - VatCan
+  - Point
+  - PointBig
   layers:
   - Default
   - TransparentFX
