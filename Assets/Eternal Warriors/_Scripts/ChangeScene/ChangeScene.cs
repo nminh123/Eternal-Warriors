@@ -15,7 +15,10 @@ public class ChangeScene : MonoBehaviour
         StartCoroutine(timeLoadScene());
         SceneManager.LoadScene("CutScene 2");
     }
-
+    public void LoadGameBtn(string scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
     public void LoadExit()
     {
         Application.Quit();
