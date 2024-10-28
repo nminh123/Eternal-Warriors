@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7baac73-4b12-47ec-b826-b80f5458a25b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MiniGame2Manager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MiniGame2Manager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/ScoreText.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/ScoreText.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Prefabs/MiniGame2.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Prefabs/MiniGame2/Target.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Prefabs/MiniGame2/Target.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/FollowedCamera.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/FollowedCamera.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/RivalSpawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/RivalSpawner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/BoatCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/BoatCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MapHandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MapHandle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +29,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Eternal Warriors/Test/scripts/data/Target.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/BoatCtrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/nhatminh/Documents/nhatminhh/GitHub/Eternal-Warriors/Assets/Eternal Warriors/_Scripts/MiniGame 2/MapHandle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MidniteOilSoftware/Scripts/Managers/ObjectPoolManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
@@ -143,6 +151,9 @@
       <workItem from="1729849744652" duration="48000" />
       <workItem from="1729868930607" duration="2815000" />
       <workItem from="1729917643781" duration="4768000" />
+      <workItem from="1730083710912" duration="773000" />
+      <workItem from="1730088694833" duration="1522000" />
+      <workItem from="1730113568604" duration="111000" />
     </task>
     <servers />
   </component>
