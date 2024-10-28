@@ -27,7 +27,7 @@ public class SpawnObject : MonoBehaviour
             if (countDown <= 0)
             {
                 int randomIndex = Random.Range(0, gameObjectPrefab.Length);
-                Instantiate(gameObjectPrefab[randomIndex], new Vector3(9.45f, Random.Range(-1.1f, -3.2f), 0), Quaternion.identity);
+                Instantiate(gameObjectPrefab[randomIndex], new Vector3(9.45f, Random.Range(-1.3f, -3.2f), 0), Quaternion.identity);
                 countDown = time;
                 
             }
