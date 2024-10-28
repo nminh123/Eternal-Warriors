@@ -9,6 +9,7 @@ TagManager:
   - Point
   - PointBig
   - bonus
+  - zone
   layers:
   - Default
   - TransparentFX
