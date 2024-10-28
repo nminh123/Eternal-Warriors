@@ -8,6 +8,7 @@ TagManager:
   - VatCan
   - Point
   - PointBig
+  - zone
   layers:
   - Default
   - TransparentFX
