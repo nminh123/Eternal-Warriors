@@ -8,6 +8,7 @@ TagManager:
   - VatCan
   - Point
   - PointBig
+  - bonus
   - zone
   layers:
   - Default

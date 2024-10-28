@@ -22,12 +22,6 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
         private void Update()
         {
             moveVec.x = Input.GetAxisRaw("Horizontal");
-            moveVec.y = Input.GetAxisRaw("Vertical");
-
-            if (moveVec.magnitude > 1)
-            {
-                moveVec.Normalize();
-            }
         }
 
         private void FixedUpdate()
@@ -35,12 +29,12 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
             rigid.MovePosition(rigid.position + moveVec * speed * Time.fixedDeltaTime);
         }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnCollisionEnter2D(Collision2D other)
         {
-            if (collision.gameObject.CompareTag("bonus"))
+            if (other.gameObject.CompareTag("bonus"))
             {
-                manager.IncreaseScore(bonusVal);
-                Debug.Log("Score: " + manager.score);
+                this.gameObject.SetActive(false);
+                Debug.Log("Thua roi!!");
             }
         }
     }
