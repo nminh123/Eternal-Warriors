@@ -13,7 +13,6 @@ public class TestKite : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0; 
         isWindActive = false;
     }
 
@@ -21,8 +20,15 @@ public class TestKite : MonoBehaviour
     {
         if (KiteEnd.instance.isOpenUI) return;
         CheckDistance();
+        CheckInput();
     }
-
+    public void CheckInput()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(new Vector2(rb.velocity.x,50));
+        }
+    }
     public void ApplyWindForce(float direction, float windForce)
     {
         isWindActive = true;

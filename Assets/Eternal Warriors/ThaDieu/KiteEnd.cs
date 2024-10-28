@@ -10,10 +10,9 @@ public class KiteEnd : MonoBehaviour
     [SerializeField] private CoolDownTimer coolDownTimer;
     [SerializeField] private KiteUI kiteUI;
     [SerializeField] private CoolDownTimer timer;
-
+    
     [SerializeField] private GameObject panel;
     public bool isOpenUI;
-    
     public float timeIsOpen;
 
     private void Awake()
@@ -35,6 +34,7 @@ public class KiteEnd : MonoBehaviour
         }
         
     }
+
     public void OpenUI()
     {
         if (coolDownTimer.isWined)
