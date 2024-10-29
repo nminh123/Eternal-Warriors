@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7baac73-4b12-47ec-b826-b80f5458a25b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/Answer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/Answer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/AnswerData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/AnswerData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/AnswerType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/AnswerType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/GameEvents.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/GameEvents.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/Question.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/Question.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/FollowedCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/FollowedCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MiniGame2Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MiniGame2Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 1/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 1/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 1/TimeEnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 1/TimeEnd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +148,8 @@
       <workItem from="1730088694833" duration="1522000" />
       <workItem from="1730113568604" duration="664000" />
       <workItem from="1730133391228" duration="3213000" />
-      <workItem from="1730168644375" duration="6507000" />
+      <workItem from="1730168644375" duration="6722000" />
+      <workItem from="1730185058245" duration="1084000" />
     </task>
     <servers />
   </component>

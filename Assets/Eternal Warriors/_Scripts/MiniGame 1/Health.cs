@@ -14,24 +14,24 @@ public class Health : MonoBehaviour
 
     private bool isDead = false;
 
-    private bool isSlow = false;
+    private bool isSlow;
     private float slowTimer = 0.5f; //thoi gian lam cham 
     // Start is called before the first frame update
     void Start()
     {
         myAnimator = GetComponent<Animator>();
         UpdateLiveImage();
-
+        isSlow = false;
     }
     private void Update()
     {
         if (isSlow)
         {
             slowTimer -= Time.deltaTime;
-            if (slowTimer <= 0)
-            {
-                Time.timeScale = 0; // dung game
-            }
+            // if (slowTimer <= 0)
+            // {
+            //     Time.timeScale = 0; // dung game
+            // }
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
