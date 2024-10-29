@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Eternal Warriors/Scenes/Fight.unity
     guid: d993b1c9348d50343bb4c917676b17ee
+  - enabled: 1
+    path: Assets/Eternal Warriors/Scenes/MiniGames/ThaDieu.unity
+    guid: d1d2891c58e3c7b42824d2e085225851
+  - enabled: 1
+    path: Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 1.unity
+    guid: 9c2fb52fae04aa443b47bf60d043bd29
   m_configObjects: {}
