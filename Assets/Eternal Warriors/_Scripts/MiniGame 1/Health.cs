@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     [SerializeField]
+    private GameObject canvasNomal;
+    [SerializeField]
     private GameObject[] liveImage;
 
-    [SerializeField]
-    private int health = 3;
+    public int health = 3;
 
     private Animator myAnimator;
 
@@ -16,12 +18,19 @@ public class Health : MonoBehaviour
 
     private bool isSlow;
     private float slowTimer = 0.5f; //thoi gian lam cham 
+
+    private TimeEnd timeEnd;
+
+    private Score scoreManager;
     // Start is called before the first frame update
     void Start()
     {
         myAnimator = GetComponent<Animator>();
+        timeEnd = FindAnyObjectByType<TimeEnd>();
+        scoreManager = FindObjectOfType<Score>();
         UpdateLiveImage();
         isSlow = false;
+        canvasNomal.SetActive(true);
     }
     private void Update()
     {
@@ -30,8 +39,15 @@ public class Health : MonoBehaviour
             slowTimer -= Time.deltaTime;
             // if (slowTimer <= 0)
             // {
-            //     Time.timeScale = 0; // dung game
+            /*Time.timeScale = 0;*/ // dung game
             // }
+        }
+        if(timeEnd._time <= 0)
+        {
+            canvasNomal.SetActive(false);
+        }
+        {
+            
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -63,8 +79,10 @@ public class Health : MonoBehaviour
         {
             myAnimator.SetBool("is_Die", true);
             CanvasManager.instance.canvasEndGame.SetActive(true);
+            CanvasManager.instance.ShowEndGameCanvas(scoreManager.GetScore());
             isDead = true;
             isSlow = true;
+            canvasNomal.SetActive(false);
         }
     }
 }
