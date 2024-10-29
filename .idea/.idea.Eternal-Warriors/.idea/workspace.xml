@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7baac73-4b12-47ec-b826-b80f5458a25b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 3/Quizz/MiniGame3Manager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 3/Quizz/MiniGame3Manager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 1/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 1/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 1/TimeEnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 1/TimeEnd.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MiniGame2Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MiniGame2Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/Answer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/Answer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/AnswerData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/AnswerData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/AnswerType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/AnswerType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/GameEvents.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/GameEvents.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/Question.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/Quizz/Question.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +43,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b0ec4bde85954a17996a00bbf5c09221954c00/bc/4b8d1fa6/BuildPipelineInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b0ec4bde85954a17996a00bbf5c09221954c00/e6/ee26fda9/Lightmapping.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cde31c1eadd84eb1a2bfd6e45f877c49175400/02/1c2cd51b/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cde31c1eadd84eb1a2bfd6e45f877c49175400/17/3fdb2160/Resources.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cde31c1eadd84eb1a2bfd6e45f877c49175400/2f/5d7b7277/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cde31c1eadd84eb1a2bfd6e45f877c49175400/34/f8fac1e3/Material.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cde31c1eadd84eb1a2bfd6e45f877c49175400/41/94c4abc4/LightProbes.cs" root0="SKIP_HIGHLIGHTING" />
@@ -149,7 +161,8 @@
       <workItem from="1730113568604" duration="664000" />
       <workItem from="1730133391228" duration="3213000" />
       <workItem from="1730168644375" duration="6722000" />
-      <workItem from="1730185058245" duration="1084000" />
+      <workItem from="1730185058245" duration="1380000" />
+      <workItem from="1730206793446" duration="5806000" />
     </task>
     <servers />
   </component>

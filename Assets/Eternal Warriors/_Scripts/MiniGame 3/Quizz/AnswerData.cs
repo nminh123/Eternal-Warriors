@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Eternal_Warriors._Scripts.MiniGame_2.Quizz
+namespace Eternal_Warriors._Scripts.MiniGame_3.Quizz
 {
     public class AnswerData
     {

@@ -1,4 +1,4 @@
-namespace Eternal_Warriors._Scripts.MiniGame_2.Quizz
+namespace Eternal_Warriors._Scripts.MiniGame_3.Quizz
 {
     public enum AnswerType
     {
