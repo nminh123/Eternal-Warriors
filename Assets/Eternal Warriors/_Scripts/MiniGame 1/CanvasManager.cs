@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class CanvasManager : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class CanvasManager : MonoBehaviour
     public GameObject canvasEndGame;
 
     public GameObject[] starImage;
+
+    public TextMeshProUGUI scoreEnd;
 
     private void Awake()
     {
@@ -25,9 +29,15 @@ public class CanvasManager : MonoBehaviour
             starImage[i].SetActive(i < health);
         }
     }
-
-    public void ShowEndGameCanvas()
+    public void GetScore(float score)
     {
+        scoreEnd.text = "Score:" + score.ToString();
+    }
+
+
+    public void ShowEndGameCanvas(float score)
+    {   
+        GetScore(score);
         canvasEndGame.SetActive(true);
     }
 }

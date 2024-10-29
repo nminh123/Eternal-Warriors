@@ -10,47 +10,61 @@ public class TimeEnd : MonoBehaviour
     public float _time = 48f;
 
     private bool gameStarted = false;
+    private Score scoreManager;
 
+    private bool controlsEnabled = false;
     void Start()
     {
         UpdateTimeDisplay();
+        scoreManager = FindObjectOfType<Score>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_time > 0)
+        if (controlsEnabled)
         {
-            
-            UpdateTimeDisplay();
-            if (gameStarted)
+            if (_time > 0)
             {
-                StatGame();
+
+                UpdateTimeDisplay();
+                if (gameStarted)
+                {
+                    StatGame();
+                }
+                else
+                {
+                    if (Input.GetKeyDown(KeyCode.Space))
+                    {
+                        gameStarted = true;
+                    }
+                }
+
             }
             else
             {
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    gameStarted = true;
-                }
+                _time = 0;
+                SoundManager.instance.PlaySound("Victory");
+                //Time.timeScale = 0;
+                UpdateTimeDisplay();
+                CanvasManager.instance.ShowEndGameCanvas(scoreManager.GetScore());
             }
-
-        }
-        else
-        {
-            _time = 0;
-            SoundManager.instance.PlaySound("Victory");
-            // Time.timeScale = 0;
-            UpdateTimeDisplay();
-            CanvasManager.instance.ShowEndGameCanvas();
         }
     }
     void UpdateTimeDisplay()
     {
-        timeText.text = $"Time:{_time:0}s";
+        //timeText.text = $"Time:{_time:0}s";
+        int minutes = Mathf.FloorToInt(_time / 60);
+        int seconds = Mathf.FloorToInt(_time % 60);
+
+        timeText.text = $"{minutes}:{seconds:00}";
     }
     private void StatGame()
     {
         _time -= Time.deltaTime;
+    }
+    public void EnableControl(bool enabled)
+    {
+        controlsEnabled = enabled;
     }
 }
