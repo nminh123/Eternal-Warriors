@@ -22,6 +22,7 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
         private void Update()
         {
             moveVec.x = Input.GetAxisRaw("Horizontal");
+            moveVec.y = Input.GetAxisRaw("Vertical");
         }
 
         private void FixedUpdate()
@@ -32,6 +33,12 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (other.gameObject.CompareTag("bonus"))
+            {
+                this.gameObject.SetActive(false);
+                Debug.Log("Thua roi!!");
+            }
+
+            if (other.gameObject.CompareTag("DeadEnd"))
             {
                 this.gameObject.SetActive(false);
                 Debug.Log("Thua roi!!");
