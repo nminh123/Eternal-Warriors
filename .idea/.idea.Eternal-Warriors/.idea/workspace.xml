@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7baac73-4b12-47ec-b826-b80f5458a25b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Prefabs/MiniGame2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Prefabs/MiniGame2/Target.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Prefabs/MiniGame2/Target.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/FollowedCamera.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/FollowedCamera.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/RivalSpawner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/RivalSpawner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/BoatCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/BoatCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MapHandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MapHandle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/FollowedCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/FollowedCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/RivalSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/RivalSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +147,8 @@
       <workItem from="1729917643781" duration="4768000" />
       <workItem from="1730083710912" duration="773000" />
       <workItem from="1730088694833" duration="1522000" />
-      <workItem from="1730113568604" duration="111000" />
+      <workItem from="1730113568604" duration="664000" />
+      <workItem from="1730133391228" duration="3213000" />
     </task>
     <servers />
   </component>
