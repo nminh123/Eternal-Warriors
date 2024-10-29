@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Eternal_Warriors._Scripts.MiniGame_2.Quizz
+namespace Eternal_Warriors._Scripts.MiniGame_3.Quizz
 {
     [System.Serializable]
     public struct Answer

@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Eternal_Warriors._Scripts.MiniGame_2.Quizz
+namespace Eternal_Warriors._Scripts.MiniGame_3.Quizz
 {
+    [CreateAssetMenu(fileName = "New Question", menuName = "Quiz/ new Question")]
     public class Question : ScriptableObject
     {
         [SerializeField] private string info = string.Empty;
