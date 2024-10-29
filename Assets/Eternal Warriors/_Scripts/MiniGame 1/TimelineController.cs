@@ -11,6 +11,7 @@ public class TimelineController : MonoBehaviour
     public Button skipButton;
     public GameObject timeLine;
     public GameObject munk;
+    public GameObject startGameCanvas;
     void Start()
     {
         playableDirector = GetComponent<PlayableDirector>();
@@ -31,6 +32,7 @@ public class TimelineController : MonoBehaviour
         timeEnd.EnableControl(true);
         timeLine.SetActive(false);
         munk.SetActive(false);
+        startGameCanvas.SetActive(true);
     }
 
     void OnDestroy()
