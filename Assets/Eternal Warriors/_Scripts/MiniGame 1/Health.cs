@@ -21,6 +21,7 @@ public class Health : MonoBehaviour
     {
         myAnimator = GetComponent<Animator>();
         UpdateLiveImage();
+
     }
     private void Update()
     {
@@ -40,6 +41,8 @@ public class Health : MonoBehaviour
             myAnimator.SetBool("is_Damage", true);
             health -= 1;
             UpdateLiveImage();
+            CanvasManager.instance.UpdateStarImage(health);
+           
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -59,6 +62,7 @@ public class Health : MonoBehaviour
         if (health <= 0 && !isDead)
         {
             myAnimator.SetBool("is_Die", true);
+            CanvasManager.instance.canvasEndGame.SetActive(true);
             isDead = true;
             isSlow = true;
         }
