@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 1.unity
     guid: 9c2fb52fae04aa443b47bf60d043bd29
+  - enabled: 1
+    path: Assets/Eternal Warriors/Scenes/MiniGames/MiniGame/mapkhoidong.unity
+    guid: 438bc7252e217ca4f8ecd60128e194d6
+  - enabled: 1
+    path: Assets/Eternal Warriors/Scenes/MiniGames/MiniGame/minigame.unity
+    guid: d77dcf55618651b429b3d3b550ec938e
   m_configObjects: {}
