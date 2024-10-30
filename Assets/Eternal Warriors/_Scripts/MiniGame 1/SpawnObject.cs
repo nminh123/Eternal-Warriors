@@ -14,6 +14,9 @@ public class SpawnObject : MonoBehaviour
     public bool creatObject;
 
     private TimeEnd timeEnd;
+
+    [SerializeField]
+    private float spawnX;
     private void Awake()
     {
         countDown = 1f;
@@ -37,7 +40,7 @@ public class SpawnObject : MonoBehaviour
                 if (countDown <= 0)
                 {
                     int randomIndex = Random.Range(0, gameObjectPrefab.Length);
-                    Instantiate(gameObjectPrefab[randomIndex], new Vector3(9.45f, Random.Range(-1.3f, -3.2f), 0), Quaternion.identity);
+                    Instantiate(gameObjectPrefab[randomIndex], new Vector3(Random.Range(7f, 65f), Random.Range(0.64f, -2.31f), 0), Quaternion.identity);
                     countDown = time;
 
                 }
@@ -45,4 +48,15 @@ public class SpawnObject : MonoBehaviour
         }
         
     }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Camera"))
+    //    {
+    //        creatObject = false;
+    //    }
+    //    else
+    //    {
+    //        creatObject = true;
+    //    }
+    //}
 }

@@ -56,6 +56,10 @@ public class Player : MonoBehaviour
         if (!gameStarted) return;
         var VerticalInput = Input.GetAxis("Vertical");
         transform.localPosition += new Vector3(0, VerticalInput, 0) * moveSpeed * Time.deltaTime;
+
+        //di chuyen qua phai 
+        var direction = Vector3.right;
+        transform.Translate(direction * moveSpeed * Time.deltaTime);
     }
 
     private void StartGame()
