@@ -9,13 +9,27 @@ public class Stress : MonoBehaviour
 
     private bool isRunning = false;
 
+    private TimeEnd timeEnd;
+
     // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        if (isRunning)
+        timeEnd = FindAnyObjectByType<TimeEnd>();
+    }
+    void Update()
+    {   
+        if(timeEnd._time <= 0)
         {
-            stressMove();
+            isRunning = false;
         }
+        else
+        {
+            if (isRunning)
+            {
+                stressMove();
+            }
+        }
+        
     }
     public void stressMove()
     {
