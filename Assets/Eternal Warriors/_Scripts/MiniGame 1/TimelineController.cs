@@ -28,11 +28,31 @@ public class TimelineController : MonoBehaviour
     private void OnTimelineStopped(PlayableDirector director)
     {
         // Cho phep nguoi choi dieu khien nhan vat sau khi timeline ket thuc
-        player.EnableControl(true);
-        timeEnd.EnableControl(true);
-        timeLine.SetActive(false);
-        munk.SetActive(false);
-        startGameCanvas.SetActive(true);
+        // Kiểm tra xem đối tượng có tồn tại không trước khi gọi phương thức
+        if (player != null)
+        {
+            player.EnableControl(true);
+        }
+
+        if (timeEnd != null)
+        {
+            timeEnd.EnableControl(true);
+        }
+
+        if (timeLine != null)
+        {
+            timeLine.SetActive(false);
+        }
+
+        if (munk != null)
+        {
+            munk.SetActive(false);
+        }
+
+        if (startGameCanvas != null)
+        {
+            startGameCanvas.SetActive(true);
+        }
     }
 
     void OnDestroy()
