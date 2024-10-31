@@ -39,20 +39,19 @@ public class Coint : MonoBehaviour
     private void OnMouseDown()
     {
         if (!hasAddedCoint)
-            AnimaCoint(endCoint, 1);
+            ReturnPool(this.gameObject);
 
     }
     protected void FixedUpdate()
     {
         if(!towerAlly.islife || !towerEnemy.islife)
-            AnimaCoint(endCoint, 1);
+            ReturnPool(this.gameObject);
     }
     IEnumerator AddPointEndTime()
     {
         yield return new WaitForSeconds(timerCoint);
         if (!hasAddedCoint)
-            AnimaCoint(endCoint, 1);
-
+            ReturnPool(this.gameObject);
     }
 
     public void ReturnPool(GameObject obj)
