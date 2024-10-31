@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 87110453}
   - component: {fileID: 87110455}
   - component: {fileID: 87110456}
+  - component: {fileID: 87110457}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -275,6 +276,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f24c7984600d14547922e53809a38931, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &87110457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87110452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4294de1fd15e0a4ea10189650a60a1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quests: []
 --- !u!1 &95051796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,6 +2163,18 @@ MonoBehaviour:
           m_StringArgument: MapKhoiDau
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 916193660}
+        m_TargetAssemblyTypeName: Eternal_Warriors._Scripts.Data.DataManager, Assembly-CSharp
+        m_MethodName: Save
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &604913070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3332,6 +3358,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 87110456}
+  data:
+    coin: 0
 --- !u!1 &937568374
 GameObject:
   m_ObjectHideFlags: 0
@@ -3735,6 +3763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textCoint: {fileID: 442955379}
+  manager: {fileID: 87110456}
 --- !u!114 &1086388991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12626,51 +12655,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037777763}
   m_CullTransparentMesh: 1
---- !u!1 &2040847684
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2040847686}
-  - component: {fileID: 2040847685}
-  m_Layer: 0
-  m_Name: Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2040847685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2040847684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4294de1fd15e0a4ea10189650a60a1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quests: []
---- !u!4 &2040847686
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2040847684}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 341.93753, y: 289.64877, z: 0.9377701}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2079747640
 GameObject:
   m_ObjectHideFlags: 0
@@ -13668,7 +13652,6 @@ SceneRoots:
   - {fileID: 335319554}
   - {fileID: 785833370}
   - {fileID: 1880915852}
-  - {fileID: 2040847686}
   - {fileID: 1027167428}
   - {fileID: 95051798}
   - {fileID: 1943793363}
