@@ -14,7 +14,7 @@ public class Score : MonoBehaviour
     void Start()
     {
         myAnimator = GetComponent<Animator>();
-        scoreText.text = "Score:"+_score.ToString();
+        scoreText.text = _score.ToString();
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class Score : MonoBehaviour
             Destroy(collision.gameObject, 0.2f);
             //tang diem
             _score += 20;
-            scoreText.text = "Score:"+_score.ToString();
+            scoreText.text = _score.ToString();
 
         }
         else if (collision.gameObject.CompareTag("PointBig"))
@@ -42,7 +42,7 @@ public class Score : MonoBehaviour
             Destroy(collision.gameObject, 0.2f);
             //tang diem
             _score += 40;
-            scoreText.text = "Score:"+_score.ToString();
+            scoreText.text = _score.ToString();
 
         }
     }
@@ -52,5 +52,10 @@ public class Score : MonoBehaviour
         {
             myAnimator.SetBool("is_Reward", false);
         }
+    }
+
+    public float GetScore()
+    {
+        return _score;
     }
 }

@@ -103,7 +103,7 @@ TextureImporter:
         x: 11
         y: 1
         width: 54
-        height: 80
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,10 +121,10 @@ TextureImporter:
       name: uitest_1
       rect:
         serializedVersion: 2
-        x: 79
-        y: 52
+        x: 90
+        y: 69
         width: 64
-        height: 25
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,8 +142,8 @@ TextureImporter:
       name: uitest_2
       rect:
         serializedVersion: 2
-        x: 104
-        y: 33
+        x: 102
+        y: 53
         width: 15
         height: 15
       alignment: 0
@@ -163,8 +163,8 @@ TextureImporter:
       name: uitest_3
       rect:
         serializedVersion: 2
-        x: 86
-        y: 7
+        x: 68
+        y: 5
         width: 40
         height: 16
       alignment: 0
@@ -184,10 +184,10 @@ TextureImporter:
       name: uitest_4
       rect:
         serializedVersion: 2
-        x: 130
-        y: 13
-        width: 23
-        height: 12
+        x: 112
+        y: 5
+        width: 40
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,12 +205,12 @@ TextureImporter:
       name: uitest_5
       rect:
         serializedVersion: 2
-        x: 132
-        y: 33
+        x: 123
+        y: 53
         width: 15
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,6 +218,69 @@ TextureImporter:
       bones: []
       spriteID: 482e779ba497afe418d39c102e3d3170
       internalID: 212336473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uitest_6
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 25
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef99b22ca389333449190fe57b7cd1eb
+      internalID: -1293152017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uitest_7
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 25
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b822ab200a57496418c98c08f6156b6e
+      internalID: -1679456619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uitest_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 68
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87696441498b0448bdd242ada9bbb78
+      internalID: -1604859369
       vertices: []
       indices: 
       edges: []
@@ -239,6 +302,9 @@ TextureImporter:
       uitest_3: -1568492604
       uitest_4: -1578254664
       uitest_5: 212336473
+      uitest_6: -1293152017
+      uitest_7: -1679456619
+      uitest_8: -1604859369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

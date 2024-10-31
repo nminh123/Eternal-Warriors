@@ -7,12 +7,37 @@ public class Obstacle : MonoBehaviour
     [SerializeField]
     private float moveSpeed;
 
-    // Update is called once per frame
-    void Update()
-    {
-        var direction = Vector3.left;
-        transform.Translate(direction * moveSpeed * Time.deltaTime);
-        //gameObject.SetActive(true);
+    [SerializeField]
+    private float moveSpeedMin;
 
+    private TimeEnd timeEnd;
+
+    private Health healthPlayer;
+    // Update is called once per frame
+    private void Start()
+    {
+        timeEnd = FindAnyObjectByType<TimeEnd>();
+        healthPlayer = FindAnyObjectByType<Health>();
+        gameObject.SetActive(true);
+    }
+    void Update()
+    {   
+        if(timeEnd._time > 0)
+        {
+            var direction = Vector3.left;
+            transform.Translate(direction * moveSpeed * Time.deltaTime);
+        }
+        else
+        {
+            var direction = Vector3.left;
+            transform.Translate(direction * moveSpeedMin * Time.deltaTime);
+            gameObject.SetActive(false);
+        }
+        if(healthPlayer.health == 0)
+        {
+            var direction = Vector3.left;
+            transform.Translate(direction * moveSpeedMin * Time.deltaTime);
+            gameObject.SetActive(false);
+        }
     }
 }
