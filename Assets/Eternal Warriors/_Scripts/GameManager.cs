@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Eternal_Warriors._Scripts
@@ -6,7 +7,25 @@ namespace Eternal_Warriors._Scripts
     {
         public static GameManager instance;
 
-        public int Coin { get; set; }
+        private int _coin;
+        public int Coin
+        {
+            get => _coin;
+            set
+            {
+                _coin = value;
+            }
+        }
+
+        private DateTime dateTime = DateTime.UtcNow;
+        public DateTime DateTime
+        {
+            get => dateTime;
+            set
+            {
+                dateTime = value;
+            }
+        }
 
         private void Awake()
         {
@@ -24,5 +43,5 @@ namespace Eternal_Warriors._Scripts
 
             Coin -= _coin;
         }
-    }   
+    }
 }

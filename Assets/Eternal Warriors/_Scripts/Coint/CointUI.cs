@@ -1,31 +1,22 @@
 ﻿using TMPro;
 using UnityEngine;
-using Eternal_Warriors._Scripts;
 
-public class CointUI : MonoBehaviour
+namespace Eternal_Warriors._Scripts.Coint
 {
-    [SerializeField] private TextMeshProUGUI textCoint;
-    private int displayedCoint = 0;
-    private float increaseSpeed = 20f;
-
-    private void Start()
+    public class CointUI : MonoBehaviour
     {
-        displayedCoint = GameManager.instance.Coin;
-        textCoint.text = displayedCoint.ToString();
-    }
+        [SerializeField] private TextMeshProUGUI textCoint;
+        [SerializeField] private GameManager manager;
+    
 
-    private void Update()
-    {
-        if (displayedCoint < GameManager.instance.Coin)
+        private void Start()
         {
+            textCoint.text = manager.Coin.ToString();
+        }
 
-            displayedCoint += Mathf.CeilToInt(increaseSpeed * Time.deltaTime);
-
-            if (displayedCoint > GameManager.instance.Coin)
-                displayedCoint = GameManager.instance.Coin;
-
-
-            textCoint.text = displayedCoint.ToString();
+        private void Update()
+        {
+            textCoint.text = manager.Coin.ToString();
         }
     }
 }
