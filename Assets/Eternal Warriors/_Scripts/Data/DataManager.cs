@@ -9,6 +9,16 @@ namespace Eternal_Warriors._Scripts.Data
 
         [SerializeField] private GameManager manager;
         private DataJson data;
+
+        private void CreateFile()
+        {
+            if (File.Exists(path))
+                return;
+            using (FileStream fs = File.Create(path))
+            {
+                Debug.Log("FIle created succesfully!!");
+            }
+        }
         
         public void SaveGame()
         {
@@ -52,6 +62,7 @@ namespace Eternal_Warriors._Scripts.Data
 
         private void Start()
         {
+            CreateFile();
             LoadGame();
         }
         
