@@ -29,13 +29,19 @@ public class Ally : Entity
             if (enemy != null)
             {
                 enemy.Damage(damage);
+                SoundEffect();
                 break;
             }
             else if(tower != null)
             {
                 tower.Damage(damage);
+                SoundEffect();
                 break;
             }
         }
+    }
+    public virtual void SoundEffect()
+    {
+        
     }
 }

@@ -55,4 +55,9 @@ public class SworderAlly : Ally
         base.AnimIdleTowerDeah();
         stateMachine.ContinueState(idleState);
     }
+    public override void SoundEffect()
+    {
+        base.SoundEffect();
+        SoundManager.instance.PlaySound("Sword");
+    }
 }

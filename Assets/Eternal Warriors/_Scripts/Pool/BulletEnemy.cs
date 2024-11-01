@@ -19,6 +19,7 @@ public class BulletEnemy : Bullet
             if (ally != null)
             {
                 ally.Damage(damage);
+                SoundManager.instance.PlaySound("Arrow");
                 ReturnToPool();
                 break;
             }

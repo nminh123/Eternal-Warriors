@@ -55,13 +55,19 @@ public class Enemy : Entity
             if (ally != null)
             {
                 ally.Damage(damage);
+                SoundEffect();
                 break;
             }
             else if(tower != null)
             {
                 tower.Damage(damage);
+                SoundManager.instance.PlaySound("Sword");
                 break;
             }
         }
+    }
+    public virtual void SoundEffect()
+    {
+
     }
 }
