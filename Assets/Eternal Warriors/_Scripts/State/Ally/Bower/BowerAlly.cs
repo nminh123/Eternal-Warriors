@@ -46,4 +46,5 @@ public class BowerAlly : Ally
         base.AnimIdleTowerDeah();
         stateMachine.ContinueState(idleState);
     }
+
 }

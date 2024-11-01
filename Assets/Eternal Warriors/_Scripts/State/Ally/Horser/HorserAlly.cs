@@ -28,6 +28,7 @@ public class HorserAlly : Ally
     {
         stateMachine.StartState(moveState);
         base.OnEnable();
+        SoundManager.instance.PlaySound("Elephant");
 
     }
     protected override void Update()
@@ -45,5 +46,9 @@ public class HorserAlly : Ally
         base.AnimIdleTowerDeah();
         stateMachine.ContinueState(idleState);
     }
-
+    public override void SoundEffect()
+    {
+        base.SoundEffect();
+        SoundManager.instance.PlaySound("Sword");
+    }
 }
