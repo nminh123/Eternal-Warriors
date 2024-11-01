@@ -10,7 +10,7 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
 
         private void Start()
         {
-            StartCoroutine(WaitToIncreaseSpeed(3f));
+            StartCoroutine(WaitToIncreaseSpeed(.5f));
         }
 
         private IEnumerator WaitToIncreaseSpeed(float time)
@@ -18,7 +18,7 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
             while (true)
             {
                 yield return new WaitForSecondsRealtime(time);
-                speed += 0.2f;
+                speed += 1f;
             }
         }
         

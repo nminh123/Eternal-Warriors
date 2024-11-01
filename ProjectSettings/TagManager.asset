@@ -11,6 +11,8 @@ TagManager:
   - bonus
   - zone
   - DeadEnd
+  - target
+  - Cloud
   layers:
   - Default
   - TransparentFX
