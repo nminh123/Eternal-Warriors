@@ -16,6 +16,15 @@ namespace Eternal_Warriors._Scripts
                 _coin = value;
             }
         }
+        private int _potinal;
+        public int Potinal
+        {
+            get => _coin;
+            set
+            {
+                _coin = value;
+            }
+        }
 
         private DateTime dateTime = DateTime.UtcNow;
         public DateTime DateTime
@@ -43,5 +52,18 @@ namespace Eternal_Warriors._Scripts
 
             Coin -= _coin;
         }
+        
+        public void AddPotinal(int _potinal)
+        {
+            Potinal += _potinal;
+        }
+        public void RemovePotinal(int _potinal, int _coin)
+        {
+            if(Potinal <= 0) return;
+            if(Potinal < _potinal) return;
+            Coin -= _coin;
+            Potinal -= _potinal;
+        }
+
     }
 }
