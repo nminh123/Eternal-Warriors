@@ -2683,6 +2683,7 @@ GameObject:
   - component: {fileID: 357109122}
   - component: {fileID: 357109121}
   - component: {fileID: 357109120}
+  - component: {fileID: 357109125}
   m_Layer: 0
   m_Name: ' NPC childP'
   m_TagString: Untagged
@@ -2825,7 +2826,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 711593193, guid: 629bdba9a382d7b4abf97d7f52056e6a, type: 3}
+  m_Sprite: {fileID: 404904468, guid: 255ab95e20f44374da15c33f2c72d529, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -2843,7 +2844,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357109118}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b391c592964b6840859580aef47e051, type: 3}
   m_Name: 
@@ -2862,6 +2863,27 @@ MonoBehaviour:
   - ban muon mo no ra khong
   refusalDialogue:
   - Eto
+--- !u!95 &357109125
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357109118}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1b120ba69bf5c89409dec8a6ab722095, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &369106593
 GameObject:
   m_ObjectHideFlags: 0
@@ -9593,7 +9615,7 @@ Transform:
   m_GameObject: {fileID: 1161300447}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7906325, y: -0.2151289, z: -10}
+  m_LocalPosition: {x: -0.7827475, y: -0.2151289, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

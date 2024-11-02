@@ -8,6 +8,8 @@ public class NPCDialogueS : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public string[] dialogues;
 
+    private Animator anim;
+    
     private int currentLine = 0;
     private bool isDialogueActive = false;
     private bool playerIsClose = false;
@@ -17,12 +19,14 @@ public class NPCDialogueS : MonoBehaviour
     [SerializeField] private float rightBound;
     private bool isMovingLeft = true;
     private bool isMoving = true;
+    private bool isAnimRun = true;
 
     void Start()
     {
         // Thiết lập hướng ban đầu cho NPC dựa trên vị trí hiện tại và các giới hạn
         isMovingLeft = (transform.position.x > (leftBound + rightBound) / 2);
         FlipFacingDirection();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -30,6 +34,7 @@ public class NPCDialogueS : MonoBehaviour
         if (isMoving && !isDialogueActive)
         {
             Patrol();
+            isAnimRun = true;
         }
 
         if (playerIsClose && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0)))
@@ -37,12 +42,21 @@ public class NPCDialogueS : MonoBehaviour
             if (isDialogueActive)
             {
                 ShowNextLine();
+                isAnimRun = false;
             }
             else
             {
                 StartDialogue();
+                isAnimRun = false;
             }
         }
+
+        this.Animation();
+    }
+    
+    public void Animation()
+    {
+        anim.SetBool("IsMove", isAnimRun);
     }
 
     private void Patrol()
