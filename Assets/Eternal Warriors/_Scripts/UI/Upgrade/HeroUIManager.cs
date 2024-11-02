@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Eternal_Warriors._Scripts;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,6 +28,7 @@ public class HeroUIManager : MonoBehaviour
     private void Start()
     {
         UpdateHeroUI();
+        GameManager.instance.Potinal = 20;
     }
     public void UpdateHeroUI()
     {
@@ -42,21 +44,24 @@ public class HeroUIManager : MonoBehaviour
     {
         Hero currentHero = heroes[currentHeroIndex];
         if (currentHero.attack >= 100) return;
-        currentHero.attack += 10; 
+        currentHero.attack += 10;
+        GameManager.instance.RemovePotinal(1, 10);
         UpdateHeroUI();
     }
     public void UpgradeDefense()
     {
         Hero currentHero = heroes[currentHeroIndex];
-        if (currentHero.attack >= 100) return;
-        currentHero.defense += 10; 
+        if (currentHero.defense >= 100) return;
+        currentHero.defense += 10;
+        GameManager.instance.RemovePotinal(1, 10);
         UpdateHeroUI();
     }
     public void UpgradeSuperPower()
     {
         Hero currentHero = heroes[currentHeroIndex];
-        if (currentHero.attack >= 100) return;
+        if (currentHero.superPower >= 100) return;
         currentHero.superPower += 10;
+        GameManager.instance.RemovePotinal(1, 10);
         UpdateHeroUI();
     }
     public void NextHero()
