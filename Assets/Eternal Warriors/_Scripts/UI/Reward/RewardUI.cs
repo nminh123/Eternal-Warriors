@@ -15,7 +15,7 @@ public class RewardUI : MonoBehaviour
         rewardPanel.SetActive(false);
     }
     private void Update()
-    {        
+    {
         if (!towerAlly.islife || !towerEnemy.islife)
         {
             setTimeActive -= Time.deltaTime;
@@ -23,7 +23,7 @@ public class RewardUI : MonoBehaviour
             textCoint.text = GameManager.instance.Coin.ToString();
             rewardPanel.SetActive(true);
         }
-        
+
     }
     public void BtnHome(string sceneName)
     {
