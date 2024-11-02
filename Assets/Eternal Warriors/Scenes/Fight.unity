@@ -3413,6 +3413,19 @@ MonoBehaviour:
   manager: {fileID: 87110456}
   data:
     coin: 0
+    swordSoldierDatas: []
+    arrowSoldierDatas: []
+    horseSoldierDatas: []
+    potential: 0
+  sworddata:
+    power: 3
+    hp: 20
+  arrowdata:
+    power: 2
+    hp: 10
+  horsedata:
+    power: 7
+    hp: 40
 --- !u!1 &937568374
 GameObject:
   m_ObjectHideFlags: 0

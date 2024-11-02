@@ -12,11 +12,11 @@ public class Bullet : MonoBehaviour
     protected float lifetime = 4f;
     protected float lifeTimer;
 
-    protected void OnEnable()
+    protected virtual void OnEnable()
     {
         lifeTimer = 0f;
     }
-    private void Start()
+    protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }

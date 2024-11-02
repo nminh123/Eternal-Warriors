@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Eternal_Warriors._Scripts;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -22,12 +23,14 @@ public class HorserAlly : Ally
     protected override void Start()
     {
         base.Start();
+        damage = GameManager.instance.HorsePower;
         stateMachine.StartState(moveState);
     }
     protected override void OnEnable()
     {
         stateMachine.StartState(moveState);
         base.OnEnable();
+        damage = GameManager.instance.HorsePower;
         SoundManager.instance.PlaySound("Elephant");
 
     }
