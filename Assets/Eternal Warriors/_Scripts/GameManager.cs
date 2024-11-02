@@ -19,10 +19,10 @@ namespace Eternal_Warriors._Scripts
         private int _potinal;
         public int Potinal
         {
-            get => _coin;
+            get => _potinal;
             set
             {
-                _coin = value;
+                _potinal = value;
             }
         }
 
@@ -61,6 +61,7 @@ namespace Eternal_Warriors._Scripts
         {
             if(Potinal <= 0) return;
             if(Potinal < _potinal) return;
+            if (Coin < _coin) return;
             Coin -= _coin;
             Potinal -= _potinal;
         }
