@@ -17,10 +17,10 @@ public class Entity : MonoBehaviour
     [Header("Stat")]
     [SerializeField] protected int maxHealth;
     public float speed;
-    public int damage;
+    public int damage;//Todo: Game Manager
     public float attackCoolDown;
     public int facing;
-    [SerializeField]protected int currentHealth;
+    [SerializeField] protected int currentHealth;
     protected bool islife = true;
     protected TowerAlly towerAlly { get; set; }
     protected TowerEnemy towerEnemy { get; set; }

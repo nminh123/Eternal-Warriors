@@ -28,7 +28,7 @@ public class HeroUIManager : MonoBehaviour
     private void Start()
     {
         UpdateHeroUI();
-        GameManager.instance.Potinal = 20;
+        GameManager.instance.Potential = 20;
     }
     public void UpdateHeroUI()
     {

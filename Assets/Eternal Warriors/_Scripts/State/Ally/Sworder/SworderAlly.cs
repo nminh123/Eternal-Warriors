@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using Eternal_Warriors._Scripts;
 using UnityEngine;
 
 public class SworderAlly : Ally
@@ -30,12 +31,13 @@ public class SworderAlly : Ally
     {
         stateMachine.StartState(moveState);
         base.OnEnable();
-
+        damage = GameManager.instance.SwordPower;
     }
     protected override void Start()
     {
         base.Start();
 
+        damage = GameManager.instance.SwordPower;
         stateMachine.StartState(moveState);
     }
 
