@@ -22,14 +22,14 @@ public class Character : MonoBehaviour
     {
         this.CheckInput();
         this.SetAnimation();
-        JoyStickk();
+        //JoyStickk();
     }
     protected void CheckInput()
     {
         xInput = Input.GetAxisRaw("Horizontal");
         yInput = Input.GetAxisRaw("Vertical");
         SetVelocity(xInput, yInput);
-        JoyStickk();
+        //JoyStickk();
        
     }
     protected void SetVelocity(float x,float y)
