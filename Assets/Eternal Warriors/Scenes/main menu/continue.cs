@@ -29,7 +29,7 @@ public class BlinkingText : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) 
         {
             isBlinking = false;
-            
+            SoundManager.instance.PlaySound("Select");
             ChangeScene();
         }
     }

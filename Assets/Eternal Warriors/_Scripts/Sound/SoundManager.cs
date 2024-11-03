@@ -37,6 +37,10 @@ public class SoundManager : MonoBehaviour
         soundClips.Add("Elephant", Resources.Load<AudioClip>("Sound/Elephant"));
         soundClips.Add("Hourse", Resources.Load<AudioClip>("Sound/Hourse"));
         soundClips.Add("Arrow", Resources.Load<AudioClip>("Sound/Arrow"));
+
+        //am thanh music
+        soundClips.Add("Select", Resources.Load<AudioClip>("Sound/Battle/Select"));
+        soundClips.Add("Die", Resources.Load<AudioClip>("Sound/Battle/Die"));
     }
 
     public void PlaySound(string soundName)
