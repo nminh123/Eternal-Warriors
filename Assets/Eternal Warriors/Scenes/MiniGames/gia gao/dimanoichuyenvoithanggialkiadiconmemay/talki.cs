@@ -118,7 +118,7 @@ public class NPCDialogueS : MonoBehaviour
         dialoguePanel.SetActive(true);
         currentLine = 0;
         ShowNextLine();
-        isMoving = false;  // Dừng di chuyển khi bắt đầu hội thoại
+        isMoving = false;  
     }
 
     private void EndDialogue()
@@ -126,7 +126,7 @@ public class NPCDialogueS : MonoBehaviour
         isDialogueActive = false;
         dialoguePanel.SetActive(false);
         currentLine = 0;
-        isMoving = true;  // Tiếp tục di chuyển sau khi kết thúc hội thoại
+        isMoving = true; 
     }
 
     private void ShowNextLine()

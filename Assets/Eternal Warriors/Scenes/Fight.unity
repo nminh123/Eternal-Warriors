@@ -308,7 +308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   power: 0
   powerDu: 0
-  PowerTimer: 0.5
+  PowerTimer: 1.75
 --- !u!4 &87110454
 Transform:
   m_ObjectHideFlags: 0
@@ -553,7 +553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d52a66d610709b3498941258244085da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 50
   healthImage: {fileID: 252512443}
   coint: {fileID: 339822048847080627, guid: 3dde16d8968a63940b6a2b2bff85a3e9, type: 3}
   islife: 1
@@ -1980,7 +1980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751c535cc9bb1c84e8fe897a2b180432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 50
   healthImage: {fileID: 579166190}
   islife: 1
 --- !u!61 &599480379
@@ -4876,10 +4876,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c0c536106148864c93f98215cfc2931, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
-  speed: 0
-  damage: 1
-  attackCoolDown: 1
+  maxHealth: 50
+  speed: 1
+  damage: 10
+  attackCoolDown: 1.5
   facing: -1
   currentHealth: 0
   checkAttack: {fileID: 802514520}
@@ -5205,10 +5205,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb5cb070523d1c4b87e8491349a2089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
-  speed: 1
+  maxHealth: 15
+  speed: 2
   damage: 0
-  attackCoolDown: 1
+  attackCoolDown: 0.75
   facing: -1
   currentHealth: 0
   checkAttack: {fileID: 311050646}
@@ -7080,7 +7080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 1
+  damage: 10
 --- !u!1 &1695184572
 GameObject:
   m_ObjectHideFlags: 0
@@ -7434,10 +7434,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a187a2c1f59698b40bea72323324370c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 2
-  speed: 1
-  damage: 1
-  attackCoolDown: 1
+  maxHealth: 40
+  speed: 0.5
+  damage: 7
+  attackCoolDown: 1.5
   facing: 1
   currentHealth: 0
   checkAttack: {fileID: 1809687039}
@@ -8302,10 +8302,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a1f79ee1b62f942b1293aaaed0cafc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
+  maxHealth: 25
   speed: 1
-  damage: 1
-  attackCoolDown: 0
+  damage: 5
+  attackCoolDown: 0.5
   facing: -1
   currentHealth: 0
   checkAttack: {fileID: 2135521549}
@@ -13463,10 +13463,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7ae131f1d769794086a3f7742d9dce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
-  speed: 1
+  maxHealth: 10
+  speed: 1.5
   damage: 10
-  attackCoolDown: 1
+  attackCoolDown: 0.75
   facing: 1
   currentHealth: 0
   checkAttack: {fileID: 1332881579}
@@ -13629,7 +13629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  damage: 1
+  damage: 3
 --- !u!61 &2079747643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14547,10 +14547,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e7701d2fa230442bfc454b30255b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 20
   speed: 1
-  damage: 1
-  attackCoolDown: 1
+  damage: 3
+  attackCoolDown: 0.5
   facing: 1
   currentHealth: 0
   checkAttack: {fileID: 4958697968402585147}
