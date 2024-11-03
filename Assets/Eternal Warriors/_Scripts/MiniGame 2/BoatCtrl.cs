@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Eternal_Warriors._Scripts.MiniGame_2
@@ -6,7 +7,7 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
     [RequireComponent(typeof(PolygonCollider2D))]
     public class BoatCtrl : MonoBehaviour
     {
-        [SerializeField] private float speed;
+        public float speed;
         [SerializeField] private MiniGame2Manager manager;
         [SerializeField] private int bonusVal;
 
@@ -42,6 +43,15 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
             {
                 this.gameObject.SetActive(false);
                 Debug.Log("Thua roi!!");
+            }
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.gameObject.CompareTag("reward"))
+            {
+                manager.IncreaseScore(1);
+                Debug.Log("Passed!!");
             }
         }
     }

@@ -6,18 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="d7baac73-4b12-47ec-b826-b80f5458a25b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/Fight.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/Fight.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/gia gao/minigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/gia gao/minigame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/Data/DataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/Data/DataManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/Data/SerializationData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/Data/SerializationData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/Pool/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/Pool/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/Pool/BulletAlly.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/Pool/BulletAlly.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/State/Ally/Horser/HorserAlly.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/State/Ally/Horser/HorserAlly.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/State/Ally/Sworder/SworderAlly.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/State/Ally/Sworder/SworderAlly.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/State/Machine/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/State/Machine/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/UI/Upgrade/HeroUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/UI/Upgrade/HeroUIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/savedata.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/savedata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/Quizz Game.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/Quizz Game.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Prefabs/MiniGame2/Target.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Prefabs/MiniGame2/Target.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/BoatCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/BoatCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/FollowedCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/FollowedCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MiniGame2Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MiniGame2Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/RivalSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/RivalSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

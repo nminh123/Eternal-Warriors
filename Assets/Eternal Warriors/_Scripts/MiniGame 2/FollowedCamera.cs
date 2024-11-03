@@ -5,12 +5,12 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
 {
     public class FollowedCamera : MonoBehaviour
     {
-        public float speed;
+        public static float speed;
         [SerializeField] private GameObject pBoat;
 
         private void Start()
         {
-            StartCoroutine(WaitToIncreaseSpeed(.5f));
+            StartCoroutine(WaitToIncreaseSpeed(.3f));
         }
 
         private IEnumerator WaitToIncreaseSpeed(float time)
@@ -18,7 +18,7 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
             while (true)
             {
                 yield return new WaitForSecondsRealtime(time);
-                speed += 1f;
+                speed += .2f;
             }
         }
         
