@@ -156,6 +156,7 @@ public class NPCShop : MonoBehaviour
         openOtherPanelButton.gameObject.SetActive(true);
         refusalButton.gameObject.SetActive(true);
         buttonsVisible = true;
+
     }
 
     protected void HideButtons()
@@ -163,6 +164,7 @@ public class NPCShop : MonoBehaviour
         openOtherPanelButton.gameObject.SetActive(false);
         refusalButton.gameObject.SetActive(false);
         buttonsVisible = false;
+        SoundManager.instance.PlaySound("Select");
     }
 
     protected void OnTriggerEnter2D(Collider2D other)

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0a3b5cd9354603e48a7431162e77e118
+guid: 13718b8153ca72e4fad155883ff6dd68
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPUM_20241004212426300_IDLE0_0_idle_0_0
+      name: SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_0
       rect:
         serializedVersion: 2
         x: 0
@@ -105,41 +105,41 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d667f8dd1e7a14b448615d83d3a4bdd0
-      internalID: -1168377631
+      spriteID: 9d95e8368960c2f478c975e94a04d2fb
+      internalID: -1549338942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241004212426300_IDLE0_0_idle_0_1
+      name: SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 512
-        height: 512
+        x: 669
+        y: 1743
+        width: 151
+        height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb236724c237cc54d84a0854ee081e8d
-      internalID: -488506648
+      spriteID: 281eeff3d659bf2459d8c7a1ba1d3c6a
+      internalID: 1989121453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241004212426300_IDLE0_0_idle_0_2
+      name: SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -147,20 +147,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 629bc00335c834844b79a59614335fbf
-      internalID: 1504094216
+      spriteID: cb04a636a567fe0429e9965c956523de
+      internalID: 604739973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241004212426300_IDLE0_0_idle_0_3
+      name: SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -168,20 +168,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caaa5b2032c60d846b866a60d4f0d31d
-      internalID: 1314943020
+      spriteID: cee159a5933723e4caab52b2fa0b921b
+      internalID: 857531494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241004212426300_IDLE0_0_idle_0_4
+      name: SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_4
       rect:
         serializedVersion: 2
         x: 0
@@ -189,20 +189,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d519fce1ca6420b48a2ff770d93b4d76
-      internalID: 1342603640
+      spriteID: b3664aa687e023545869aecba21d16fb
+      internalID: -1269188116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241004212426300_IDLE0_0_idle_0_5
+      name: SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_5
       rect:
         serializedVersion: 2
         x: 512
@@ -210,20 +210,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f5bdc4e715dc3a4186183f0638b2561
-      internalID: 1463523692
+      spriteID: 0d6e061200a657545a161d7cef770973
+      internalID: 350911503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241004212426300_IDLE0_0_idle_0_6
+      name: SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_6
       rect:
         serializedVersion: 2
         x: 1024
@@ -231,20 +231,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48876af72e2108b44b080f2a2e7f43ca
-      internalID: -1736546816
+      spriteID: 3f533ad0c034b344c9674ea3fa4750e1
+      internalID: -666525944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241004212426300_IDLE0_0_idle_0_7
+      name: SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_7
       rect:
         serializedVersion: 2
         x: 1536
@@ -252,14 +252,14 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b2e6f4ee14b7d043b303d5ac3f96aac
-      internalID: 1139858758
+      spriteID: 3d11d9b7d881f2f44b7aa4192454de68
+      internalID: -1391851700
       vertices: []
       indices: 
       edges: []
@@ -275,14 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPUM_20241004212426300_IDLE0_0_idle_0_0: -1168377631
-      SPUM_20241004212426300_IDLE0_0_idle_0_1: -488506648
-      SPUM_20241004212426300_IDLE0_0_idle_0_2: 1504094216
-      SPUM_20241004212426300_IDLE0_0_idle_0_3: 1314943020
-      SPUM_20241004212426300_IDLE0_0_idle_0_4: 1342603640
-      SPUM_20241004212426300_IDLE0_0_idle_0_5: 1463523692
-      SPUM_20241004212426300_IDLE0_0_idle_0_6: -1736546816
-      SPUM_20241004212426300_IDLE0_0_idle_0_7: 1139858758
+      SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_0: -1549338942
+      SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_1: 1989121453
+      SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_2: 604739973
+      SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_3: 857531494
+      SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_4: -1269188116
+      SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_5: 350911503
+      SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_6: -666525944
+      SPUM_20241030214957664_DAMAGED0_LongSpearAttack_1_0_7: -1391851700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

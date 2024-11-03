@@ -17,6 +17,7 @@ public class TimelineController : MonoBehaviour
         playableDirector = GetComponent<PlayableDirector>();
         playableDirector.stopped += OnTimelineStopped; // them su kien khi timeline dung
         skipButton.onClick.AddListener(SkipCutscene);
+        
     }
     private void SkipCutscene()
     {

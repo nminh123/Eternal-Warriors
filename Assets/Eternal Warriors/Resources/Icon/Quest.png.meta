@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: abba61f175c3e0d449df10414b0cb8ed
+guid: e8ff1fc78c2a09b4ebb1b616de5d70f7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 70
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPUM_20241005091046147_OTHER2_0_move_0_0
+      name: Quest_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1536
-        width: 512
-        height: 512
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c5c26597bfd7b54ab35746da00ae32d
-      internalID: -211082966
+      spriteID: 24dfbb74e5ce8f649b794914b1002185
+      internalID: 175045810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241005091046147_OTHER2_0_move_0_1
+      name: Quest_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 512
-        height: 512
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd34165ea51c1fe4e83da92498758c02
-      internalID: 991498492
+      spriteID: 95d3f96c5cf40bc4294373deb5d938af
+      internalID: 932299121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPUM_20241005091046147_OTHER2_0_move_0_2
+      name: Quest_2
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1536
-        width: 512
-        height: 512
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,50 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b6d1ebc0f071a240b2f50c9e67ef954
-      internalID: -1197698146
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241005091046147_OTHER2_0_move_0_3
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a19329fb0f229254789d337e79e68ee7
-      internalID: 910618254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPUM_20241005091046147_OTHER2_0_move_0_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d3d59a0cde746847bdbdb50cad68a52
-      internalID: 272321903
+      spriteID: 43ef703ebe7fb344d9d03194f6acc573
+      internalID: 888126185
       vertices: []
       indices: 
       edges: []
@@ -212,11 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPUM_20241005091046147_OTHER2_0_move_0_0: -211082966
-      SPUM_20241005091046147_OTHER2_0_move_0_1: 991498492
-      SPUM_20241005091046147_OTHER2_0_move_0_2: -1197698146
-      SPUM_20241005091046147_OTHER2_0_move_0_3: 910618254
-      SPUM_20241005091046147_OTHER2_0_move_0_4: 272321903
+      Quest_0: 175045810
+      Quest_1: 932299121
+      Quest_2: 888126185
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
