@@ -668,7 +668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1433,7 +1433,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!224 &679984233
 RectTransform:
@@ -1522,8 +1522,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "N\xFAi Ngh\u0129a L\u0129nh - Ph\xFA Th\u1ECD"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2114,7 +2114,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079747079}
   m_BodyType: 2
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -3828,8 +3828,8 @@ MonoBehaviour:
   openOtherPanelButton: {fileID: 132813199}
   refusalButton: {fileID: 543644658}
   firstMeetingDialogue:
-  - "Ch\u1EC9 c\xF2n 1 s\u1EF1 ki\u1EC7n th\xF4i!"
-  - "\u0110\xF3 l\xE0 gi\u1EA3 b\xE1nh g\xE0y"
+  - "Ch\u1EC9 c\xF2n 1 s\u1EF1 ki\u1EC7n th\xF4i! \u0110\xF3 l\xE0 gi\u1EA3 b\xE1nh
+    d\xE0y"
   - "C\u1EADu mu\u1ED1n tham gia kh\xF4ng?"
   dialogues:
   - "Ch\u1EC9 c\xF2n 1 s\u1EF1 ki\u1EC7n th\xF4i!"
@@ -8354,7 +8354,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!224 &1807694503
 RectTransform:
@@ -8958,15 +8958,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1362778544100896040, guid: f02a2d412398e764fa3f7927a688d385, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.44
+      value: -1.41
       objectReference: {fileID: 0}
     - target: {fileID: 1362778544100896040, guid: f02a2d412398e764fa3f7927a688d385, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.17
+      value: -2.26
       objectReference: {fileID: 0}
     - target: {fileID: 1362778544100896040, guid: f02a2d412398e764fa3f7927a688d385, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1362778544100896040, guid: f02a2d412398e764fa3f7927a688d385, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8998,7 +8998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6351869698104718734, guid: f02a2d412398e764fa3f7927a688d385, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6351869698104718734, guid: f02a2d412398e764fa3f7927a688d385, type: 3}
       propertyPath: dialogueText
@@ -9015,7 +9015,7 @@ PrefabInstance:
     - target: {fileID: 6351869698104718734, guid: f02a2d412398e764fa3f7927a688d385, type: 3}
       propertyPath: dialogues.Array.data[1]
       value: "c\xF3 r\u1EA5t nhi\u1EC1u s\u1EF1 ki\u1EC7n th\xFA v\u1ECB b\u1EA1n
-        c\xF3 th\u1EC3 tham gi\xE1 \u0111\xF3"
+        c\xF3 th\u1EC3 tham gia \u0111\xF3"
       objectReference: {fileID: 0}
     - target: {fileID: 7359957697932756937, guid: f02a2d412398e764fa3f7927a688d385, type: 3}
       propertyPath: m_Name
