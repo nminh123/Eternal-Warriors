@@ -34,7 +34,7 @@ public class Enemy : Entity
     protected override void AnimDeah()
     {
         base.AnimDeah();
-        QuestManager.instance.UpdateQuest(enemyType, 1);
+        //QuestManager.instance.UpdateQuest(enemyType, 1);
     }
     public virtual void FallCoint()
     {

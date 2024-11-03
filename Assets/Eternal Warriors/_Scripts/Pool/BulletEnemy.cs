@@ -16,10 +16,17 @@ public class BulletEnemy : Bullet
         foreach (Collider2D hit in colliders)
         {
             Ally ally = hit.GetComponent<Ally>();
+            TowerAlly tower = hit.GetComponent<TowerAlly>();
             if (ally != null)
             {
                 ally.Damage(damage);
                 SoundManager.instance.PlaySound("Arrow");
+                ReturnToPool();
+                break;
+            }
+            if (tower != null)
+            {
+                tower.Damage(damage);
                 ReturnToPool();
                 break;
             }
