@@ -24,7 +24,7 @@ public class TestKite : MonoBehaviour
     }
     public void CheckInput()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             rb.AddForce(new Vector2(rb.velocity.x,50));
         }
