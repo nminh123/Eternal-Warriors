@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -315, y: 330.99997}
+  m_AnchoredPosition: {x: -315, y: 330.99994}
   m_SizeDelta: {x: 1105.8398, y: 973.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8821689
@@ -234,7 +234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 210, y: 241}
+  m_AnchoredPosition: {x: 210, y: 241.00002}
   m_SizeDelta: {x: 251.85999, y: 45.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &14666818
@@ -1259,7 +1259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.0015415, y: 117.900024}
+  m_AnchoredPosition: {x: -0.0015415, y: 117.90004}
   m_SizeDelta: {x: 1919.8, y: 235.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &139624836
@@ -2323,7 +2323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1027150064}
-  otherPanel: {fileID: 119331485}
+  otherPanel: {fileID: 284853289}
   dialogueText: {fileID: 1590458848}
   openOtherPanelButton: {fileID: 421270701}
   refusalButton: {fileID: 760301055}
@@ -10506,7 +10506,7 @@ Transform:
   m_GameObject: {fileID: 1161300447}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7944672, y: -0.2151289, z: -10}
+  m_LocalPosition: {x: -0.7879269, y: -0.2151289, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
