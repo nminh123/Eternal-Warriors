@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tank_0
+      name: Tank 2_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 12
-        width: 77
-        height: 46
+        x: 0
+        y: 0
+        width: 86.5
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d91a0072caa6aba4db27181bf7f08e72
-      internalID: 824335491
+      spriteID: 79454224a0e669449b22bbf226037530
+      internalID: -52776218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tank_1
+      name: Tank 2_1
       rect:
         serializedVersion: 2
-        x: 91
-        y: 12
-        width: 77
-        height: 46
+        x: 86
+        y: 0
+        width: 86.5
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4987700d940325d4d93bf851e6e29759
-      internalID: 1203890826
+      spriteID: 9797a23c4f7deb146bc54339c0962f0d
+      internalID: 196423587
       vertices: []
       indices: 
       edges: []
@@ -162,8 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tank_0: 824335491
-      Tank_1: 1203890826
+      Tank 2_0: -52776218
+      Tank 2_1: 196423587
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
