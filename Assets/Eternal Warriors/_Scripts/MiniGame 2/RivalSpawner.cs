@@ -1,12 +1,11 @@
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Eternal_Warriors._Scripts.MiniGame_2
 {
     public class RivalSpawner : MonoBehaviour
     {
         [SerializeField] private GameObject prefab;
-        [SerializeField] private float maxX, minX, maxY, minY, timeBetweenSpawn;
+        [SerializeField] private float timeBetweenSpawn;
         private float spawnTime;
 
         private void Update()
@@ -20,10 +19,7 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
 
         void Spawn()
         {
-            float x = Random.Range(minX, maxX);
-            float y = Random.Range(minY, maxY);
-
-            Instantiate(prefab, transform.position + new Vector3(x, y, 0), transform.rotation);
+            Instantiate(prefab, transform.position + new Vector3(Random.Range(3.64f, 8.5f), Random.Range(-22.5f,135f), 0), transform.rotation);
         }
     }
 }
