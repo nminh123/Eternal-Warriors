@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Eternal_Warriors._Scripts;
 using UnityEngine;
 
 public class BowerAlly : Ally
@@ -23,11 +24,13 @@ public class BowerAlly : Ally
     protected override void Start()
     {
         base.Start();
+        maxHealth = GameManager.instance.ArrowHp;
         stateMachine.StartState(moveState);
     }
     protected override void OnEnable()
     {
         base.OnEnable();
+        maxHealth = GameManager.instance.ArrowHp;
         stateMachine.StartState(moveState);
 
     }
