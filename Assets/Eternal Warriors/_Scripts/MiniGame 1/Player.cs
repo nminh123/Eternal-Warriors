@@ -25,6 +25,8 @@ public class Player : MonoBehaviour
     private bool gameStarted = false; //ktra co an nut space hay chua
 
     private bool controlsEnabled = false; //co duoc phep dieu khien hay ko
+
+    public Joystick joystick;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,11 +62,15 @@ public class Player : MonoBehaviour
         //di chuyen qua phai 
         var direction = Vector3.right;
         transform.Translate(direction * moveSpeed * Time.deltaTime);
+
+        float verticalInput = joystick.Vertical;
+        Vector3 movement = new Vector3(0, verticalInput, 0) * moveSpeed * Time.deltaTime;
+        transform.localPosition += movement;
     }
 
     private void StartGame()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             myAnimator.SetBool("is_Run", true);
             manager.GetComponent<SpawnObject>().creatObject = true;
@@ -76,5 +82,4 @@ public class Player : MonoBehaviour
     {
         controlsEnabled = enabled;
     }
-    
 }

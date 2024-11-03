@@ -11,6 +11,8 @@ public class Character : MonoBehaviour
     protected float yInput;
     [SerializeField]protected float speed;
 
+    public Joystick joystick;
+
     protected void Start()
     {
         anim = GetComponent<Animator>();
@@ -20,15 +22,18 @@ public class Character : MonoBehaviour
     {
         this.CheckInput();
         this.SetAnimation();
+        JoyStickk();
     }
     protected void CheckInput()
     {
         xInput = Input.GetAxisRaw("Horizontal");
         yInput = Input.GetAxisRaw("Vertical");
         SetVelocity(xInput, yInput);
+        JoyStickk();
+       
     }
     protected void SetVelocity(float x,float y)
-    {
+    {   
         rb.velocity = new Vector3(x,y).normalized * speed;
         Flip(x);
     }
@@ -46,5 +51,13 @@ public class Character : MonoBehaviour
             anim.SetBool("move", true);
         else if(xInput == 0 || yInput == 0)
             anim.SetBool("move",false);
+    }
+    public void JoyStickk()
+    {
+        xInput = joystick.Horizontal;
+        yInput = joystick.Vertical;
+        Vector2 movement = new Vector2 (xInput, yInput)* speed *2 * Time.deltaTime;
+        rb.MovePosition(rb.position + movement);
+        Flip(movement.x);
     }
 }
