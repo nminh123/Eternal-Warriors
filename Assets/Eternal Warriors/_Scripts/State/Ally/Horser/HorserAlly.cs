@@ -24,6 +24,7 @@ public class HorserAlly : Ally
     {
         base.Start();
         damage = GameManager.instance.HorsePower;
+        maxHealth = GameManager.instance.HorseHp;
         stateMachine.StartState(moveState);
     }
     protected override void OnEnable()
@@ -31,6 +32,7 @@ public class HorserAlly : Ally
         stateMachine.StartState(moveState);
         base.OnEnable();
         damage = GameManager.instance.HorsePower;
+        maxHealth = GameManager.instance.HorseHp;
         SoundManager.instance.PlaySound("Elephant");
 
     }
