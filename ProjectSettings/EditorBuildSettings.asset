@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Eternal Warriors/Scenes/MiniGames/gia gao/minigame.unity
     guid: d77dcf55618651b429b3d3b550ec938e
+  - enabled: 1
+    path: Assets/Eternal Warriors/Scenes/ManChoi/MapKhoiDau 2 1.unity
+    guid: ddce10848c4f33348a410d6bed8f71ff
+  - enabled: 1
+    path: Assets/Eternal Warriors/Scenes/ManChoi/MapKhoiDau 3.unity
+    guid: 65456cfdbc889804e90cd98c7012062b
   m_configObjects: {}

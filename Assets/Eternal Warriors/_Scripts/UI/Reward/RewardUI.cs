@@ -7,21 +7,30 @@ public class RewardUI : MonoBehaviour
 {
     public TowerAlly towerAlly;
     public TowerEnemy towerEnemy;
-    public GameObject rewardPanel;
+    public GameObject PanelHome;
+    public GameObject PanelNext;
     public TextMeshProUGUI textCoint;
     public float setTimeActive;
     private void Start()
     {
-        rewardPanel.SetActive(false);
+        PanelHome.SetActive(false);
+        PanelNext.SetActive(false);
     }
     private void Update()
     {
-        if (!towerAlly.islife || !towerEnemy.islife)
+        if (!towerAlly.islife)
         {
             setTimeActive -= Time.deltaTime;
             if (setTimeActive > 0) return;
             textCoint.text = GameManager.instance.Coin.ToString();
-            rewardPanel.SetActive(true);
+            PanelHome.SetActive(true);
+        }
+        else if (!towerEnemy.islife)
+        {
+            setTimeActive -= Time.deltaTime;
+            if (setTimeActive > 0) return;
+            textCoint.text = GameManager.instance.Coin.ToString();
+            PanelNext.SetActive(true);
         }
 
     }
