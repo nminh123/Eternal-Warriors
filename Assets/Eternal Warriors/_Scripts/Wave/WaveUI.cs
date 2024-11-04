@@ -20,7 +20,7 @@ public class WaveUI : MonoBehaviour
         if (waveSpawner.waveNumber != currentWave)
         {
             currentWave = waveSpawner.waveNumber;
-            waveText.text = "Wave " + currentWave.ToString();
+            waveText.text = "Đợt " + currentWave.ToString();
             StartCoroutine(TimerWave());
         }
     }
