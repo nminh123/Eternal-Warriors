@@ -719,7 +719,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 1123900690, guid: afacb4c7cfb61d742b1ad43bf1ed8358, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2989,7 +2989,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: -1415181635, guid: afacb4c7cfb61d742b1ad43bf1ed8358, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6114,13 +6114,6 @@ MonoBehaviour:
   manager: {fileID: 87110456}
   data:
     coin: 0
-    sp: 0
-    sh: 0
-    ap: 0
-    ah: 0
-    hop: 0
-    hoh: 0
-    potential: 0
 --- !u!1 &937568374
 GameObject:
   m_ObjectHideFlags: 0
@@ -15639,7 +15632,7 @@ MonoBehaviour:
   towerEnemy: {fileID: 195602205}
   PanelHome: {fileID: 2116744796}
   PanelNext: {fileID: 1093286793}
-  textCoint: {fileID: 0}
+  textCoint: {fileID: 1335827204}
   setTimeActive: 3.2
 --- !u!114 &1994031016
 MonoBehaviour:

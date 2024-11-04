@@ -33,7 +33,7 @@ public class HorserAlly : Ally
         base.OnEnable();
         // damage = GameManager.instance.HorsePower;
         // maxHealth = GameManager.instance.HorseHp;
-        SoundManager.instance.PlaySound("Elephant");
+        //SoundManager.instance.PlaySound("Elephant");
 
     }
     protected override void Update()
@@ -51,9 +51,9 @@ public class HorserAlly : Ally
         base.AnimIdleTowerDeah();
         stateMachine.ContinueState(idleState);
     }
-    public override void SoundEffect()
-    {
-        base.SoundEffect();
-        SoundManager.instance.PlaySound("Sword");
-    }
+    //public override void SoundEffect()
+    //{
+    //    base.SoundEffect();
+    //    SoundManager.instance.PlaySound("Sword");
+    //}
 }

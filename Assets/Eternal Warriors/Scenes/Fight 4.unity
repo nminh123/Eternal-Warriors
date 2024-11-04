@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 19942910}
   - component: {fileID: 19942909}
   m_Layer: 6
-  m_Name: HaiBaChung
+  m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5459,7 +5459,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MapKhoiDau 3
+          m_StringArgument: Fight 5
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
@@ -6463,13 +6463,6 @@ MonoBehaviour:
   manager: {fileID: 87110456}
   data:
     coin: 0
-    sp: 0
-    sh: 0
-    ap: 0
-    ah: 0
-    hop: 0
-    hoh: 0
-    potential: 0
 --- !u!1 &937568374
 GameObject:
   m_ObjectHideFlags: 0
@@ -6737,7 +6730,7 @@ GameObject:
   - component: {fileID: 1052205433}
   - component: {fileID: 1052205432}
   m_Layer: 7
-  m_Name: LinhNgua(Dich)
+  m_Name: Satthuu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8037,7 +8030,7 @@ GameObject:
   - component: {fileID: 1179722457}
   - component: {fileID: 1179722456}
   m_Layer: 7
-  m_Name: LinhCung(Dich)
+  m_Name: Akk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11044,7 +11037,7 @@ GameObject:
   - component: {fileID: 1910373692}
   - component: {fileID: 1910373694}
   m_Layer: 7
-  m_Name: LinhKiem(Dich)
+  m_Name: Tankk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16203,7 +16196,7 @@ GameObject:
   - component: {fileID: 1956006480}
   - component: {fileID: 1956006479}
   m_Layer: 6
-  m_Name: LinhCung
+  m_Name: Ak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17601,7 +17594,7 @@ GameObject:
   - component: {fileID: 3665168733123848828}
   - component: {fileID: 7730759682427504896}
   m_Layer: 6
-  m_Name: LinhKiem
+  m_Name: SatThu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
