@@ -12,17 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: ImportantQuestion
   m_EditorClassIdentifier: 
-  _info: The earth is..?
+  _info: "Ng\u01B0\u1EDDi \u0111\xE3 l\u1EADp n\xEAn tri\u1EC1u \u0111\u1EA1i nh\xE0
+    L\xFD l\xE0 ai?"
   _answers:
-  - _info: Flat
-    _isCorrect: 0
-  - _info: Sphere
+  - _info: "L\xFD Th\xE1i T\u1ED5"
     _isCorrect: 1
-  - _info: Box
+  - _info: "L\xEA Th\xE1i T\u1ED5"
     _isCorrect: 0
-  - _info: Donut
+  - _info: "Tr\u1EA7n Th\xE1i T\xF4ng"
+    _isCorrect: 0
+  - _info: "\u0110inh Ti\xEAn Ho\xE0ng"
     _isCorrect: 0
   _useTimer: 1
-  _timer: 30
+  _timer: 10
   _answerType: 1
-  _addScore: 50
+  _addScore: 20

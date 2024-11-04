@@ -12,15 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: MoonRadius
   m_EditorClassIdentifier: 
-  _info: The radius of the moon is ..
+  _info: "Ai l\xE0 ng\u01B0\u1EDDi \u0111\xE3 l\xE3nh \u0111\u1EA1o cu\u1ED9c kh\u1EDFi
+    ngh\u0129a ch\u1ED1ng qu\xE2n Nguy\xEAn v\xE0o th\u1EBF k\u1EF7 XIII?"
   _answers:
-  - _info: 10,737 km
+  - _info: "Tr\u1EA7n Th\u1EE7 \u0110\u1ED9"
     _isCorrect: 0
-  - _info: 2,546 km
-    _isCorrect: 0
-  - _info: 1,737 km
+  - _info: "Tr\u1EA7n H\u01B0ng \u0110\u1EA1o"
     _isCorrect: 1
+  - _info: "L\xFD C\xF4ng U\u1EA9n"
+    _isCorrect: 0
+  - _info: "Ng\xF4 Quy\u1EC1n"
+    _isCorrect: 0
   _useTimer: 1
-  _timer: 10
+  _timer: 20
   _answerType: 1
-  _addScore: 25
+  _addScore: 50

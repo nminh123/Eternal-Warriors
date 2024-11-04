@@ -4,24 +4,26 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: ChooseFood
   m_EditorClassIdentifier: 
-  _info: Choose Food?
+  _info: "Chi\u1EBFn th\u1EAFng B\u1EA1ch \u0110\u1EB1ng n\u0103m 938 do ai ch\u1EC9
+    huy?"
   _answers:
-  - _info: Rice
+  - _info: "Tr\u1EA7n H\u01B0ng \u0110\u1EA1o"
+    _isCorrect: 0
+  - _info: "L\xFD Th\u01B0\u1EDDng Ki\u1EC7t"
+    _isCorrect: 0
+  - _info: "Ng\xF4 Quy\u1EC1n"
     _isCorrect: 1
-  - _info: Ice
+  - _info: "L\xEA L\u1EE3i"
     _isCorrect: 0
-  - _info: Dice
-    _isCorrect: 0
-  - _info: Mice?
-    _isCorrect: 0
-  _useTimer: 0
-  _timer: 0
+  _useTimer: 1
+  _timer: 15
   _answerType: 1
-  _addScore: 10
+  _addScore: 20

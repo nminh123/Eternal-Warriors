@@ -2631,6 +2631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quest
       objectReference: {fileID: 0}
+    - target: {fileID: 2737160401742953263, guid: 7ee35e65f06a8ff4f838e339af6609d7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4941000137318489068, guid: 7ee35e65f06a8ff4f838e339af6609d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10826,6 +10830,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quest
       objectReference: {fileID: 0}
+    - target: {fileID: 2737160401742953263, guid: 7ee35e65f06a8ff4f838e339af6609d7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4941000137318489068, guid: 7ee35e65f06a8ff4f838e339af6609d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -13293,6 +13301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quest
       objectReference: {fileID: 0}
+    - target: {fileID: 2737160401742953263, guid: 7ee35e65f06a8ff4f838e339af6609d7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4941000137318489068, guid: 7ee35e65f06a8ff4f838e339af6609d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.1
@@ -15464,6 +15476,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quest
       objectReference: {fileID: 0}
+    - target: {fileID: 2737160401742953263, guid: 7ee35e65f06a8ff4f838e339af6609d7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4941000137318489068, guid: 7ee35e65f06a8ff4f838e339af6609d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15749,7 +15765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2141195825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15844,6 +15860,10 @@ PrefabInstance:
     - target: {fileID: 2170700515595286052, guid: 7ee35e65f06a8ff4f838e339af6609d7, type: 3}
       propertyPath: m_Name
       value: Quest
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737160401742953263, guid: 7ee35e65f06a8ff4f838e339af6609d7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4941000137318489068, guid: 7ee35e65f06a8ff4f838e339af6609d7, type: 3}
       propertyPath: m_LocalPosition.x
