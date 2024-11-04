@@ -46,6 +46,7 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
             {
                 this.gameObject.SetActive(false);
                 canvasEndGame.SetActive(true);
+                GameManager.instance.AddCoin(manager.score);
                 Debug.Log("Thua roi!!");
             }
 
@@ -53,6 +54,7 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
             {
                 this.gameObject.SetActive(false);
                 canvasEndGame.SetActive(true);
+                GameManager.instance.AddCoin(manager.score);
                 Debug.Log("Thua roi!!");
             }
         }
