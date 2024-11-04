@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Eternal_Warriors._Scripts.MiniGame_2
 {
@@ -19,6 +20,7 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
                 canvasEndGame.SetActive(true);
                 FollowedCamera.speed = 0;
                 boatCtrl.speed = 0;
+                // SceneManager.LoadScene("Game", LoadSceneMode.Additive);
             }
         }
     }
