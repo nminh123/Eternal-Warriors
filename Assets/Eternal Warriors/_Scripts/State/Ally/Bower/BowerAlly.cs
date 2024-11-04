@@ -24,13 +24,13 @@ public class BowerAlly : Ally
     protected override void Start()
     {
         base.Start();
-        maxHealth = GameManager.instance.ArrowHp;
+        // maxHealth = GameManager.instance.ArrowHp;
         stateMachine.StartState(moveState);
     }
     protected override void OnEnable()
     {
         base.OnEnable();
-        maxHealth = GameManager.instance.ArrowHp;
+        // maxHealth = GameManager.instance.ArrowHp;
         stateMachine.StartState(moveState);
 
     }
