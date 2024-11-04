@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     private bool controlsEnabled = false; //co duoc phep dieu khien hay ko
 
     // public Joystick joystick;
+    //public Joystick joystick;
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +67,10 @@ public class Player : MonoBehaviour
         // float verticalInput = joystick.Vertical;
         // Vector3 movement = new Vector3(0, verticalInput, 0) * moveSpeed * Time.deltaTime;
         // transform.localPosition += movement;
+
+        //float verticalInput = joystick.Vertical;
+        //Vector3 movement = new Vector3(0, verticalInput, 0) * moveSpeed * Time.deltaTime;
+        //transform.localPosition += movement;
     }
 
     private void StartGame()

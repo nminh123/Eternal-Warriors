@@ -17,20 +17,22 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
         private Vector2 moveVec;
         private Rigidbody2D rigid;
 
+        public GameObject canvasEndGame;
         private void Start()
         {
             rigid = GetComponent<Rigidbody2D>();
             rigid.gravityScale = 0;
+            canvasEndGame.SetActive(false);
         }
 
         private void Update()
         {
             moveVec.x = Input.GetAxisRaw("Horizontal");
             moveVec.y = Input.GetAxisRaw("Vertical");
-            moveVec.x = joystick.Horizontal;
-            moveVec.y = joystick.Vertical;
-            Vector2 movement = new Vector2(0, moveVec.y) *speed * Time.fixedDeltaTime;
-            rigid.MovePosition(rigid.position + movement);
+            //moveVec.x = joystick.Horizontal;
+            //moveVec.y = joystick.Vertical;
+            //Vector2 movement = new Vector2(0, moveVec.y) *speed * Time.fixedDeltaTime;
+            //rigid.MovePosition(rigid.position + movement);
         }
 
         private void FixedUpdate()
@@ -43,12 +45,14 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
             if (other.gameObject.CompareTag("bonus"))
             {
                 this.gameObject.SetActive(false);
+                canvasEndGame.SetActive(true);
                 Debug.Log("Thua roi!!");
             }
 
             if (other.gameObject.CompareTag("DeadEnd"))
             {
                 this.gameObject.SetActive(false);
+                canvasEndGame.SetActive(true);
                 Debug.Log("Thua roi!!");
             }
         }
