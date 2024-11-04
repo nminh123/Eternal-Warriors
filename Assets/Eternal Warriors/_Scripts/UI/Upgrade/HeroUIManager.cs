@@ -46,6 +46,7 @@ public class HeroUIManager : MonoBehaviour
         if (currentHero.attack >= 100) return;
         currentHero.attack += 10;
         // GameManager.instance.RemovePotinal(1, 10);
+        GameManager.instance.RemoveCount(50);
         UpdateHeroUI();
     }
     public void UpgradeDefense()
@@ -54,6 +55,7 @@ public class HeroUIManager : MonoBehaviour
         if (currentHero.defense >= 100) return;
         currentHero.defense += 10;
         // GameManager.instance.RemovePotinal(1, 10);
+        GameManager.instance.RemoveCount(50);
         UpdateHeroUI();
     }
     public void UpgradeSuperPower()
@@ -62,6 +64,7 @@ public class HeroUIManager : MonoBehaviour
         if (currentHero.superPower >= 100) return;
         currentHero.superPower += 10;
         // GameManager.instance.RemovePotinal(1, 10);
+        GameManager.instance.RemoveCount(100);
         UpdateHeroUI();
     }
     public void NextHero()
