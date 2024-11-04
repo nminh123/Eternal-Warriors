@@ -14,7 +14,7 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
 
         private void Update()
         {
-            if (score == 2)
+            if (score == 7) 
             {
                 FollowedCamera.speed = 0;
                 boatCtrl.speed = 0;
