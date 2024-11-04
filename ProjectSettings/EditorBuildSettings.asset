@@ -44,4 +44,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Eternal Warriors/Scenes/Fight 5.unity
     guid: 96703760ea41dfa4bbedc387fc2cfb19
+  - enabled: 1
+    path: Assets/Eternal Warriors/Scenes/CutScene/CutScene 1.unity
+    guid: 4c0450090e17d484687ad7ae0f94d57e
+  - enabled: 1
+    path: Assets/Eternal Warriors/Scenes/CutScene/CutScene 2.unity
+    guid: 4031ac3b32924aa49ae918694f7cb1ad
+  - enabled: 1
+    path: Assets/Eternal Warriors/Scenes/CutScene/CutScene 3.unity
+    guid: 4dc5afc416076424aa61d3a1c5a88168
   m_configObjects: {}
