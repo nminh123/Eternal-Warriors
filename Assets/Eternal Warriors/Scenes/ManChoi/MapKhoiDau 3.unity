@@ -3131,7 +3131,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &293979256
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13457,13 +13457,6 @@ MonoBehaviour:
   manager: {fileID: 893439490}
   data:
     coin: 0
-    sp: 0
-    sh: 0
-    ap: 0
-    ah: 0
-    hop: 0
-    hoh: 0
-    potential: 0
 --- !u!1 &1164550166
 GameObject:
   m_ObjectHideFlags: 0
@@ -15870,7 +15863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeTime: 0.2
-  sceneName: Fight
+  sceneName: Fight 4
 --- !u!1 &1527603714
 GameObject:
   m_ObjectHideFlags: 0
@@ -18202,7 +18195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1799608234
 RectTransform:
   m_ObjectHideFlags: 0
