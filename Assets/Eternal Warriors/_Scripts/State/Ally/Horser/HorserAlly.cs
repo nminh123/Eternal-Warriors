@@ -23,16 +23,16 @@ public class HorserAlly : Ally
     protected override void Start()
     {
         base.Start();
-        damage = GameManager.instance.HorsePower;
-        maxHealth = GameManager.instance.HorseHp;
+        // damage = GameManager.instance.HorsePower;
+        // maxHealth = GameManager.instance.HorseHp;
         stateMachine.StartState(moveState);
     }
     protected override void OnEnable()
     {
         stateMachine.StartState(moveState);
         base.OnEnable();
-        damage = GameManager.instance.HorsePower;
-        maxHealth = GameManager.instance.HorseHp;
+        // damage = GameManager.instance.HorsePower;
+        // maxHealth = GameManager.instance.HorseHp;
         SoundManager.instance.PlaySound("Elephant");
 
     }
