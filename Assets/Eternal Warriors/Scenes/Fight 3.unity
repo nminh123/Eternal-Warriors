@@ -6990,7 +6990,7 @@ GameObject:
   - component: {fileID: 1145711005}
   - component: {fileID: 1145711004}
   m_Layer: 7
-  m_Name: LinhNgua(Dich)
+  m_Name: LinhCuoiNgua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7359,7 +7359,7 @@ GameObject:
   - component: {fileID: 1179722457}
   - component: {fileID: 1179722456}
   m_Layer: 7
-  m_Name: LinhCung(Dich)
+  m_Name: LinhNoo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9534,7 +9534,7 @@ GameObject:
   - component: {fileID: 1716121269}
   - component: {fileID: 1716121268}
   m_Layer: 6
-  m_Name: HaiBaChung
+  m_Name: CuoiNgua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10116,7 +10116,7 @@ GameObject:
   - component: {fileID: 1910373692}
   - component: {fileID: 1910373694}
   m_Layer: 7
-  m_Name: LinhKiem(Dich)
+  m_Name: LinhKiemm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15353,7 +15353,7 @@ GameObject:
   - component: {fileID: 1956006480}
   - component: {fileID: 1956006479}
   m_Layer: 6
-  m_Name: LinhCung
+  m_Name: LinhNo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15859,7 +15859,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.6666667}
+    oldSize: {x: 0.64, y: 0.23}
     newSize: {x: 0.48, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -15936,7 +15936,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -13590778, guid: ead25ca3080f1884b9ca7c7c0541e37f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cf1255f09618e9d48aaab95ad19ea0ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -16873,7 +16873,7 @@ GameObject:
   - component: {fileID: 3665168733123848828}
   - component: {fileID: 7730759682427504896}
   m_Layer: 6
-  m_Name: LinhKiem
+  m_Name: LinhGiao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
