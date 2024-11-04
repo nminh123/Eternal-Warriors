@@ -4384,8 +4384,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26.787003, y: -1}
-  m_SizeDelta: {x: 95.573, y: 50}
+  m_AnchoredPosition: {x: 35.876, y: -1}
+  m_SizeDelta: {x: 113.75, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &525804396
 GameObject:
@@ -6463,13 +6463,6 @@ MonoBehaviour:
   manager: {fileID: 87110456}
   data:
     coin: 0
-    sp: 0
-    sh: 0
-    ap: 0
-    ah: 0
-    hop: 0
-    hoh: 0
-    potential: 0
 --- !u!1 &937568374
 GameObject:
   m_ObjectHideFlags: 0
@@ -16538,7 +16531,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 35, y: -41}
-  m_SizeDelta: {x: 164.847, y: 60.397}
+  m_SizeDelta: {x: 185.502, y: 60.397}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2037777765
 MonoBehaviour:
