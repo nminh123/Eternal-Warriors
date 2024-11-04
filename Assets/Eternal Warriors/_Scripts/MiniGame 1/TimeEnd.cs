@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Eternal_Warriors._Scripts;
 using TMPro;
 using UnityEngine;
 
@@ -48,6 +49,7 @@ public class TimeEnd : MonoBehaviour
                 //Time.timeScale = 0;
                 UpdateTimeDisplay();
                 CanvasManager.instance.ShowEndGameCanvas(scoreManager.GetScore());
+                GameManager.instance.AddCoin((int)scoreManager.GetScore());
             }
         }
     }
