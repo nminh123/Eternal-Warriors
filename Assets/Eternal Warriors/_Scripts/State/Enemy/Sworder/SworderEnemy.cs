@@ -52,6 +52,6 @@ public class SworderEnemy : Enemy
     public override void SoundEffect()
     {
         base.SoundEffect();
-        SoundManager.instance.PlaySound("Sword");
+        //SoundManager.instance.PlaySound("Sword");
     }
 }

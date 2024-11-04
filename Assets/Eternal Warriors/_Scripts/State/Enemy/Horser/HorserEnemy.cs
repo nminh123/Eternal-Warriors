@@ -28,7 +28,7 @@ public class HorserEnemy : Enemy
     {
         stateMachine.StartState(moveState);
         base.OnEnable();
-        SoundManager.instance.PlaySound("Hourse");
+        //SoundManager.instance.PlaySound("Hourse");
 
     }
     protected override void Update()
@@ -52,6 +52,6 @@ public class HorserEnemy : Enemy
     public override void SoundEffect()
     {
         base.SoundEffect();
-        SoundManager.instance.PlaySound("Sword2");
+        //SoundManager.instance.PlaySound("Sword2");
     }
 }

@@ -4425,6 +4425,52 @@ RectTransform:
   m_AnchoredPosition: {x: 26.787003, y: -1}
   m_SizeDelta: {x: 95.573, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &456185037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 456185039}
+  - component: {fileID: 456185038}
+  m_Layer: 0
+  m_Name: SceneChange
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &456185038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456185037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a26212dee2bd00a40b2936404a4e06e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeTime: 60
+  sceneName: CutScene 3
+--- !u!4 &456185039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456185037}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.8092269, y: -0.22110118, z: 89.38261}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &495792753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8639620255030635961, guid: 0f32a9a5bc4ab7f4c82679054d51c4a0, type: 3}
@@ -6807,13 +6853,6 @@ MonoBehaviour:
   manager: {fileID: 87110456}
   data:
     coin: 0
-    sp: 0
-    sh: 0
-    ap: 0
-    ah: 0
-    hop: 0
-    hoh: 0
-    potential: 0
 --- !u!1 &937568374
 GameObject:
   m_ObjectHideFlags: 0
@@ -18290,3 +18329,4 @@ SceneRoots:
   - {fileID: 895659712}
   - {fileID: 178166446}
   - {fileID: 575802544}
+  - {fileID: 456185039}

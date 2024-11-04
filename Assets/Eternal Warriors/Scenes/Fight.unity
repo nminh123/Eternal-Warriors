@@ -8307,7 +8307,7 @@ MonoBehaviour:
   BG: {fileID: 1781760627}
   displayDuration: 1.5
   fadeDuration: 3
-  diaDanhName: Thanh Luy Lau
+  diaDanhName: "Th\xE0nh Luy L\xE2u"
 --- !u!114 &1941822620
 MonoBehaviour:
   m_ObjectHideFlags: 0
