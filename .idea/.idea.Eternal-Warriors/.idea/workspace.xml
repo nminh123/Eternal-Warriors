@@ -6,15 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d7baac73-4b12-47ec-b826-b80f5458a25b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/Quizz Game.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/Quizz Game.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Prefabs/MiniGame2/Target.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Prefabs/MiniGame2/Target.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/BoatCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/BoatCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/FollowedCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/FollowedCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MiniGame2Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MiniGame2Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/RivalSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/RivalSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/Fight.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/Fight.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 1/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 1/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +88,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/Eternal_Warrior.app/Contents/MacOS/Eternal Warriors" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/Eternal_Warrior.app/Contents/MacOS" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../../Unity/Install/2022.3.21f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
@@ -163,6 +166,7 @@
       <workItem from="1730352317463" duration="1295000" />
       <workItem from="1730519553295" duration="777000" />
       <workItem from="1730525423161" duration="1223000" />
+      <workItem from="1730712936998" duration="1290000" />
     </task>
     <servers />
   </component>
