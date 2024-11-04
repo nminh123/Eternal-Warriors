@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
 
     private bool controlsEnabled = false; //co duoc phep dieu khien hay ko
 
-    public Joystick joystick;
+    // public Joystick joystick;
     // Start is called before the first frame update
     void Start()
     {
@@ -63,14 +63,14 @@ public class Player : MonoBehaviour
         var direction = Vector3.right;
         transform.Translate(direction * moveSpeed * Time.deltaTime);
 
-        float verticalInput = joystick.Vertical;
-        Vector3 movement = new Vector3(0, verticalInput, 0) * moveSpeed * Time.deltaTime;
-        transform.localPosition += movement;
+        // float verticalInput = joystick.Vertical;
+        // Vector3 movement = new Vector3(0, verticalInput, 0) * moveSpeed * Time.deltaTime;
+        // transform.localPosition += movement;
     }
 
     private void StartGame()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Space) /*|| Input.GetMouseButtonDown(0)*/)
         {
             myAnimator.SetBool("is_Run", true);
             manager.GetComponent<SpawnObject>().creatObject = true;
