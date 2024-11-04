@@ -2321,7 +2321,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -7.266838, z: 41.380768, w: 20.111015}
+  m_margin: {x: 0, y: -7.266838, z: 307.85532, w: 20.111015}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2717,14 +2717,14 @@ MonoBehaviour:
   openOtherPanelButton: {fileID: 465221627}
   refusalButton: {fileID: 773119623}
   firstMeetingDialogue:
-  - Hello, tui la nguoi nong than thiet tot bung
-  - nhung toi co mot suc to lon
-  - do chinh la co the ren luyen binh linh cua ban
-  - ban muon mo no ra khong
+  - "Mi t\xEDnh ra chi\u1EBFn tr\u01B0\u1EDDng m\xE0 kh\xF4ng chu\u1EA9n b\u1ECB
+    g\xEC sao?"
+  - "Ta c\xF3 1 s\u1ED1 th\u1EE9 c\xF3 th\u1EC3 khi\u1EBFn nh\u1EEFng ng\u01B0\u1EDDi
+    l\xEDnh m\u1EA1nh h\u01A1n ng\u01B0\u01A1i c\xF3 mu\u1ED1n mua kh\xF4ng?"
   dialogues:
-  - "b\u1EA1n c\xF3 mu\u1ED1n n\xE2ng c\u1EA5p kh\xF4ng?"
+  - "\u0110\u1EBFn \u0111\u1EC3 n\xE2ng c\u1EA5p sao?"
   refusalDialogue:
-  - bye bye
+  - "h\u1EB9n g\u1EB7p l\u1EA1i."
 --- !u!114 &274125901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3407,7 +3407,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 133, y: 256}
+  m_AnchoredPosition: {x: 133, y: 255.99998}
   m_SizeDelta: {x: 251.85999, y: 45.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &336491356
@@ -3525,7 +3525,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 357109119}
-  - component: {fileID: 357109124}
   - component: {fileID: 357109123}
   - component: {fileID: 357109122}
   - component: {fileID: 357109121}
@@ -3569,8 +3568,9 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1287034052}
   dialogueText: {fileID: 627201430}
   dialogues:
-  - "ch\xE0o ch\xFA"
-  - "ch\xFAc ch\xFA 1 ng\xE0y t\u1ED1t \u0111\u1EB9p"
+  - "Ch\xE0o ch\xFA! Ch\xFAc ch\xFA 1 ng\xE0y t\u1ED1t l\xE0nh"
+  - "H\xF4m nay m\u1ECDi ng\u01B0\u1EDDi nh\u1ED9n nh\u1ECBp qu\xE1 c\xF3 l\u1EBD
+    s\u1EAFp c\xF3 1 l\u1EC5 h\u1ED9i hay g\xEC \u0111\xF3"
   moveSpeed: 2
   leftBound: -7.12
   rightBound: 26.72
@@ -3684,32 +3684,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &357109124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357109118}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b391c592964b6840859580aef47e051, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 1287034052}
-  otherPanel: {fileID: 119331485}
-  dialogueText: {fileID: 1590458848}
-  openOtherPanelButton: {fileID: 421270701}
-  refusalButton: {fileID: 760301055}
-  firstMeetingDialogue:
-  - Hello, tui la nguoi nong than thiet tot bung
-  - nhung toi co mot suc to lon
-  - do chinh la co the ren luyen binh linh cua ban
-  - ban muon mo no ra khong
-  dialogues:
-  - ban muon mo no ra khong
-  refusalDialogue:
-  - Eto
 --- !u!95 &357109125
 Animator:
   serializedVersion: 5
@@ -4116,7 +4090,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 402818172}
-  - component: {fileID: 402818173}
   - component: {fileID: 402818171}
   - component: {fileID: 402818174}
   - component: {fileID: 402818175}
@@ -4196,32 +4169,6 @@ Transform:
   - {fileID: 1508344521}
   m_Father: {fileID: 206479123}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &402818173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402818170}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b391c592964b6840859580aef47e051, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 1027150064}
-  otherPanel: {fileID: 119331485}
-  dialogueText: {fileID: 1590458848}
-  openOtherPanelButton: {fileID: 421270701}
-  refusalButton: {fileID: 760301055}
-  firstMeetingDialogue:
-  - Hello, tui la nguoi nong than thiet tot bung
-  - nhung toi co mot suc to lon
-  - do chinh la co the ren luyen binh linh cua ban
-  - ban muon mo no ra khong
-  dialogues:
-  - ban muon mo no ra khong
-  refusalDialogue:
-  - Eto
 --- !u!61 &402818174
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4295,7 +4242,9 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1758536399}
   dialogueText: {fileID: 1854848965}
   dialogues:
-  - "Tui l\xE0 MInh "
+  - "L\u0169 x\xE2m l\u01B0\u1EE3c \u0111\xE3 l\u1EA5y \u0111i t\u1EA5t c\u1EA3 m\u1ECDi
+    th\u1EE9 c\u1EE7a ta"
+  - "H\xF4m nay ta nh\u1EA5t \u0111\u1ECBnh s\u1EBD b\xE1o th\xF9"
   isPlayerNearby: 0
 --- !u!1 &421270699
 GameObject:
@@ -8019,7 +7968,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Close
+  m_text: "Kh\xF4ng"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10956,7 +10905,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Open
+  m_text: OK
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11746,7 +11695,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Close
+  m_text: "Kh\xF4ng"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12773,7 +12722,7 @@ Transform:
   m_GameObject: {fileID: 1161300447}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7879269, y: -0.2151289, z: -10}
+  m_LocalPosition: {x: -0.78520894, y: -0.2151289, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14026,12 +13975,14 @@ MonoBehaviour:
   openOtherPanelButton: {fileID: 421270701}
   refusalButton: {fileID: 760301055}
   firstMeetingDialogue:
-  - "nguoi anh em \xE0?"
-  - ban muon ra chien truong ak
+  - "Ng\u01B0\u1EDDi anh em! h\xF4m nay s\u1EBD l\xE0 ng\xE0y quan tr\u1ECDng th\u1EE9
+    2 trong cu\u1ED9c \u0111\u1EDDi ta \u0111\xF3."
+  - "Ng\u01B0\u01A1i \u0111\xE3 s\u1EB5n s\xE0ng chi\u1EBFn \u0111\u1EA5u v\xEC \u0111\u1EA5t
+    n\u01B0\u1EDBc ch\u01B0a?"
   dialogues:
-  - ban muon ra chien truong ak
+  - "Ng\u01B0\u01A1i mu\u1ED1n ra tr\u1EADn \xE0?"
   refusalDialogue:
-  - bye
+  - "T\u1EA1m bi\u1EC7t"
 --- !u!114 &1299091551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14199,7 +14150,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Open
+  m_text: "V\xE2ng"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14435,7 +14386,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1356094460}
-  - component: {fileID: 1356094463}
   - component: {fileID: 1356094462}
   - component: {fileID: 1356094461}
   - component: {fileID: 1356094464}
@@ -14560,32 +14510,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1356094463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356094459}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b391c592964b6840859580aef47e051, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 1027150064}
-  otherPanel: {fileID: 119331485}
-  dialogueText: {fileID: 1590458848}
-  openOtherPanelButton: {fileID: 421270701}
-  refusalButton: {fileID: 760301055}
-  firstMeetingDialogue:
-  - Hello, tui la nguoi nong than thiet tot bung
-  - nhung toi co mot suc to lon
-  - do chinh la co the ren luyen binh linh cua ban
-  - ban muon mo no ra khong
-  dialogues:
-  - ban muon mo no ra khong
-  refusalDialogue:
-  - Eto
 --- !u!114 &1356094464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14614,7 +14538,12 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1758536399}
   dialogueText: {fileID: 1854848965}
   dialogues:
-  - "Xin ch\xE0o"
+  - "N\u01A1i b\u1EA1n \u0111ang \u0111\u1EE9ng l\xE0 Luy L\xE2u t\xF4i nghe n\xF3i
+    s\u1EAFp c\xF3 1 cu\u1ED9c chi\u1EBFn di\u1EC5n ra \u1EDF \u0111\xE2y "
+  - "Ng\u01B0\u01A1i s\u1EBD theo phe c\u1EE7a 2 v\u1ECB n\u1EEF t\u01B0\u1EDBng
+    kia hay l\xE0 theo qu\xE2n \u0110\xF4ng H\xE1n"
+  - "Ta d\xF9 c\xF3 th\u1EBF n\xE0o c\u0169ng s\u1EBD ch\u1ED1ng l\u1EA1i l\u0169
+    x\xE2m l\u01B0\u1EE3c"
   isPlayerNearby: 0
 --- !u!1 &1364084935
 GameObject:
@@ -15039,7 +14968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 133, y: 256}
+  m_AnchoredPosition: {x: 133, y: 255.99998}
   m_SizeDelta: {x: 251.85999, y: 45.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1378646399
@@ -15609,7 +15538,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Close
+  m_text: "Kh\xF4ng"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -18564,7 +18493,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Open
+  m_text: OK
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
