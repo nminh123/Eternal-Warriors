@@ -4,20 +4,26 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: MORE MATH
   m_EditorClassIdentifier: 
-  _info: 2+2=?
+  _info: "Th\u1EDDi k\u1EF3 B\u1EAFc thu\u1ED9c \u1EDF Vi\u1EC7t Nam k\xE9o d\xE0i
+    bao nhi\xEAu n\u0103m?"
   _answers:
-  - _info: 1
+  - _info: "H\u01A1n 200 n\u0103m"
     _isCorrect: 0
-  - _info: 4
+  - _info: "H\u01A1n 500 n\u0103m"
+    _isCorrect: 0
+  - _info: "G\u1EA7n 1.000 n\u0103m"
     _isCorrect: 1
+  - _info: "G\u1EA7n 1.500 n\u0103m"
+    _isCorrect: 0
   _useTimer: 1
-  _timer: 4
+  _timer: 25
   _answerType: 0
-  _addScore: 10
+  _addScore: 75

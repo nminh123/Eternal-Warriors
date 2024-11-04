@@ -12,15 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: SunTemperature
   m_EditorClassIdentifier: 
-  _info: The temperature of the sun is about ..
+  _info: "Tr\u1EADn chi\u1EBFn \u0110i\u1EC7n Bi\xEAn Ph\u1EE7 n\u0103m 1954 c\xF3
+    \xFD ngh\u0129a g\xEC \u0111\u1ED1i v\u1EDBi l\u1ECBch s\u1EED Vi\u1EC7t Nam?"
   _answers:
-  - _info: 10,000 Fahrenheit
-    _isCorrect: 1
-  - _info: 100,000 Fahrenheit
+  - _info: "K\u1EBFt th\xFAc th\u1EDDi k\u1EF3 B\u1EAFc thu\u1ED9c"
     _isCorrect: 0
-  - _info: 1,000 Fahrenheit
+  - _info: "Gi\xE0nh \u0111\u1ED9c l\u1EADp t\u1EEB Ph\xE1p"
+    _isCorrect: 1
+  - _info: "B\u1EAFt \u0111\u1EA7u kh\u1EDFi ngh\u0129a T\xE2y S\u01A1n"
+    _isCorrect: 0
+  - _info: "Thi\u1EBFt l\u1EADp nh\xE0 n\u01B0\u1EDBc \u0110\u1EA1i Vi\u1EC7t"
     _isCorrect: 0
   _useTimer: 1
-  _timer: 10
+  _timer: 25
   _answerType: 1
-  _addScore: 20
+  _addScore: 75
