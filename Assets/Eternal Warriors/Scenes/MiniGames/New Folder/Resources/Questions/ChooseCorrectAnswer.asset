@@ -4,24 +4,26 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: ChooseCorrectAnswer
   m_EditorClassIdentifier: 
-  _info: Red Alert 2 is..?
+  _info: "Ai l\xE0 ng\u01B0\u1EDDi l\xE3nh \u0111\u1EA1o cu\u1ED9c kh\u1EDFi ngh\u0129a
+    Hai B\xE0 Tr\u01B0ng?"
   _answers:
-  - _info: RPG
-    _isCorrect: 0
-  - _info: RTS
+  - _info: "Tr\u01B0ng Tr\u1EAFc v\xE0 Tr\u01B0ng Nh\u1ECB"
     _isCorrect: 1
-  - _info: FPS
+  - _info: "L\xFD Th\xE1i T\u1ED5 v\xE0 L\xFD Th\xE1i T\xF4ng"
     _isCorrect: 0
-  - _info: Horror
+  - _info: "L\xEA L\u1EE3i v\xE0 Nguy\u1EC5n Tr\xE3i"
+    _isCorrect: 0
+  - _info: "Ng\xF4 Quy\u1EC1n v\xE0 \u0110inh B\u1ED9 L\u0129nh"
     _isCorrect: 0
   _useTimer: 1
-  _timer: 8
+  _timer: 15
   _answerType: 1
-  _addScore: 10
+  _addScore: 20
