@@ -44,7 +44,7 @@ public class TimeEnd : MonoBehaviour
             else
             {
                 _time = 0;
-                SoundManager.instance.PlaySound("Victory");
+                //SoundManager.instance.PlaySound("Victory");
                 //Time.timeScale = 0;
                 UpdateTimeDisplay();
                 CanvasManager.instance.ShowEndGameCanvas(scoreManager.GetScore());
