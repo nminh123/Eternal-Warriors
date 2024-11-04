@@ -31,15 +31,15 @@ public class SworderAlly : Ally
     {
         stateMachine.StartState(moveState);
         base.OnEnable();
-        damage = GameManager.instance.SwordPower;
-        maxHealth = GameManager.instance.SwordHp;
+        // damage = GameManager.instance.SwordPower;
+        // maxHealth = GameManager.instance.SwordHp;
     }
     protected override void Start()
     {
         base.Start();
 
-        damage = GameManager.instance.SwordPower;
-        maxHealth = GameManager.instance.SwordHp;
+        // damage = GameManager.instance.SwordPower;
+        // maxHealth = GameManager.instance.SwordHp;
         stateMachine.StartState(moveState);
     }
 

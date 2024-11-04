@@ -9,13 +9,13 @@ public class BulletAlly : Bullet
     protected override void OnEnable()
     {
         base.OnEnable();
-        damage = GameManager.instance.ArrowPower;
+        // damage = GameManager.instance.ArrowPower;
     }
 
     protected override void Start()
     {
         base.Start();
-        damage = GameManager.instance.ArrowPower;
+        // damage = GameManager.instance.ArrowPower;
     }
 
     protected override void SetBullet()

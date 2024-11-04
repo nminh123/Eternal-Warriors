@@ -28,7 +28,7 @@ public class HeroUIManager : MonoBehaviour
     private void Start()
     {
         UpdateHeroUI();
-        GameManager.instance.Potential = 20;
+        // GameManager.instance.Potential = 20;
     }
     public void UpdateHeroUI()
     {
@@ -45,7 +45,7 @@ public class HeroUIManager : MonoBehaviour
         Hero currentHero = heroes[currentHeroIndex];
         if (currentHero.attack >= 100) return;
         currentHero.attack += 10;
-        GameManager.instance.RemovePotinal(1, 10);
+        // GameManager.instance.RemovePotinal(1, 10);
         UpdateHeroUI();
     }
     public void UpgradeDefense()
@@ -53,7 +53,7 @@ public class HeroUIManager : MonoBehaviour
         Hero currentHero = heroes[currentHeroIndex];
         if (currentHero.defense >= 100) return;
         currentHero.defense += 10;
-        GameManager.instance.RemovePotinal(1, 10);
+        // GameManager.instance.RemovePotinal(1, 10);
         UpdateHeroUI();
     }
     public void UpgradeSuperPower()
@@ -61,7 +61,7 @@ public class HeroUIManager : MonoBehaviour
         Hero currentHero = heroes[currentHeroIndex];
         if (currentHero.superPower >= 100) return;
         currentHero.superPower += 10;
-        GameManager.instance.RemovePotinal(1, 10);
+        // GameManager.instance.RemovePotinal(1, 10);
         UpdateHeroUI();
     }
     public void NextHero()
