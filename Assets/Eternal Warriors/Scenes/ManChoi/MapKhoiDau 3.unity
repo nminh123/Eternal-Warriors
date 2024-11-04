@@ -234,7 +234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 210, y: 241.00002}
+  m_AnchoredPosition: {x: 136, y: 270}
   m_SizeDelta: {x: 251.85999, y: 45.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &14666818
@@ -1500,7 +1500,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1564,7 +1564,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &196671610
@@ -2562,14 +2562,13 @@ MonoBehaviour:
   openOtherPanelButton: {fileID: 421270701}
   refusalButton: {fileID: 760301055}
   firstMeetingDialogue:
-  - Hello, tui la nguoi nong than thiet tot bung
-  - nhung toi co mot suc to lon
-  - do chinh la co the ren luyen binh linh cua ban
-  - ban muon mo no ra khong
+  - "T\xF4i l\xE0 trung uy t\xF4i c\xF3 th\u1EC3 gi\xFAp nh\u1EEFng ng\u01B0\u1EDDi
+    l\xEDnh m\u1EA1nh m\u1EBD h\u01A1n"
   dialogues:
-  - ban muon mo no ra khong
+  - "Mu\u1ED1n c\u1EA3i thi\u1EC7n ch\u1EA5t l\u01B0\u1EE3ng qu\xE2n \u0111\u1ED3ng
+    minh kh\xF4ng?"
   refusalDialogue:
-  - Eto
+  - "h\u1EB9n g\u1EB7p l\u1EA1i!!!!!!!"
 --- !u!114 &274125901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2997,6 +2996,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4648610028909530430, guid: ae064970dc911e3468cd9344f575a964, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799767155747707961, guid: ae064970dc911e3468cd9344f575a964, type: 3}
+      propertyPath: m_text
+      value: "Ch\u1ECB Nguy\u1EC7t"
+      objectReference: {fileID: 0}
     - target: {fileID: 7501257915603381792, guid: ae064970dc911e3468cd9344f575a964, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3672,7 +3679,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "B\xECnh Gold"
+  m_text: "B\xECnh"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7320,6 +7327,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2874742068563239081, guid: c7ce31a46ceb5b645890eceeb770929d, type: 3}
+      propertyPath: m_text
+      value: "Ph\u01B0\u01A1ng"
+      objectReference: {fileID: 0}
     - target: {fileID: 5231945698163963952, guid: c7ce31a46ceb5b645890eceeb770929d, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -10325,7 +10336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1027150065
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12265,11 +12276,15 @@ MonoBehaviour:
   openOtherPanelButton: {fileID: 132813199}
   refusalButton: {fileID: 543644658}
   firstMeetingDialogue:
-  - "Nay s\u1EBD "
+  - "S\u1EB5n s\xE0ng ch\u01B0a ng\u01B0\u1EDDi l\xEDnh \u0111\xE2y s\u1EBD l\xE0
+    kho\u1EA3ng kh\u1EAFc quan tr\u1ECDng nh\u1EA5t \u0111\u1EDDi ch\xFAng \u0111\xF3."
+  - "D\u01B0\u1EDBi s\u1EF1 l\u1EA1nh \u0111\u1EA1o c\u1EE7a \u0111\u1ED3ng ch\xED
+    Nguy\u1EC5n \xC1i Qu\u1ED1c v\xE0 \u0111\u1ED3ng ch\xED V\xF5 Nguy\xEAn Gi\xE1p
+    ta kh\xF4ng th\u1EC3 thua \u0111\u01B0\u1EE3c"
   dialogues:
-  - ban muon ra chien truong ak
+  - "Ra chi\u1EBFn tr\u01B0\u1EDDng \xE0 anh linh."
   refusalDialogue:
-  - eto
+  - "T\xF4i s\u1EBD ch\u1EDD c\u1EADu c\xF9ng \u0111\u1EA5t n\u01B0\u1EDBc."
 --- !u!114 &1299091551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14031,10 +14046,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "B\xECnh Gold"
+  m_text: "Trung \xFAy"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14437,7 +14452,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Th\xF4n N\u1EEF"
+  m_text: "Ch\u1ECB Nguy\u1EC7t"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -15827,7 +15842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ph\u01B0\u01A1ng Nam P"
+  m_text: "Ph\u01B0\u01A1ng"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
