@@ -9,7 +9,7 @@ public class TestCharacter : MonoBehaviour
     public float speed;
     private float xInput;
     public float distance = 2f;
-    public Joystick joystick;
+    //public Joystick joystick;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,7 +32,7 @@ public class TestCharacter : MonoBehaviour
         xInput = Input.GetAxisRaw("Horizontal");
         Flip(xInput);
         rb.velocity = new Vector2(xInput * speed, rb.velocity.y);
-        JoyStickk();
+        //JoyStickk();
     }
     public void CheckAnimation()
     {
@@ -59,11 +59,11 @@ public class TestCharacter : MonoBehaviour
             kite.transform.position += (Vector3)direction * (xDistance - distance);
         }
     }
-    public void JoyStickk()
-    {
-        xInput = joystick.Horizontal;
-        Vector2 movement = new Vector2(xInput, 0) * speed * 2 * Time.deltaTime;
-        rb.MovePosition(rb.position + movement);
-        Flip(movement.x);
-    }
+    //public void JoyStickk()
+    //{
+    //    xInput = joystick.Horizontal;
+    //    Vector2 movement = new Vector2(xInput, 0) * speed * 2 * Time.deltaTime;
+    //    rb.MovePosition(rb.position + movement);
+    //    Flip(movement.x);
+    //}
 }
