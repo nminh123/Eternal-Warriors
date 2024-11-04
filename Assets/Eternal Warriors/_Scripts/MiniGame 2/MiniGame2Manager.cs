@@ -20,8 +20,6 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
                 FollowedCamera.speed = 0;
                 boatCtrl.speed = 0;
             }
-
-            
         }
     }
 }
