@@ -51,6 +51,7 @@ namespace Eternal_Warriors._Scripts.MiniGame_2
             if (other.gameObject.CompareTag("reward"))
             {
                 manager.IncreaseScore(1);
+                SoundManager.instance.PlaySound("Bonus");
                 Debug.Log("Passed!!");
             }
         }
