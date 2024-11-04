@@ -3734,13 +3734,6 @@ MonoBehaviour:
   manager: {fileID: 87110456}
   data:
     coin: 0
-    sp: 0
-    sh: 0
-    ap: 0
-    ah: 0
-    hop: 0
-    hoh: 0
-    potential: 0
 --- !u!1 &932019073
 GameObject:
   m_ObjectHideFlags: 0
@@ -4038,7 +4031,7 @@ MonoBehaviour:
   towerEnemy: {fileID: 195602205}
   PanelHome: {fileID: 1830417806}
   PanelNext: {fileID: 879282968}
-  textCoint: {fileID: 0}
+  textCoint: {fileID: 1369049939}
   setTimeActive: 3.2
 --- !u!114 &1027167425
 MonoBehaviour:
