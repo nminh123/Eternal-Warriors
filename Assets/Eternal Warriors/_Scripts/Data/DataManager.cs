@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using UnityEngine;
@@ -8,6 +9,7 @@ namespace Eternal_Warriors._Scripts.Data
     {
         [SerializeField] private GameManager manager;
         [SerializeField] private SerializationData data;
+        private HeroCollection heroesCollection = new HeroCollection { heroes = new List<Hero>() };
         private string path = Application.dataPath + "/savedata.json";
 
         private void Start()
@@ -46,6 +48,55 @@ namespace Eternal_Warriors._Scripts.Data
             data.hoh = manager.HorseHp;
             data.potential = manager.Potential;
             data.Time = manager.DateTime;
+
+            if (data.herocollection == null)
+                data.herocollection = new HeroCollection();
+            if (data.herocollection.heroes == null)
+                data.herocollection.heroes = new List<Hero>();
+            
+            // data.herocollection.heroes.Clear();
+            // foreach (var hero in heroesCollection.heroes)
+            // {
+            //     data.herocollection.heroes.Add(new Hero
+            //     {
+            //         heroName = hero.heroName,
+            //         attack = hero.attack,
+            //         defense = hero.defense,
+            //         superPower = hero.superPower
+            //     });
+            // }
+            // data.herocollection.heroes = heroesCollection.heroes;
+            
+            foreach (var heroes in data.herocollection.heroes)
+            {
+                foreach (var heroes1 in heroesCollection.heroes)
+                {
+                    switch (heroes.heroName)
+                    {
+                        case "kiem":
+                            heroes.heroName = heroes1.heroName;
+                            heroes.attack = heroes1.attack;
+                            heroes.defense = heroes1.defense;
+                            heroes.superPower = heroes1.superPower;
+                            break;
+                        case "cung":
+                            heroes.heroName = heroes1.heroName;
+                            heroes.attack = heroes1.attack;
+                            heroes.defense = heroes1.defense;
+                            heroes.superPower = heroes1.superPower;
+                            break;
+                        case "voi":
+                            heroes.heroName = heroes1.heroName;
+                            heroes.attack = heroes1.attack;
+                            heroes.defense = heroes1.defense;
+                            heroes.superPower = heroes1.superPower;
+                            break;
+                        default:
+                            Debug.LogWarning("Không tìm thấy hệ lính!!");
+                            break;
+                    }
+                }
+            }
             
             string json = JsonConvert.SerializeObject(data, Formatting.Indented);
             File.WriteAllText(path, json);
@@ -71,6 +122,37 @@ namespace Eternal_Warriors._Scripts.Data
                 manager.HorseHp = data.hoh;
                 manager.Potential = data.potential;
                 manager.DateTime = data.Time;
+                
+                foreach (var heroes in heroesCollection.heroes)
+                {
+                    foreach (var heroes1 in data.herocollection.heroes)
+                    {
+                        switch (heroes.heroName)
+                        {
+                            case "kiem":
+                                heroes.heroName = heroes1.heroName;
+                                heroes.attack = heroes1.attack;
+                                heroes.defense = heroes1.defense;
+                                heroes.superPower = heroes1.superPower;
+                                break;
+                            case "cung":
+                                heroes.heroName = heroes1.heroName;
+                                heroes.attack = heroes1.attack;
+                                heroes.defense = heroes1.defense;
+                                heroes.superPower = heroes1.superPower;
+                                break;
+                            case "voi":
+                                heroes.heroName = heroes1.heroName;
+                                heroes.attack = heroes1.attack;
+                                heroes.defense = heroes1.defense;
+                                heroes.superPower = heroes1.superPower;
+                                break;
+                            default:
+                                Debug.LogWarning("Không tìm thấy hệ lính!!");
+                                break;
+                        }
+                    }
+                }
             }
             else
                 Debug.LogWarning("Save file not found. Initializing with default values.");

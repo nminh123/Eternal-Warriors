@@ -13,6 +13,7 @@ namespace Eternal_Warriors._Scripts.Data
         public int hop;
         public int hoh;
         public int potential;
+        public HeroCollection herocollection;
         public DateTime Time;
     }
 }

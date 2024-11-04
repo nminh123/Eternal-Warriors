@@ -3571,6 +3571,23 @@ MonoBehaviour:
     hop: 0
     hoh: 0
     potential: 0
+    herocollection:
+      heroes:
+      - heroName: kiem
+        attack: 0
+        defense: 0
+        superPower: 0
+        heroImage: {fileID: -253384644, guid: fce9494928cb1204bb98b434c47f60cb, type: 3}
+      - heroName: cung
+        attack: 0
+        defense: 0
+        superPower: 0
+        heroImage: {fileID: -1118333833, guid: 1bb58a0b5fcb4dc4088371a49a237118, type: 3}
+      - heroName: voi
+        attack: 0
+        defense: 0
+        superPower: 0
+        heroImage: {fileID: -926936574, guid: 41c456ad6f126334f9b9c8871c9bf6f4, type: 3}
 --- !u!1 &932019073
 GameObject:
   m_ObjectHideFlags: 0

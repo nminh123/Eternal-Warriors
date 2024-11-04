@@ -1,9 +1,9 @@
 ﻿using Eternal_Warriors._Scripts;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
 
 [System.Serializable]
 public class Hero
@@ -12,12 +12,20 @@ public class Hero
     public int attack;
     public int defense;
     public int superPower;
+    [JsonIgnore]
     public Sprite heroImage;
 }
-public class HeroUIManager : MonoBehaviour
+
+[System.Serializable]
+public class HeroCollection
 {
     public List<Hero> heroes;
+}
+
+public class HeroUIManager : MonoBehaviour
+{
     private int currentHeroIndex = 0;
+    private HeroCollection heroes = new HeroCollection { heroes = new List<Hero>() };
 
     public TextMeshProUGUI heroNameText;
     public Image heroImage;
@@ -27,12 +35,39 @@ public class HeroUIManager : MonoBehaviour
 
     private void Start()
     {
+        if (heroes.heroes == null || heroes.heroes.Count == 0)
+        {
+            heroes.heroes = new List<Hero>
+            {
+                new Hero
+                {
+                    heroName = "kiem",
+                    attack = 0,
+                    defense = 0,
+                    superPower = 0
+                },
+                new Hero
+                {
+                heroName = "cung",
+                attack = 0,
+                defense = 0,
+                superPower = 0
+                },
+                new Hero
+                {
+                    heroName = "voi", 
+                    attack = 0, 
+                    defense = 0, 
+                    superPower = 0
+                }
+            };
+        }
         UpdateHeroUI();
         GameManager.instance.Potential = 20;
     }
     public void UpdateHeroUI()
     {
-        Hero currentHero = heroes[currentHeroIndex];
+        Hero currentHero = heroes.heroes[currentHeroIndex];
 
         heroNameText.text = currentHero.heroName;
         heroImage.sprite = currentHero.heroImage;   
@@ -42,7 +77,7 @@ public class HeroUIManager : MonoBehaviour
     }
     public void UpgradeAttack()
     {
-        Hero currentHero = heroes[currentHeroIndex];
+        Hero currentHero = heroes.heroes[currentHeroIndex];
         if (currentHero.attack >= 100) return;
         currentHero.attack += 10;
         GameManager.instance.RemovePotinal(1, 10);
@@ -50,7 +85,7 @@ public class HeroUIManager : MonoBehaviour
     }
     public void UpgradeDefense()
     {
-        Hero currentHero = heroes[currentHeroIndex];
+        Hero currentHero = heroes.heroes[currentHeroIndex];
         if (currentHero.defense >= 100) return;
         currentHero.defense += 10;
         GameManager.instance.RemovePotinal(1, 10);
@@ -58,7 +93,7 @@ public class HeroUIManager : MonoBehaviour
     }
     public void UpgradeSuperPower()
     {
-        Hero currentHero = heroes[currentHeroIndex];
+        Hero currentHero = heroes.heroes[currentHeroIndex];
         if (currentHero.superPower >= 100) return;
         currentHero.superPower += 10;
         GameManager.instance.RemovePotinal(1, 10);
@@ -66,12 +101,14 @@ public class HeroUIManager : MonoBehaviour
     }
     public void NextHero()
     {
-        currentHeroIndex = (currentHeroIndex + 1) % heroes.Count;
+        if (heroes.heroes == null || heroes.heroes.Count == 0) return;
+        currentHeroIndex = (currentHeroIndex + 1) % heroes.heroes.Count;
         UpdateHeroUI();
     }
     public void PreviousHero()
     {
-        currentHeroIndex = (currentHeroIndex - 1 + heroes.Count) % heroes.Count;
+        if (heroes.heroes == null || heroes.heroes.Count == 0) return;
+        currentHeroIndex = (currentHeroIndex - 1 + heroes.heroes.Count) % heroes.heroes.Count;
         UpdateHeroUI();
     }
 }

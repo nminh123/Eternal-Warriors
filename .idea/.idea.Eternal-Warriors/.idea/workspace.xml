@@ -6,15 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d7baac73-4b12-47ec-b826-b80f5458a25b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eternal-Warriors/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/MiniGame 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/Quizz Game.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/MiniGames/Quizz Game.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Prefabs/MiniGame2/Target.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Prefabs/MiniGame2/Target.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/BoatCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/BoatCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/FollowedCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/FollowedCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MiniGame2Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/MiniGame2Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/RivalSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/MiniGame 2/RivalSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/Fight.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/Scenes/Fight.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/Data/DataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/Data/DataManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/Data/SerializationData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/Data/SerializationData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/UI/Upgrade/HeroUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Eternal Warriors/_Scripts/UI/Upgrade/HeroUIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/savedata.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/savedata.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +28,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10075f8d4dda423b945f7b39523eb7de3600/bd/8c083e20/JsonUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58ad0307846e4e2aa7b395ea5a7758f5469200/3c/a9353101/CancellationTokenSource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58ad0307846e4e2aa7b395ea5a7758f5469200/5c/767fd35a/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/55/ebc1150e/IFormatProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6ede60d539084761ad581d21731be376a200/82/9b531f8d/TilemapRenderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b0ec4bde85954a17996a00bbf5c09221954c00/bc/4b8d1fa6/BuildPipelineInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
@@ -119,10 +116,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17192">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="17192" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -163,6 +160,7 @@
       <workItem from="1730352317463" duration="1295000" />
       <workItem from="1730519553295" duration="777000" />
       <workItem from="1730525423161" duration="1223000" />
+      <workItem from="1730689289850" duration="6645000" />
     </task>
     <servers />
   </component>
